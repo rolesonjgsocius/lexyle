@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="footer-two" inherit_id="website.snippet_options">
+        <xpath expr="//we-select[@data-variable='footer-template']" position="inside">
+            <we-button title="lexyle_footer"
+                       data-name="plantzone_footer_opt"
+                       data-customize-website-views="Lexyle.lexyle_footer"
+                       data-customize-website-variable="'lexyle_footer'"
+                       data-img="/website/static/src/img/snippets_options/footer_template_links.svg"/>
+        </xpath>
+    </template>
+    <template id="lexyle_footer" inherit_id="website.layout" name="Template Footer lexyle_footer" active="False">
+        <xpath expr="//footer//div[@id='footer']" position="replace">
+            <link rel="preconnect" href="https://fonts.googleapis.com/"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com"/>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+                  rel="stylesheet"/>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com"/>
+            <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap"
+                  rel="stylesheet"/>
+
+            <style>
+                @font-face {
+                font-family: 'Gilroy-Bold';
+                src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Bold.ttf') format('truetype');
+
+                }
+
+                @font-face {
+                font-family: 'Gilroy-Light';
+                src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Light.ttf') format('truetype');
+
+                }
+
+                @font-face {
+                font-family: 'Gilroy-Heavy';
+                src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Heavy.ttf') format('truetype');
+
+                }
+                .footergrid p, .footergrid a {
+                font-family: 'Gilroy-Bold', sans-serif !important;
+                text-align: justify;
+                color: #003384 !important;
+                margin-right: 15px;
+                }
+                .footergrid > div:nth-of-type(2){
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                }
+                .addressfooter{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                }
+                .addressfooter p {
+
+                }
+                .footergrid li{
+                list-style: none;
+                margin-bottom: 5px;
+                }
+                .
+                .footergrid a{
+                list-style: none;
+                color: #003384 !important;
+
+                }
+                .buttonbasichover:hover {
+                background-color: aliceblue !important;
+                color: black !important;
+                }
+                .footergrid{
+                display:grid;
+                padding: 25px 0px;
+                grid-template-columns:1fr ;
+                gap: 30px;
+                }
+                .footergrid button{
+                background: rgba(0, 0, 0, 1);
+                color: white;
+                border-radius: 20px;
+                padding: 5px 35px;
+                border: 2px solid white;
+                margin: 50px 0px;
+                }
+
+
+                /* Small devices (≥576px) */
+                @media (min-width: 576px) {
+
+                }
+
+                /* Medium devices (≥768px) */
+                @media (min-width: 768px) {
+                .footergrid{
+                display:grid;
+                grid-template-columns:1fr 1fr ;
+                }
+
+                }
+
+                /* Large devices (≥992px) */
+                @media (min-width: 992px) {
+                .footergrid{
+                display: grid;
+                gap: 30px;
+                grid-template-columns: 1fr 3fr 1fr;
+                padding:25px;
+                }
+
+                }
+
+                /* Extra large devices (≥1200px) */
+                @media (min-width: 1200px) {
+
+                }
+
+                /* Extra extra large devices (≥1400px) */
+                @media (min-width: 1400px) {
+
+                }
+                /* Extra extra large devices (≥1400px) */
+                @media (max-width: 768px) {
+                .footergrid {
+                padding: 50px 10px;
+                }
+                .firstsection_footer{
+                align-items: center !important;
+                }
+
+                .footergrid a{
+                text-align: center !important;
+                }
+                .addressfooter{
+                align-items: center !important;
+                }
+                .footergrid div{
+                display: flex;
+                justify-content: start;
+                <!--					margin: 30px 0px;-->
+                }
+
+                .footergrid div:nth-of-type(2) {
+                display: flex;
+                justify-content: start;
+                flex-direction: column;
+                }
+                .footergrid div button{
+
+                margin: 30px 0px;
+                }
+                }
+
+            </style>
+            <div style="background: #F9F9F9;color: black;" class="footercontainer ">
+                <div class="footergrid ">
+                    <a href="/">
+                        <div class="firstsection_footer" style="display: flex;
+  align-content: center;
+ align-items: center;
+flex-direction:column;justify-content: center;">
+                            <img style="   width: 145px;
+ " src="/Lexyle/static/src/images/image 1.png"/>
+                            <p style="   color: #456f8c !important;
+  font-size: 10px;
+  margin-top: 2px;
+  word-spacing: 0px;
+  font-weight: 500;
+  font-family: 'Poppins', serif !important;
+  margin: 0px !important;
+">Learn Today.
+                                <span style="    white-space: nowrap;
+">
+                                    Lead Tomorrow
+                                </span>
+                            </p>
+
+                        </div>
+                    </a>
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <p>Contact Us:
+                            <a href="tel:+918714603391">91 871 460 3391</a>
+                        </p>
+                        <p>Email:
+                        <a href="mailto:info@socius.com"> info@socius.com</a>
+                        </p>
+                        <p>Website:
+                              <a href="www.socius.com"> www.socius.com</a>
+                        </p>
+
+
+
+
+
+                    </div>
+                    <div class="addressfooter">
+                        <p>
+                            Socialize with Us
+                        </p>
+                        <div>
+                            <a href="#">
+                                <img style="    height: 30px;
+  width: auto;" src="/Lexyle/static/src/images/image 5.png"/>
+                            </a>
+                            <a href="#">
+                                <img style="    height: 30px;
+  width: auto;" src="/Lexyle/static/src/images/image 6.png"/>
+                            </a>
+                            <a href="#">
+                                <img style="    height: 30px;
+  width: auto;" src="/Lexyle/static/src/images/image 7.png"/>
+                            </a>
+                            <a href="#">
+                                <img style="    height: 30px;
+  width: auto;" src="/Lexyle/static/src/images/image 8.png"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="display_popup">
+        <section>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+          <script src="https://cdn.jsdelivr.net/npm/typeset@0.2.0/dist/typeset.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <style>
+                @media(max-width:768px){
+                #splash_popup .close-button{
+                width: 25px !important;
+                height: 25px !important;
+                font-size: 18px !important;
+                top: 5px !important;
+                right: 5px !important;
+                }
+                .linksresp{
+               margin: 0px !important;
+    margin-top: 5px !important;
+                }
+                .linksrespcontainer{
+                margin:10px 0px !important;
+                }
+                .blue-text{
+                  font-size: 14px !important;
+                }
+                .modal-dialog{
+                width: 100vw !important;
+                max-width: 95% !important;
+                }
+                }
+            #splashModal{
+                  z-index: 99999999999999999;
+            }
+                #splash_popup {
+                    width: 100%;
+                    background-color: #fff;
+                    border: 1px solid #999;
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    border-radius: 6px;
+                    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+                    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+                    background-clip: padding-box;
+                    outline: 0;
+                    padding: 20px;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                    max-height: calc(100vh - 70px);
+                    overflow-y: auto;
+                }
+                @font-face {
+                    font-family: 'Bungee';
+                    font-weight: 900;
+                    src: url("/Lexyle/static/src/fonts/bungee/Bungee-Regular.ttf") format("truetype");
+                }
+                @font-face {
+                    font-family: 'Satoshi';
+                    src: url("/Lexyle/static/src/fonts/Satoshi/Satoshi-Variable.ttf") format("truetype");
+                }
+                @font-face {
+                    font-family: 'BonnetGrotesque';
+                    font-weight: medium;
+                    src: url("/Lexyle/static/src/fonts/BonnetGrotesque/BonnetGrotesqueNr-Medium.ttf") format("truetype");
+                }
+                .sato-font {
+                    font-family: 'Satoshi';
+                }
+                #splash_popup .blue-text {
+                    color: #280195;
+                }
+                #splash_popup .up-head-text {
+  font-size: 15px;
+                      text-transform: uppercase;
+                    font-weight: 600;
+                    margin-bottom: 0px;
+                }
+                #splash_popup .lr-head-text {
+                      font-size: 14px;
+                    font-weight: 600;
+                }
+                #splash_popup .up-txt {
+                    text-transform: uppercase;
+                }
+                #splash_popup .codrush-head-txt     {
+                    font-family: 'Bungee';
+                      font-size: 35px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    margin-bottom: 0px;
+                }
+                #splash_popup .ltd-off-txt {
+                    font-size: 20px;
+                    font-weight: 600;
+                    font-family: 'BonnetGrotesque';
+                    letter-spacing: 1px;
+                }
+                #splash_popup .para-font {
+                    font-weight: 400;
+  font-size: 14px;
+                      font-family: 'Satoshi';
+                    text-align: justify;
+                      margin: 10px 0;
+                }
+                #splash_popup .close-button {
+                    text-align: center;
+                    background: #0068D9;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 20px;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    font-size: 24px;
+                    cursor: pointer;
+                    color: #fff;
+                    z-index: 1050;
+                }
+                #splash_popup .modal {
+                z-index: 9999999999999;
+                }
+                #splash_popup .modal-content {
+                    border: none;
+                    border-radius: 6px;
+                }
+                #splash_popup .modal-dialog {
+                    max-width: 75% !important;
+                    margin: 30px auto !important;
+                }
+
+                @media(min-width: 576px){
+                        #splash_popup .modal-dialog {
+                            max-width:  75%  !important;
+                            margin: 30px auto !important;
+                         }
+                .deskdispheading{
+                display:block;
+                }
+                .mobdispheadinglr{
+                display:none;
+                }
+                    }
+                @media(max-width:576px){
+                .resppaddingcancel{
+                padding-left: 0px !important;
+  padding-right: 0px !important;
+                }
+                .deskdispheading{
+                display:none;
+                }
+                 .mobdispheadinglr{
+             display: block;
+    text-align: justify;
+
+    line-height: 20px;
+                }
+
+                }
+                    .modal-dialog{
+
+                                                    max-width: 75% ;
+
+                    }
+            </style>
+            <script>
+                (function($) {
+                    $(document).ready(function() {
+                        if (!sessionStorage.getItem('splashShown')) {
+                            $('#splashModal').modal({
+                                backdrop: 'static',
+                                keyboard: false
+                            });
+                            sessionStorage.setItem('splashShown', 'true');
+                        }
+                    });
+                })(jQuery);
+            </script>
+
+        </section>
+        <div class="modal fade" id="splashModal" tabindex="-1" role="dialog" aria-labelledby="splashModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <section id="splash_popup">
+                        <span class="close-button" data-dismiss="modal">X</span>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div  class="resppaddingcancel col-md-6">
+                                    <div class="d-flex justify-content-between mt-2  mb-1">
+                                        <div style="display:flex;
+flex-direction:column;">
+                                                      <img src="/Lexyle/static/src/images/image 1.png" style="
+width: 116px;
+  height: auto;
+"/>
+                                        <p style="
+color: #456f8c;
+  font-size: 9px;
+  margin-top: 0px;
+  word-spacing: 0px;
+  font-weight: 500;
+">Learn Today. Lead Tomorrow</p>
+                                        </div>
+
+                                        <img src="/Lexyle/static/src/images/display/Blue_ss.png" style="
+width: auto;
+  height: 38px;
+
+"/>
+                                    </div>
+                                    <div class="text-center">
+                                        <h4 class="sato-font blue-text up-head-text">lexyle presents</h4>
+                                        <h1 class="sato-font blue-text codrush-head-txt">coderush'25</h1>
+                                        <h5 class="sato-font blue-text lr-head-text up-txt">powered by socius innovative global brains</h5>
+                                    </div>
+                                    <p class="blue-text para-font">We are pleased to invite the final semester students of your esteemed institution to participate in an exciting Hackathon Event aimed at showcasing innovation, creativity, and problem-solving skills in the tech space.</p>
+                                    <div class="pt-2 pb-2">
+                                        <h4 class="blue-text lr-head-text up-txt">eligibility</h4>
+
+                                            <h4 class="blue-text  deskdispheading lr-head-text">Final Semester B.Tech / B.E. Students from </h4>
+                                        <h4 class="blue-text deskdispheading  lr-head-text">Engineering Colleges in Thiruvananthapuram</h4>
+                                     <h4 class="blue-text mobdispheadinglr  lr-head-text">Final Semester B.Tech / B.E. Students from Engineering Colleges in Thiruvananthapuram </h4>
+
+
+
+                                    </div>
+                                    <div style="border:3px solid #280195;display:grid;grid-template-columns:auto auto auto;padding: 2% 3%;">
+                                        <div class="text-center">
+                                            <h3 class="blue-text" style="font-size: 16px;font-weight: 600;">7<span style="font-size: 16px;vertical-align: super;">th</span> June</h3>
+                                            <h3 class="blue-text" style="font-size: 16px;font-weight: 600;">Saturday</h3>
+
+                                            <h1 class="blue-text" style="font-size: 16px;font-weight: 900;">2025</h1>
+                                                   <h3 class="blue-text" style="font-size: 16px;font-weight: 600;">09:00 AM</h3>
+                                        </div>
+                                        <div style="display: flex;justify-content: center;align-items: center;padding-left: 10px;">
+                                            <p style="border-right:3px solid #280195;height: 100%;margin-bottom: 0;margin:0 8px;"></p>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <p class="blue-text max-width-custom" style="font-weight:700;font-size: 16px;padding: 4%;">
+  Travancore Hall<br/>
+  <span style="white-space: nowrap;">Park Center</span>, Phase1, Technopark, Thiruvananthapuram
+</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex linksrespcontainer  flex-column flex-md-row justify-content-between">
+                                        <p class="blue-text linksresp text-md-start text-center  para-font">+91 8714603391</p>
+                                        <p class="blue-text  linksresp text-md-start text-center  para-font">www.lexyle.com</p>
+                                        <p class="blue-text  linksresp text-md-start text-center  para-font">info@lexyle.in</p>
+                                  <p style="  color: #280195;" class="blue-text  linksresp text-md-start text-center d-block d-md-none para-font"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfbEs53kmPu5BNardp3qz1_JX5gPJA3MOdPAtqleSQciV0NiA/viewform" style="  text-decoration: underline;color: #280195;">Click here to register</a></p>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 resppaddingcancel" style="background: url('/Lexyle/static/src/images/display/imgg.jpg');background-size: cover;background-position:center;display: flex;justify-content: end;align-items: end;padding: 2%;">
+                                    <div style="border:4px solid #fff;width: fit-content;text-align: center;padding: 2%;">
+                                        <div style="background:white;">
+                                            <img class="img-fluid" src="/Lexyle/static/src/images/display/qrcode.png" style="background: #fff;width: 120px;margin-bottom: 10px;  margin-top: 10px;"/>
+                                        </div>
+                                        <h4 class="text-white ltd-off-txt">LIMITED SEATS AVAILABLE!</h4>
+                                        <h4 class="text-white ltd-off-txt">SCAN QR TO REGISTER</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+<!--                    <script type="text/javascript">-->
+<!--                        document.addEventListener("DOMContentLoaded", function () {-->
+<!--                        document.querySelectorAll('.mobdispheadinglr').forEach(el => {-->
+<!--                        // Replace textContent safely without breaking tags (if any)-->
+<!--                        const text = el.textContent;-->
+<!--                        const modified = text.replace(/\w+/g, word => {-->
+<!--                        // Avoid modifying very short words-->
+<!--                        return word.length > 3 ? word.match(/.{1,5}/g).join('\u00AD') : word;-->
+<!--                        });-->
+<!--                        el.innerHTML = modified;-->
+<!--                        });-->
+<!--                        });-->
+<!--                    </script>-->
+
+                </div>
+            </div>
+
+        </div>
+
+    </template>
+</odoo>

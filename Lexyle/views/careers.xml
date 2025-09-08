@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="Lexyle_Careers" name="Lexyle">
+        <t t-call="website.layout">
+                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
+                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap"
+                      rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;display=swap" rel="stylesheet"/>
+<style>
+            #wrapwrap > main{
+                      overflow-x: hidden !important;
+                    }
+    .intern-btn:hover{
+     text-decoration: none;
+    }
+
+     @font-face {
+                    font-family: 'Gilroy-Bold';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Bold.ttf') format('truetype');
+
+                    }
+
+                    @font-face {
+                    font-family: 'Gilroy-Light';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Light.ttf') format('truetype');
+                    }
+
+                    @font-face {
+                    font-family: 'Gilroy-Medium';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Medium.ttf') format('truetype');
+                    }
+                         @font-face {
+                    font-family: 'Gilroy-Regular';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Regular.ttf') format('truetype');
+                    }
+
+                    @font-face {
+                    font-family: 'Gilroy-Heavy';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Heavy.ttf') format('truetype');
+
+                    }
+</style>
+            <section id="careers">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 text-center text-white" style="background: url('/Lexyle/static/src/images/display/career_banner.png');background-position: center;background-size: cover;padding:12% 0">
+                            <h2>Career</h2>
+                            <p style="       font-size: 18px;
+
+">You will Love our Working Culture</p>
+                        </div>
+                    </div>
+                    <div class="row" id="career-div">
+                        <div class="col-md-12 text-center mt-2">
+                            <h3 style="font-weight: 600;">OPEN POSITIONS</h3>
+                            <p>We Are Hiring</p>
+                        </div>
+                        <div class="col-md-12" style="padding:2% 4%;">
+                            <div class="row" style="background: #F1F0F0;padding: 3%;border-radius: 25px;">
+                                <div class="col-md-12">
+                                    <div class="row pb-4">
+                                        <div class="col-md-6">
+                                            <h6>Artificial Intelligence / Python Intern - BTech/MCA/BCA</h6>
+                                            <div class="pb-3 mt-3">
+                                                <p>
+                                                    <img src="/Lexyle/static/src/images/icons/Time@3x.png"
+                                                         style="width: 20px;height: 20px;" class="me-2"/>
+                                                    6 Months duration
+                                                </p>
+                                                <p>
+                                                    <img src="/Lexyle/static/src/images/icons/Pin@3x.png"
+                                                         style="width: 20px;height: 20px;" class="me-2"/>
+                                                    Hybrid
+                                                </p>
+                                                <p>
+                                                    <img src="/Lexyle/static/src/images/icons/paper_clip_light.png"
+                                                         style="width: 20px;height: 20px;" class="me-2"/>
+                                                    Thiruvananthapuram
+                                                </p>
+                                                <p>
+                                                    <img src="/Lexyle/static/src/images/icons/Date_range_duotone_line@3x.png"
+                                                         style="width: 20px;height: 20px;" class="me-2"/>
+                                                    Starts within 1 month
+                                                </p>
+                                            </div>
+                                            <a class="intern-btn" href="javascript:void(0);" onclick="showCareerContent()"
+                                               style="color:#D5A03D;background: transparent;border:1px solid #CC8501;border-radius:37px;padding: 2% 7%;">
+                                                Details
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="text-end">
+                                                <a href="/career_form" class="btn"
+                                                   style="    background: #003384;     border-radius: 25px;     padding: 10px 25px;     border: none;     color: white;     font-size: 15px;     margin-right: 15px;     font-family:   Arial, sans-serif  Arial, sans-serif ;     font-optical-sizing: auto;     font-style: normal;     font-variation-settings: 'wdth' 100;     font-weight: 600;">
+                                                    APPLY NOW
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3" style="border-top: 1px solid #C4C4C4">
+                                        <p>Posted: <span style="font-weight:600;">5 days ago  |</span> Openings: <span style="font-weight:600;">10</span> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 d-none" style="padding:2% 4%;">
+                            <div class="row" style="background: #F1F0F0;padding: 3%;border-radius: 25px;">
+                                <div class="col-md-12">
+                                    <div class="row pb-4">
+                                        <div class="col-md-6">
+                                            <h6>Artificial Intelligence / Python Intern - BTech/MCA/BCA</h6>
+                                            <div class="pb-3 mt-3">
+                                                <p>
+                                                    <img src="/Lexyle/static/src/images/icons/Time@3x.png"
+                                                         style="width: 20px;height: 20px;" class="me-2"/>
+                                                    6 Months duration
+                                                </p>
+                                                <p>
+                                                    <img src="/Lexyle/static/src/images/icons/Pin@3x.png"
+                                                         style="width: 20px;height: 20px;" class="me-2"/>
+                                                    Hybrid
+                                                </p>
+                                                <p>
+                                                    <img src="/Lexyle/static/src/images/icons/paper_clip_light.png"
+                                                         style="width: 20px;height: 20px;" class="me-2"/>
+                                                    Thiruvananthapuram
+                                                </p>
+                                                <p>
+                                                    <img src="/Lexyle/static/src/images/icons/Date_range_duotone_line@3x.png"
+                                                         style="width: 20px;height: 20px;" class="me-2"/>
+                                                    Starts within 1 month
+                                                </p>
+                                            </div>
+                                            <a class="intern-btn" href="javascript:void(0);" onclick="showCareerContent()"
+                                               style="color:#D5A03D;background: transparent;border:1px solid #CC8501;border-radius:37px;padding: 2% 7%;">
+                                                Details
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="text-end">
+                                                <a href="/career_form" class="btn"
+                                                   style="    background: #003384;     border-radius: 25px;     padding: 10px 25px;     border: none;     color: white;     font-size: 15px;     margin-right: 15px;     font-family:   Arial, sans-serif  Arial, sans-serif ;     font-optical-sizing: auto;     font-style: normal;     font-variation-settings: 'wdth' 100;     font-weight: 600;">
+                                                    APPLY NOW
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3" style="border-top: 1px solid #C4C4C4">
+                                        <p>Posted: <span style="font-weight:600;">5 days ago  |</span> Openings: <span style="font-weight:600;">10</span> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-none" id="career-div-content">
+                        <div class="col-md-12" style="padding:2% 4%;">
+                            <div class="row" style="background: #F1F0F0;padding: 3%;border-radius: 25px;">
+                                <div class="col-md-12">
+                                    <div class="row pb-4">
+                                        <div class="col-md-10">
+                                            <h6>Artificial Intelligence / Python Intern - BTech/MCA/BCA</h6>
+                                            <div class="pb-3 mt-3">
+                                                <p>
+                                                    Description
+                                                </p>
+                                                <p style="  margin-bottom: 5px;">
+                                                    Roles &amp; Responsibilities
+                                                </p>
+                                                <p style="text-align:justify;  word-wrap: break-word;">We are seeking a Python developer with AI knowledge to join our team. The ideal candidate will be responsible for developing high-quality software applications using Python, Tensorflow, and related technologies.</p>
+                                                <p style="  margin-bottom: 5px;">
+                                                    Preferred Candidate Profile
+                                                </p>
+                                                <p style="text-align:justify;  word-wrap: break-word;">
+                                                    The successful candidate will be able to troubleshoot and resolve technical issues, assist with the implementation of new technologies, and provide support to team members.
+                                                </p>
+                                                <p style="    margin-bottom: 10px;" >Qualifications / Skills:</p>
+
+                                                <h6 style="  margin-bottom: 5px;">BTech/MCA/BCA</h6>
+                                                <div style="white-space: no-wrap;">
+
+                                                    <ul>
+  <li>Good verbal and written communication</li>
+  <li>Strong analytical and debugging skills</li>
+  <li>Strong professionalism</li>
+  <li>Good customer focus</li>
+  <li>Ability to maintain confidentiality</li>
+  <li>Understanding software requirement specifications</li>
+  <li>Ability to learn new technologies</li>
+</ul>
+
+<p style="  margin-bottom: 0px;">Role: Software Development - Other</p>
+<p style="  margin-bottom: 0px;" >Industry Type: IT Services &amp; Consulting</p>
+<p style="  margin-bottom: 0px;">Department: Engineering - Software &amp; QA</p>
+<p style="  margin-bottom: 0px;" >Employment Type: Full Time, Permanent</p>
+<p style="  margin-bottom: 0px;" >Role Category: Software Development</p>
+
+<p style="margin-top: 15px;
+  margin-bottom: 5px;">Education</p>
+<ul>
+  <li>UG/PG in Any Specialization</li>
+  <li>B.Sc in Any Specialization</li>
+  <li>B.Tech/B.E. in Any Specialization</li>
+</ul>
+
+<!--<p>Key Skills</p>-->
+<!--<p>Skills highlighted with ‘‘ are preferred key skills</p>-->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="text-end">
+                                                <a href="/career_form" class="btn"
+                                                   style="    background: #003384;     border-radius: 25px;     padding: 10px 25px;     border: none;     color: white;     font-size: 15px;     margin-right: 15px;     font-family:   Arial, sans-serif  Arial, sans-serif ;     font-optical-sizing: auto;     font-style: normal;     font-variation-settings: 'wdth' 100;     font-weight: 600;">
+                                                    APPLY NOW
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function showCareerContent() {
+                        var careerDivContent = document.getElementById('career-div-content');
+                        var careerDiv = document.getElementById('career-div');
+                        if (careerDivContent) {
+                            careerDivContent.classList.remove('d-none');
+                            careerDiv.classList.add('d-none');
+                        }
+                    }
+                </script>
+            </section>
+        </t>
+    </template>
+    <template id="career_form">
+        <t t-call="website.layout">
+            <div class="container-fluid internshipapplicationform">
+                <style>
+<!--                    internshipapplicationform {-->
+<!--                    background: #F1F0F0;-->
+<!--                    padding: 25px 50px;-->
+<!--                    margin-top: 25px;-->
+<!--                    border-radius: 30px;-->
+<!--                    }-->
+                    .form_crm_functionity_internship .col-form-label {
+                    font-family: "Arial", sans-serif !important;
+                    text-align: start !important;
+                    font-weight: 500 !important;
+                    color: black !important;
+                    font-size: 14px !important;
+                    margin-bottom: 0px;
+                    }
+                    .form_crm_functionity_internship a {
+                    background: #003384 !important;
+                    font-family: 'Arial', sans-serif !important;
+                    text-align: start !important;
+                    font-weight: 500 !important;
+                    color: white !important;
+                    font-size: 14px !important;
+                    border: none !important;
+                    padding: 15px 75px !important;
+                    border-radius: 25px !important;
+                    }
+                    .form_crm_functionity_internship{
+                    min-height: 500px;
+                    background: #F1F0F0;
+                    padding: 25px 50px;
+                    margin-top: 25px;
+                    border-radius: 30px;
+                    margin-right: 8%;
+                    margin-left: 8%;
+                    margin-bottom: 3%;
+                    }
+                    @media(max-width:576px){
+                    .form_crm_functionity_internship{
+                    padding: 10px !important;
+                    margin: 10px !important;
+                    }
+                    }
+                </style>
+                <div class="row">
+                    <div class="col-md-12 text-center text-white"
+                         style="background: url('/Lexyle/static/src/images/display/career_banner.png');background-position: center;background-size: cover;padding:12% 0">
+                        <h2>Career</h2>
+                        <p style="        font-size: 18px;
+
+">You will Love our Working Culture</p>
+                    </div>
+                </div>
+                <h4 class="text-center" style=" color: black;font-family: 'Arial', sans-serif;text-align: center;font-weight: 600;margin: 25px 0px;">Apply Now</h4>
+                <div class="oe_structure form_crm_functionity_internship"></div>
+            </div>
+            <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".onlyform");
+
+    if (!form) return; // Safety check
+
+    const phoneInputs = form.querySelectorAll("input[type='tel']");
+
+    phoneInputs.forEach(function (phoneInput) {
+        // Set input mode to numeric to encourage number-only input on mobile devices
+        phoneInput.setAttribute("inputmode", "numeric");
+        // Add required attribute
+        phoneInput.setAttribute("required", true);
+        // Set pattern to enforce 10 digits (for HTML5 validation)
+        phoneInput.setAttribute("pattern", "\\d{10}");
+        // Optionally, add a placeholder for guidance
+        phoneInput.setAttribute("placeholder", "");
+
+        phoneInput.addEventListener("input", function () {
+            // Remove non-digits
+            this.value = this.value.replace(/\D/g, '');
+            // Limit to 10 digits
+            if (this.value.length > 10) {
+                this.value = this.value.slice(0, 10);
+            }
+        });
+
+        // Optional: Provide real-time feedback
+        phoneInput.addEventListener("blur", function () {
+            const digitsOnly = this.value.replace(/\D/g, '');
+            if (digitsOnly.length > 0 &amp;&amp; digitsOnly.length &lt; 10) {
+                this.classList.add("input-error");
+                // Optionally show a message below the input
+                let errorMessage = this.nextElementSibling;
+                if (!errorMessage || !errorMessage.classList.contains("error-message")) {
+                    errorMessage = document.createElement("span");
+                    errorMessage.classList.add("error-message");
+                    errorMessage.style.color = "red";
+                    errorMessage.style.fontSize = "12px";
+                    this.parentNode.insertBefore(errorMessage, this.nextSibling);
+                }
+                errorMessage.textContent = "Enter a Valid Phone Number";
+            } else {
+                this.classList.remove("input-error");
+                const errorMessage = this.nextElementSibling;
+                if (errorMessage &amp;&amp; errorMessage.classList.contains("error-message")) {
+                    errorMessage.textContent = "";
+                }
+            }
+        });
+    });
+
+    form.addEventListener("submit", function (e) {
+        let allValid = true;
+
+        phoneInputs.forEach(function (input) {
+            const digitsOnly = input.value.replace(/\D/g, '');
+            if (digitsOnly.length !== 10) {
+                allValid = false;
+                input.classList.add("input-error");
+                // Ensure error message is visible
+                let errorMessage = input.nextElementSibling;
+                if (!errorMessage || !errorMessage.classList.contains("error-message")) {
+                    errorMessage = document.createElement("span");
+                    errorMessage.classList.add("error-message");
+                    errorMessage.style.color = "red";
+                    errorMessage.style.fontSize = "12px";
+                    input.parentNode.insertBefore(errorMessage, input.nextSibling);
+                }
+                errorMessage.textContent = "Phone number must be exactly 10 digits.";
+            } else {
+                input.classList.remove("input-error");
+                const errorMessage = input.nextElementSibling;
+                if (errorMessage &amp;&amp; errorMessage.classList.contains("error-message")) {
+                    errorMessage.textContent = "";
+                }
+            }
+        });
+
+        if (!allValid) {
+            e.preventDefault(); // Stop form submission
+            alert("Please enter exactly 10 digits in the phone number field.");
+        }
+    });
+});
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select all inputs with class="onlytext"
+        var textInputs = document.querySelectorAll(".onlytext");
+
+
+        textInputs.forEach(function (input) {
+            input.addEventListener("input", function () {
+    console.log("Input onlytext");
+                this.value = this.value.replace(/[0-9]/g, '');
+            });
+        });
+    });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const experienceInputs = document.querySelectorAll(".onlyexperience");
+
+    experienceInputs.forEach(function (input) {
+        input.setAttribute("inputmode", "numeric");
+        input.setAttribute("maxlength", "2");
+
+        input.addEventListener("input", function () {
+            // Remove anything that's not a number
+            this.value = this.value.replace(/\D/g, '');
+
+            // Limit to 2 digits
+            if (this.value.length > 2) {
+                this.value = this.value.slice(0, 2);
+            }
+        });
+
+        input.addEventListener("blur", function () {
+            const value = this.value;
+            if (value.length === 0 || parseInt(value) > 50) {
+                alert("Please enter valid experience (1–50 years).");
+                this.classList.add("input-error");
+            } else {
+                this.classList.remove("input-error");
+            }
+        });
+    });
+});
+</script>
+        </t>
+    </template>
+
+
+</odoo>

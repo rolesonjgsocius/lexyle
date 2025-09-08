@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+        <template id="Lexyle_LMS" name="Lexyle_LMS">
+
+
+        <t t-call="website.layout">
+            <section>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
+                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap"
+                      rel="stylesheet"/>
+                    <style>
+                    @media(max-width:992px) {
+                        .banner_custom_lms{
+                        margin-top: 100px !important;
+                        }
+                        .banner_custom_lms > div{
+                         row-gap: 25px;
+                        }
+                    .hide_flex{
+                    flex: unset !important;
+margin: 10px !important;
+                    }
+                        margin-top: 100px;
+                    .banner_custom_lms > div{
+gap: 25px;
+                    }
+                   .second_banner{
+                    height: 100% !important;
+                    margin: 50px 0px;
+  padding: 25px 0px;
+
+                    }
+
+                    .second_banner p {
+                   font-family: 'Open Sans', serif;
+  font-size: 14px;
+    margin: 15px 15px;
+                    }
+                    .endless_possibilites_grid{
+                    grid-template-columns: 1fr !important;
+                    }
+                    .resp_lms_middle > div:nth-of-type(1){
+                    margin-right: 0px !important;
+                    }
+                    .resp_lms_middle{
+                    display: flex;
+                    flex-direction:column !important;
+                    align-items: center;
+                    gap: 25px;
+                    }
+                    }
+                    .resp_lms_middle{
+                    display: flex;
+                    }
+                    .lms_middle_section > div > div{
+
+                    padding: 0px;
+                    border-radius: 15px;
+                    }
+                    .lms_middle_section > div > div > div{
+
+                    padding: 0px;
+                    border-radius: 15px;
+                    }
+
+                    .lms_middle_section h4{
+                    font-family: 'Gilroy-Heavy', sans-serif;
+                    color: white;
+                    font-size: 30px;
+                    word-spacing: 5px;
+                    margin-top: 35px;
+                    padding: 10px;
+                    }
+                    .lms_middle_section p {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: white;
+                    font-family: 'Open Sans', serif;
+                    margin-top: 25px;
+                    padding: 10px;
+                    }
+                    .banner_custom_lms > div > div > p:nth-of-type(1){
+                  font-weight: 500;
+  font-size: 40px;
+  font-family: 'Gilroy-Heavy', sans-serif;
+  margin-bottom: 0px;
+                        color: #292E32;
+                    }
+                    .banner_custom_lms > div > div > p:nth-of-type(2){
+                    font-weight: 400;
+                    color: black;
+                    font-family: 'Open Sans', serif;
+                    font-size: 12px;
+                    margin: 15px 0px;
+                           text-align: justify;
+  text-align-last: start;
+                          color: #292E32;
+                    }
+                    .getintouchgrid{
+                    background: #F9F9F9;
+                    padding: 30px;
+                    border-radius: 25px;
+                    margin-top: 50px;
+                    font-family: 'Open Sans', serif;
+                    }
+                    .endless_possibilites_get_in_touch{
+                    margin: 75px auto;
+                    }
+                    .getintouchgrid p {font-size: 14px;
+                    font-weight: 400; }
+                    .getintouchgrid h4{
+                    margin-top: 35px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    }
+                    .getintouchgrid ul {
+                    padding-left: 0px;
+                    }
+                    .getintouchgrid li {
+                    list-style: none;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 3px;
+                    }
+                    .getintouchgrid > div:nth-of-type(1){
+                    background: #0068D9;
+                    color: white;
+                    padding: 25px;
+                    border-radius: 25px;
+                    }
+                    .groupofinputs_getintouch{
+                    padding: 25px;
+                    }
+                    .groupofinputs_getintouch >div {
+                    flex-direction: column;
+                    }
+                    .groupofinputs_getintouch input {
+                    border-radius: 5px;
+                    border: 1px solid #0068D9;
+                    padding: 10px;
+                    }
+                    .groupofinputs_getintouch button {
+                    background: #0068D9;
+                    color: white;
+                    max-width: 175px;
+                    border: none;
+                    border-radius: 25px;
+                    padding: 10px;
+                    font-weight: 700;
+                    font-family: 'Open Sans', serif;
+                    font-size: 16px;
+                    }
+                    .banner{margin-top:100px;}
+                    .banner > div:nth-of-type(1) >div:nth-of-type(2) >div > img:nth-of-type(1){
+                    height: 170px;
+                    width: auto !important;
+                    }
+                    .banner > div:nth-of-type(1) >div:nth-of-type(2) > img:nth-of-type(2){
+                    max-height: 500px !important;
+                    width: auto !important;
+                    }
+                       .second_banner button{
+background: #0068D9;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+                    font-weight: 700;
+                    }
+                    .second_banner{
+
+                    background: url('/Lexyle/static/src/images/image(1).png') center/cover no-repeat;
+                    height: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 50px 0px;
+                    }
+.second_banner p {
+                   font-family: 'Open Sans', serif;
+  font-size: 14px;
+
+                    }
+
+                    @font-face {
+                    font-family: 'Gilroy-Bold';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Bold.ttf') format('truetype');
+
+                    }
+
+                    @font-face {
+                    font-family: 'Gilroy-Light';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Light.ttf') format('truetype');
+
+                    }
+
+                    @font-face {
+                    font-family: 'Gilroy-Heavy';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Heavy.ttf') format('truetype');
+
+                    }
+                    .waveofgrowth >div:nth-of-type(1) >div:nth-of-type(1) img {
+                    height: 275px;
+                    width: auto !important;
+                    }
+                    .waveofgrowth >div:nth-of-type(1) >div:nth-of-type(1) {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    }
+                      .waveofgrowth >div:nth-of-type(1) >div:nth-of-type(1) p{
+                   color:black;
+                    text-align: center;
+                    margin-top: 0px;
+                    line-height: 20px;
+                    }
+                    .waveofgrowth >div:nth-of-type(1) >div:nth-of-type(1) img{
+flex-direction: column;
+                    }
+                    .waveofgrowth{
+                    margin-bottom: 50px;
+                    }
+
+                    .endless_possibilites_grid > div {
+                    border-top:3px solid #0068D9;
+                    border-bottom:3px solid #0068D9;
+                    padding:10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                    }
+                    .endless_possibilites_grid{
+                    display:grid;
+                    grid-template-columns:1fr 1fr 1fr;
+                    gap:10px;
+                    margin: 50px 0px;
+                    }
+                    .endless_possibilites_grid > *:nth-child(3n+2) {
+                    border-top:3px solid #003384;
+                    border-bottom:3px solid #003384;
+                    padding:10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                    }
+
+                    .endless_possibilites_grid h4 {
+                    color: #003384;
+                    font-family: 'Gilroy-Bold', sans-serif;
+                    text-align: center;
+                    font-size: 20px;
+                    }
+                    .endless_possibilites_grid p {
+                    font-size: 12px;
+                    font-family: 'Open Sans', serif;
+                    text-align: justify;
+                    color: black;
+                    font-weight: 400;
+                    }
+
+
+                </style>
+
+                <div class="container banner banner_custom_lms">
+                    <div class="row d-flex align-items-center">
+                        <div class=" g-sm-2  col-12 col-sm-4  col-md-6 ">
+                            <p>Learning management</p>
+                            <h4 style="font-family: 'Gilroy-Heavy', sans-serif;
+  color: #003384;
+  font-size: 40px;
+  word-spacing: 5px;">Effective and user-friendly
+                                <span style="color: #0068D9;">learning</span>
+                            </h4>
+                            <p>Lexyle offers the essential framework for businesses to implement scalable and tailored
+                                learning experiences for diverse audiences, regardless of location.
+                            </p>
+                            <button style="font-family: 'Gilroy-Bold', sans-serif;
+  color: white;
+  font-size: 15px;
+  word-spacing: 5px;
+  background: #0068D9;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 25px;margin-top: 20px;" class="btn btn-primary">Book A Demo
+                            </button>
+                        </div>
+                        <div class=" col-12 col-sm-4  col-md-6 position-relative">
+
+                            <img class=" w-100" src="Lexyle/static/src/images/image(2).png" alt="Platform Image"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="container waveofgrowth lms_middle_section ">
+                    <div class="row ">
+                        <div class="col-12">
+                            <h4 style="font-family: 'Gilroy-Heavy', sans-serif;
+  color: #003384;
+  font-size: 40px;
+  word-spacing: 5px;
+  text-align: center;
+  margin: 50px 0px;
+    margin-top: 50px;
+  margin-top: 75px;margin-bottom: 0px;">Enhance <span style="color: #0068D9;">efficiency</span>  and <span style="color: #0068D9;">
+                                optimize
+                            </span> your efforts through
+                                <span style="color: #0068D9;">AI and automation</span>
+                            </h4>
+                            <p>
+                              The Lexyle learning platform utilizes artificial intelligence alongside a robust workflow engine to conserve time, manage repetitive activities, and streamline processes. From tagging and content recommendations to sending notifications and automating enrollments and recertification, our learner-focused technology ensures that your team can concentrate on tasks that genuinely make a difference.
+                            </p>
+                        </div>
+                        <div style=" position: relative;margin-bottom: 25px;" class="col-12 resp_lms_middle">
+                            <div style="background: #003384;flex: 1.2;  padding: 20px; z-index: 2; position: relative; margin-right: -50px;"
+                                 class="col-12 col-md-6">
+                                <h4>Create a customized experience for each learner</h4>
+                                <p>Each learner possesses unique requirements and merits an individualized experience.
+                                    Our robust configuration engine enables you to effortlessly design customized pages
+                                    for various audiences and scenarios. With a simple drag-and-drop interface, you can
+                                    swiftly develop tailored, personalized learning programs.
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-6" style="">
+                                <img class="w-100" src="Lexyle/static/src/images/image(3).png" alt="Platform Image"
+                                     style="
+  height: 100%;"/>
+                            </div>
+                        </div>
+
+
+                        <div style="background:#0068D9;" class="col-12 ">
+                            <img class=" w-100" src="Lexyle/static/src/images/image(4).png" alt="Platform Image"/>
+                            <h4 style="padding: 0px 30px;">Enhance the training of your extended enterprise</h4>
+                            <p style="padding: 0px 30px;margin-bottom: 20px;">Provide tailored learning experiences for your partners,
+                                customers, and members that promote product adoption, minimize churn, and boost revenue.
+                                With straightforward content management, effective version control, and interactive
+                                community features, you can establish a learning community for your extended enterprise
+                                that enhances your brand's reputation.
+                            </p>
+                        </div>
+                       <div class="col-12 d-flex flex-column flex-md-row align-items-center position-relative resp_lms_middle"
+     style="margin-bottom: 25px;margin-top: 25px;">
+
+
+    <div class="col-12 col-md-6 position-relative ">
+        <img class="w-100" src="Lexyle/static/src/images/image(5).png" alt="Platform Image"
+             style="height: 100%; max-width: 100%; border-radius: 10px;"/>
+    </div>
+
+
+    <div  class="hide_flex col-12 col-md-6 position-relative "
+         style="background: #003384; padding: 20px; z-index: 2; margin-left: -50px;flex:1.2;height: 100%;">
+        <h4>Foster a social and interactive learning atmosphere</h4>
+        <p>Establish a collaborative and nurturing educational setting, facilitate the capture and dissemination of institutional knowledge, and enhance learner involvement through social elements and gamification techniques.
+        </p>
+    </div>
+</div>
+
+   <div style="background:#0068D9;" class="col-12 ">
+                            <img class=" w-100" src="Lexyle/static/src/images/image(6).png" alt="Platform Image"/>
+                            <h4 style="padding: 0px 30px;">Foster the competencies essential for your organization's <success class=""></success></h4>
+                            <p style="padding: 0px 30px;margin-bottom: 20px;">In the current landscape, skills are paramount. We provide comprehensive resources, including advanced features for skill enhancement, skill evaluations, and talent growth. Are you finding it challenging to deliver pertinent and current content? Create it in moments using generative AI or browse our extensive global catalog, which offers more than 30,000 courses focused on in-demand skills.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="second_banner">
+                    <h4 style="font-family: 'Gilroy-Heavy', sans-serif;
+  color: #003384;
+  font-size: 40px;
+  word-spacing: 5px;
+  text-align: center;
+  margin-bottom: 10px;">Enhance your skills, elevate your career today!
+                    </h4>
+                    <p>Docebo offers an engaging environment for learners, is user-friendly for administrators, and brings transformative benefits to organizations. Experience the leading learning platform today.
+                    </p>
+                    <div>
+                         <button>Book A Demo</button>
+                    </div>
+
+                </div>
+
+                <div id="get_in_touch_id" class="endless_possibilites_get_in_touch container">
+                    <p style="color: black;
+  font-family: 'Open Sans', serif;
+  font-size: 12px;
+  letter-spacing: 3px;text-align: center;
+">Our solutions
+                    </p>
+                    <h4 style="font-family: 'Gilroy-Heavy', sans-serif;
+  color: #003384;
+  font-size: 30px;
+ margin: 15px 0px 10px 0px;text-align: center;   ">Get in Touch
+                    </h4>
+                    <p style="font-size: 12px;
+  font-family: 'Open Sans', serif;
+  font-weight: 400;
+  word-spacing: 4px;
+  text-align: justify;text-align: center;">To request a demo or want to know more. Contact us directly or fill out the
+                        form and we will get back to you promptly
+                    </p>
+                    <div class="row g-2 getintouchgrid">
+                        <div class="col-12 col-md-4">
+                            <p>Lexyle serves as the cornerstone for enhancing learner engagement, optimizing and
+                                expanding workflows,
+                                facilitating content management, integrating seamlessly with your learning technology
+                                ecosystem, and
+                                achieving business objectives both now and in the future.
+                            </p>
+                            <h4>Locate Us</h4>
+                            <ul>
+                                <li>Ground Floor, Pamba Building, Phase I</li>
+                                <li>Building, Phase I</li>
+                                <li>Technopark, Kerala</li>
+                            </ul>
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li>+91 871 460 3391</li>
+                                <li>info@lexyle.in</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-8">
+
+                            <div class="row g-4 groupofinputs_getintouch">
+                                <div class="col-12 col-md-6  d-flex flex-direction-column">
+                                    <p>First Name *</p>
+                                    <input type="text"/>
+                                </div>
+                                <div class="col-12 col-md-6  d-flex flex-direction-column">
+                                    <p>Last Name *</p>
+                                    <input type="text"/>
+                                </div>
+                                <div class="col-12 col-md-6  d-flex flex-direction-column">
+                                    <p>Email Address *</p>
+                                    <input type="text"/>
+                                </div>
+                                <div class="col-12 col-md-6  d-flex flex-direction-column">
+                                    <p>Phone Number *</p>
+                                    <input type="text"/>
+                                </div>
+                                <div class="col-12 col-md-6  d-flex flex-direction-column">
+                                    <p>Country *</p>
+                                    <input type="text"/>
+                                </div>
+                                <div class="col-12 col-md-6  d-flex flex-direction-column">
+                                    <p>Subject *</p>
+                                    <input type="text"/>
+                                </div>
+                                <div class="col-12   d-flex flex-direction-column">
+                                    <p>Message</p>
+                                    <input type="text"/>
+                                </div>
+                                <div class="col-12   d-flex flex-direction-column ">
+                                    <button>Contact Now</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+
+
+</odoo>

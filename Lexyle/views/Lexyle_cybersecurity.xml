@@ -1,0 +1,1178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="Lexyle_cybersecurity" name="Lexyle">
+        <t t-call="website.layout">
+            <t t-call="Lexyle.display_popup"/>
+
+            <title>Socius × NCSRC Partnership</title>
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+            <!-- Icons -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"/>
+
+            <style>
+
+                ::-webkit-scrollbar {
+                width: 3px;
+                }
+
+                ::-webkit-scrollbar-thumb {
+                background-color: #888;
+                border-radius: 6px;
+                }
+
+                ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                }
+
+                .card-front::-webkit-scrollbar, .card-back::-webkit-scrollbar {
+                display: block !important;
+                }
+                #wrapwrap > main{
+                overflow-x: hidden !important;
+                }
+                .doagriai_container *{
+                color:black !important;
+                }
+                .cardbox {
+                margin: 20px auto;
+                position: relative;
+                perspective: none;
+                }
+
+                .card {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                min-height: 300px;
+                border-radius: 20px;
+                border: 0;
+                box-shadow: 0px 2px 30px 0px #00000014;
+                overflow: hidden;
+                }
+
+                .card-front,
+                .card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                padding: 20px;
+                background-color: white;
+                border-radius: 20px;
+                box-shadow: 1px 10px 30px rgba(0, 0, 0, 0.2);
+                overflow-y: auto;
+                transition: opacity 0.5s ease;
+                }
+
+                .card-front::-webkit-scrollbar,
+                .card-back::-webkit-scrollbar {
+                display: none;
+                }
+
+                .card-front {
+                z-index: 2;
+                opacity: 1;
+                }
+
+                .card-back {
+                z-index: 1;
+                opacity: 0;
+                }
+
+                .cardbox:hover .card-front {
+                opacity: 0;
+                z-index: 1;
+                }
+
+                .cardbox:hover .card-back {
+                opacity: 1;
+                z-index: 2;
+                }
+
+                <!--hover box end-->
+                .s_website_form_submit .s_website_form_label{
+                display: none !important;
+
+                }
+                .s_website_form_mark{
+                color: red !important;
+                }
+                .getintouchbackground{
+                background: linear-gradient(#0033841F, #0033841F), url('/Lexyle/static/src/images/image(1).png')
+                center/cover no-repeat;
+                min-height: 250px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                }
+                @media(min-width:992px){
+                .respinstantbanking_content p{
+                text-align: justify;
+
+                max-width: 609px;
+
+                }
+                #assessments{
+                margin-top: 30px;
+
+                }
+                .img-drone-resp{
+                max-width: 470px;
+                }
+
+
+                .inputcustom_crm form > div {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr !important;
+                }
+                }
+                @media(max-width:568px) {
+                .text-aligin-last-custom-resp{
+
+                text-align-last: start !important;
+                }
+                .keypcompdogargi p {
+                margin-bottom:5px;
+                }
+                .keypcompdogargi ul {
+                padding-left: 25px !important;
+                }
+                .keypcompdogargi .cardbox{
+                margin-top: 0px !important;
+                }
+                .keypcompdogargi {
+                gap: 0px;
+                }
+                }
+                @media(max-width:992px) {
+
+                #aipowered_assessment{
+                gap: 20px;
+
+                }
+                #assessments{ margin-top: 30px !important;}
+                .instantquestionbank{
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+
+                }
+                .respinstantbanking_content h4{
+                text-align: center !important;
+                margin-bottom: 15px !important;
+                }
+                .respinstantbanking_content p{
+                text-align: justify !important;
+                margin-bottom: 10px !important;
+                word-break: normal !important;
+                overflow-wrap: break-word;
+                hyphens: auto;
+                font-size: 15px !important;
+                }
+                .getintouchgrid{
+                padding: 0px !important;
+                }
+                .bankcreation{
+                gap: 20px;
+
+                }
+                .pararespaitop{
+                width:100% !important;
+                }
+                .instantquestionresp{
+                position: static !important;
+                max-height: 210px;
+                }
+                .ROI_DRIVEN_BENIFITS{
+                gap: 25px;
+                }
+                .instantquestionbank > img{
+                height: 100% !important;
+                }
+                .hide_flex{
+                flex: unset !important;
+                margin: 10px !important;
+                }
+                .banner_custom_lms{
+                margin-top: 0px !important;
+                }
+                .banner_custom_lms > div{
+                row-gap: 10px !important;
+                }
+
+                .banner_custom_lms > div{
+                gap: 25px;
+                }
+                .imagemarginleftresp{
+                margin-left: 0px !important;
+
+                }
+                .second_banner{
+                height: 100% !important;
+                margin: 50px 0px;
+                padding: 25px 0px;
+
+                }
+
+                .second_banner p {
+                font-family: 'Open Sans', serif;
+                font-size: 15px;
+                margin: 15px 15px;
+                }
+                .endless_possibilites_grid{
+                grid-template-columns: 1fr !important;
+                }
+                .resp_lms_middle > div:nth-of-type(1){
+                margin-right: 0px !important;
+                }
+                .resp_lms_middle{
+                display: flex;
+                flex-direction:column !important;
+                align-items: center;
+                gap: 25px;
+                }
+                }
+                .resp_lms_middle{
+                display: flex;
+                }
+                .lms_middle_section > div > div{
+
+                padding: 0px;
+                border-radius: 15px;
+                }
+                .lms_middle_section > div > div > div{
+
+                padding: 0px;
+                border-radius: 15px;
+                }
+
+                .lms_middle_section h4{
+                font-family: 'Gilroy-Heavy', sans-serif;
+                color: white;
+                font-size: 30px;
+                word-spacing: 5px;
+                margin-top: 35px;
+                padding: 10px;
+                }
+                .lms_middle_section p {
+                font-size: 13px;
+                font-weight: 400;
+                color: white;
+                font-family: 'Open Sans', serif;
+                margin-top: 25px;
+                padding: 10px;
+                }
+                .banner_custom_lms > div > div > p:nth-of-type(1){
+                font-weight: 500;
+                font-size: 40px;
+                font-family: 'Gilroy-Heavy', sans-serif;
+                margin-bottom: 0px;
+                color: black;
+                }
+                .banner_custom_lms > div > div > p:nth-of-type(2){
+                font-weight: 400;
+                font-size: 15px;
+                margin: 15px 0px;
+                text-align: justify;
+                text-align-last: start;
+                color: black;
+                line-height: 25px;
+                font-family: Arial, sans-serif;
+                }
+                .getintouchgrid{
+                background: #F9F9F9;
+                padding: 30px;
+                border-radius: 25px;
+                margin-top: 25px;
+
+                font-family: 'Open Sans', serif;
+                }
+                .endless_possibilites_get_in_touch{
+                margin: 50px auto 75px auto;
+
+                }
+                .getintouchgrid p {font-size: 15px;
+                text-align: justify;
+                font-weight: 400; }
+                .getintouchgrid h4{
+                margin-top: 35px;
+                font-size: 20px;
+                font-weight: 700;
+                }
+                .getintouchgrid ul {
+                padding-left: 0px;
+                }
+                .getintouchgrid li {
+                list-style: none;
+                font-size: 15px;
+                font-weight: 400;
+                margin-bottom: 3px;
+                }
+                .getintouchgrid > div:nth-of-type(1){
+                background: #0068D9;
+                color: white;
+                padding: 25px;
+                border-radius: 25px;
+                }
+                .groupofinputs_getintouch{
+                padding: 25px;
+                }
+                .groupofinputs_getintouch >div {
+                flex-direction: column;
+                }
+                .groupofinputs_getintouch input {
+                border-radius: 5px;
+                border: 1px solid #0068D9;
+                padding: 10px;
+                }
+                .groupofinputs_getintouch button {
+                background: #0068D9;
+                color: white;
+                max-width: 175px;
+                border: none;
+                border-radius: 25px;
+                padding: 10px;
+                font-weight: 700;
+                font-family: 'Open Sans', serif;
+                font-size: 16px;
+                }
+
+                .banner > div:nth-of-type(1) >div:nth-of-type(2) >div > img:nth-of-type(1){
+                height: 170px;
+                width: auto !important;
+                }
+                .banner > div:nth-of-type(1) >div:nth-of-type(2) > img:nth-of-type(2){
+                max-height: 500px !important;
+                width: auto !important;
+                }
+                .second_banner button{
+                background: #0068D9;
+                color: white;
+                border: none;
+                padding: 10px 25px;
+                border-radius: 25px;
+                font-weight: 700;
+                }
+                .second_banner{
+
+                background: url('/Lexyle/static/src/images/image(1).png') center/cover no-repeat;
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 50px 0px;
+                }
+                .second_banner p {
+                font-family: 'Open Sans', serif;
+                font-size: 15px;
+
+                }
+
+                @font-face {
+                font-family: 'Gilroy-Bold';
+                src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Bold.ttf') format('truetype');
+
+                }
+
+                @font-face {
+                font-family: 'Gilroy-Light';
+                src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Light.ttf') format('truetype');
+                }
+
+                @font-face {
+                font-family: 'Gilroy-Medium'
+                src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Medium.ttf') format('truetype');
+                }
+                @font-face {
+                font-family: Arial, sans-serif
+
+
+                ;
+                src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Regular.ttf') format('truetype');
+                }
+
+                @font-face {
+                font-family: 'Gilroy-Heavy';
+                src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Heavy.ttf') format('truetype');
+
+                }
+
+                .waveofgrowth >div:nth-of-type(1) >div:nth-of-type(1) img {
+                height: 275px;
+                width: auto !important;
+                }
+                .waveofgrowth >div:nth-of-type(1) >div:nth-of-type(1) {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                }
+                .waveofgrowth >div:nth-of-type(1) >div:nth-of-type(1) p{
+                color:black;
+                text-align: center;
+                margin-top: 0px;
+                line-height: 20px;
+                }
+                .waveofgrowth >div:nth-of-type(1) >div:nth-of-type(1) img{
+                flex-direction: column;
+                }
+                .waveofgrowth{
+                margin-bottom: 50px;
+                }
+
+                .endless_possibilites_grid > div {
+                border-top:3px solid #0068D9;
+                border-bottom:3px solid g#0068D9;
+                padding:10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 20px;
+                }
+                .endless_possibilites_grid{
+                display:grid;
+                grid-template-columns:1fr 1fr 1fr;
+                gap:10px;
+                margin: 50px 0px;
+                }
+                .endless_possibilites_grid > *:nth-child(3n+2) {
+                border-top:3px solid #003384;
+                border-bottom:3px solid #003384;
+                padding:10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 20px;
+                }
+
+                .endless_possibilites_grid h4 {
+                color: #003384;
+                font-family: 'Gilroy-Bold', sans-serif;
+                text-align: center;
+                font-size: 20px;
+                }
+                .endless_possibilites_grid p {
+                font-size: 12px;
+                font-family: 'Open Sans', serif;
+                text-align: justify;
+                color: black;
+                font-weight: 400;
+                }
+                .banner{
+                <!--                        margin-top:100px;-->
+                }
+                .aipowered_assessment{
+                margin: 30px auto 75px auto;
+
+
+                }
+
+                .aipowered_assessment_firstcol{
+                background: #003384;
+                color: white;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                border-radius: 15px;
+                }
+
+                .aipowered_assessment_firstcol h4{
+                font-family: Arial, sans-serif;
+                font-size: 23px;
+                }
+                .aipowered_assessment_firstcol p{
+                font-family: Arial, sans-serif;
+                font-size: 15px;
+                text-align: justify;
+                }
+                .aipowered_assessment_secondcol p:nth-of-type(1){
+                color: black;
+                font-weight: 700;
+                font-family: Arial, sans-serif;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                font-size: 15px;
+                }
+                .aipowered_assessment_secondcol p:nth-of-type(2){
+                color: black;
+                font-family: Arial, sans-serif;
+                font-size: 15px;
+                text-align: justify;
+
+                }
+                .aipowered_assessment_secondcol h4 span{
+                background: #003384;
+                border-radius: 100px;
+                padding: 5px 12px;
+                color: white;
+                font-size: 20px;
+                font-weight: 700;
+                }
+                .ROI_DRIVEN_BENIFITS{
+                margin: 35px 0px;
+                }
+                .ROI_DRIVEN_BENIFITS >div > div{
+                background:#F4F9FB;
+                border-radius:10px;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) !important;
+                padding: 10px;
+                min-height: 180px;
+
+                }
+                .ROI_DRIVEN_BENIFITS h4{
+                text-align: center;
+                color: black;
+                font-size: 16px;
+                font-family: 'Gilroy-bold';
+                }
+                .ROI_DRIVEN_BENIFITS p{
+                text-align: center;
+                color: black;
+                font-size: 15px;
+                font-family: Arial, sans-serif;
+                }
+                .ROI_DRIVEN_BENIFITS > div {
+                margin-top:0px !important;
+                }
+                .testiaisection{
+                display:flex;
+
+                }
+                .testiaisection > div:nth-of-type(1){
+                background: linear-gradient(to bottom, #00C3A5, #003384);
+                }
+                .testiaisection p {
+                text-align: start;
+                color: black;
+                font-family: 'Open Sans', serif;
+                font-size: 12px;
+                }
+                .testimonails_image{
+                display: flex;
+                margin-top: 20px;
+                padding-left: 40px;
+                }
+                .testimonails_image p {
+                margin-bottom: 4px;
+                }
+                .instantquestionbank{
+                position: relative;
+                background: #003384;
+                color: white;
+                border-radius: 10px;
+                padding: 30px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                }
+                .instantquestionbank br{
+                margin-top: 10px;
+
+                }
+                .instantquestionbank > img {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                height: 100%;
+
+                width: auto !important;
+                }
+                .questionbanks p{
+                display: grid;
+                grid-template-columns: 1fr;
+                font-weight: 400;
+                font-size: 15px;
+                margin-bottom: 10px;
+                color: black;
+                font-family: Arial, sans-serif
+
+                ;
+                line-height: 25px;
+                text-align: justify !important;
+                }
+                .questionbanks{
+                margin: 50px auto;
+                margin-top: 25px;
+                }
+                .bankcreation{
+                margin-top: 25px;
+                }
+                .bankcreation >div > div > p:nth-of-type(1) span img {
+                max-width: 20px;
+                margin-top: 2px;
+                }
+                .bankcreation >div > div > p:nth-of-type(1) span {
+                height: 30px !important;
+                display: flex !important;
+                align-items: start !important;
+                }
+                .bankcreation >div > div > p:nth-of-type(1){
+                display: grid;
+                grid-template-columns: 25px 1fr;
+                color: black;
+                font-size: 16px;
+                font-family: 'Gilroy-Bold';
+                gap: 5px;
+                margin-bottom: 5px;
+
+
+                }
+                .bankcreation >div > div > p:nth-of-type(2){
+                text-align: justify;
+                color: black;
+                font-size: 15px;
+                font-family: Arial, sans-serif;
+                }
+                bankcreation >div > div > p:nth-of-type(1) img{
+                height: 20px;
+                width: 20px !important;
+                }
+                .bankcreation > div >div{
+                background: #EBF2F9;
+                padding: 20px 20px;
+                border-radius: 5px;
+                min-height: 150px;
+                border-radius: 10px;
+                }
+
+
+                .input-container {
+                position: relative;
+                display: inline-block;
+                width: 100%; /* Adjust width */
+                }
+
+                .input-container input {
+                width: 100%;
+                padding-right: 30px; /* Space for the icon */
+                }
+                .input-container input::placeholder {
+                color: black;
+                font-family: 'Open Sans', serif;
+                font-size: 12px;
+                text-align: justify;
+                font-weight: 500;
+                }
+
+                .input-container img {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 15px;
+                height: auto;
+                cursor: pointer;
+                }
+
+                /* Custom dropdown styling */
+                .custom-dropdown {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                max-height: 150px;
+                overflow-y: auto;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                z-index: 1000;
+                }
+
+                .custom-dropdown div {
+                padding: 8px;
+                cursor: pointer;
+                color: black;
+                font-family: 'Open Sans', serif;
+                font-size: 12px;
+                text-align: justify;
+                font-weight: 500;
+                }
+
+                .custom-dropdown div:hover {
+                background: #f0f0f0;
+                }
+
+                .inputcustom_crm form > div > div > div{
+                display: flex;
+                flex-direction: column;
+                }
+
+                .inputcustom_crm form > div > div:last-of-type {
+                grid-column: span 2 !important;
+
+                }
+                .inputcustom_crm form > div > div:nth-of-type(7){
+                grid-column: span 2 !important;
+
+                }
+                .inputcustom_crm form input {
+                border-radius: 5px;
+                border: 1px solid #0068D9;
+                padding: 10px;
+                }
+                .inputcustom_crm .form-select{
+                border-radius: 5px;
+                border: 1px solid #0068D9;
+                padding: 10px;
+                }
+                .inputcustom_crm form textarea {
+                border-radius: 5px;
+                border: 1px solid #0068D9;
+                padding: 10px;
+                }
+                .inputcustom_crm form > div > div:last-of-type a {
+                background: #0068D9;
+                color: white;
+                max-width: 175px;
+                border: none;
+                border-radius: 25px;
+                padding: 10px 50px;
+                font-weight: 700;
+                font-family: 'Open Sans', serif;
+                font-size: 16px;
+                }
+                .inputcustom_crm .col-form-label{
+                font-size: 15px;
+                font-weight: 400;
+                font-family: 'Open Sans', serif;
+                }
+
+
+            </style>
+            <style>
+
+                .cybersecuritycommon_container h5 {
+                font-weight: 700;
+                font-family: 'Gilroy-Medium', sans-serif;
+                margin-bottom: 0px;
+                color: black;
+                }
+                .cybersecuritycommon_container h4 {
+                font-weight: 500;
+                font-size: 40px;
+                font-family: 'Gilroy-Heavy', sans-serif;
+                margin-bottom: 0px;
+                color: black;
+                }
+                .cybersecuritycommon_container img {
+                border-radius: 25px !important;
+                }
+
+                .cybersecuritycommon_container p {
+                font-weight: 400;
+                font-size: 15px;
+                margin: 15px 0px;
+                text-align: justify;
+                text-align-last: start;
+                color: black;
+                line-height: 25px;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                text-align-last: center;
+                }
+                /* Custom Styles */
+                .hero {
+                background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                url('/Lexyle/static/src/images/cyber_security.jpg') no-repeat center center;
+                background-size: cover;
+                color: white;
+                padding: 120px 0;
+                text-align: center;
+                min-height: 70vh;
+                background-attachment: fixed;
+                }
+                .hero h1 {
+                font-size: 3rem;
+                }
+
+                .program-card {
+                box-shadow: 0 0 20px rgba(0,0,0,0.2);
+                transition: all 0.3s ease;
+                }
+
+                .program-card img {
+                height: 160px;
+                width: 100%;
+                object-fit: cover;
+                margin-bottom: 15px;
+                }
+                .program-card:hover {
+                transform: translateY(-5px) scale(1.05); /* Move up + scale */
+                box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+                }
+                .timeline-step {
+                text-align: center;
+                padding: 20px;
+                }
+                .benefits {
+                background: #003384;
+                color: white;
+                padding: 30px 0 30px 0px;
+                }
+                .benefits p , .benefits h4 {
+                color:white;
+                }
+                .cta-section {
+                background: #f8f9fa;
+                padding: 80px 0;
+                text-align: center;
+                }
+            </style>
+
+            <div class="container ">
+                <div id="assessments" class="container banner banner_custom_lms">
+                    <div class="row d-flex align-items-center">
+                        <div class=" g-sm-2  col-12 col-sm-4  col-md-6 ">
+                            <p>Empowering the Next Generation of</p>
+                            <h4 style="font-family: 'Gilroy-Heavy', sans-serif;
+  color: #003384;
+  font-size: 40px;
+  word-spacing: 5px;">Cyber &amp; FinTech Leaders
+                            </h4>
+                            <p>A strategic collaboration between Socius Innovative Global Brains and the National Cyber
+                                Security Research Council (NCSRC) to deliver world-class certified programs.
+                            </p>
+
+                            <div class="d-flex gap-3 ">
+                                <a href="#programs">
+                                    <button style="font-family: 'Gilroy-Bold', sans-serif;   color: white;   font-size: 15px;   word-spacing: 3px; background: #003384;   border: none;   border-radius: 50px;   padding: 10px 25px;margin-top: 20px;"
+                                            class="btn btn-primary">Explore Programs
+                                    </button>
+                                </a>
+                                <a href="#apply">
+                                    <button style="font-family: 'Gilroy-Bold', sans-serif;   color: white;   font-size: 15px;   word-spacing: 3px; background: #003384;   border: none;   border-radius: 50px;   padding: 10px 25px;margin-top: 20px;"
+                                            class="btn btn-primary">Apply Now
+                                    </button>
+                                </a>
+
+                            </div>
+
+                        </div>
+                        <div style="    display: flex;
+    justify-content: start;" class=" col-12 col-sm-4  col-md-6 position-relative">
+
+                            <img style="            max-width: 525px;
+
+    margin-left: 15px;border-radius: 25px;" class="imagemarginleftresp w-100"
+                                 src="Lexyle/static/src/images/cyber_security.jpg"
+                                 alt="Platform Image"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Section -->
+
+
+            <!-- About the Collaboration -->
+            <section class="py-5 cybersecuritycommon_container">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center">
+                            <img src="/Lexyle/static/src/images/cyber_colab.jpg"
+                                 class="img-fluid rounded" alt="Collaboration"/>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 style="text-align: start;">About the Collaboration</h4>
+                            <p style="text-align: justify;
+  text-align-last: start;">Socius and NCSRC have joined forces to bring learners globally recognized certifications,
+                                expert mentorship, and industry-ready programs in Cybersecurity, Forensics,
+                                Investigation, and FinTech. This partnership bridges academic excellence with industry
+                                relevance, ensuring students step confidently into high-demand careers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us -->
+            <section class="py-5 bg-light cybersecuritycommon_container">
+                <div class="container">
+                    <h4 class="text-center mb-4">Why Choose Us?</h4>
+                    <div class="row text-center g-4">
+                        <div class="col-md-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px"
+                                 fill="#1472fd">
+                                <path d="m387-412 35-114-92-74h114l36-112 36 112h114l-93 74 35 114-92-71-93 71ZM240-40v-309q-38-42-59-96t-21-115q0-134 93-227t227-93q134 0 227 93t93 227q0 61-21 115t-59 96v309l-240-80-240 80Zm240-280q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70ZM320-159l160-41 160 41v-124q-35 20-75.5 31.5T480-240q-44 0-84.5-11.5T320-283v124Zm160-62Z"/>
+                            </svg>
+                            <h5 class="mt-3">Official Certifications</h5>
+                            <p>Directly from NCSRC, a trusted national body.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <!--                            <i class="bi bi-person-badge display-4 text-success"></i>-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px"
+                                 fill="#198754">
+                                <path d="m280-620 80-80-80-80-80 80 80 80Zm200-40ZM160-400q-33 0-56.5-23.5T80-480v-360q0-33 23.5-56.5T160-920h640q33 0 56.5 23.5T880-840v360q0 33-23.5 56.5T800-400H671q6-20 8-40t0-40h121v-360H160v360h121q-2 20 0 40t8 40H160Zm500-280q25 0 42.5-17.5T720-740q0-25-17.5-42.5T660-800q-25 0-42.5 17.5T600-740q0 25 17.5 42.5T660-680ZM200-40v-84q0-35 19.5-65t51.5-45q49-23 102-34.5T480-280q54 0 107 11.5T689-234q32 15 51.5 45t19.5 65v84H200Zm80-80h400v-4q0-12-7-22t-18-15q-42-19-86-29t-89-10q-45 0-89 10t-86 29q-11 5-18 15t-7 22v4Zm200-200q-58 0-99-41t-41-99q0-58 41-99t99-41q58 0 99 41t41 99q0 58-41 99t-99 41Zm0-80q25 0 42.5-17.5T540-460q0-25-17.5-42.5T480-520q-25 0-42.5 17.5T420-460q0 25 17.5 42.5T480-400Zm0-60Zm0 340Z"/>
+                            </svg>
+                            <h5 class="mt-3">Expert Faculty</h5>
+                            <p>Learn from seasoned cyber and fintech professionals.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <!--                            <i class="bi bi-building display-4 text-warning"></i>-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px"
+                                 fill="#ffc107">
+                                <path d="M80-120v-720h400v160h400v560H80Zm80-80h240v-80H160v80Zm0-160h240v-80H160v80Zm0-160h240v-80H160v80Zm0-160h240v-80H160v80Zm320 480h320v-400H480v400Zm80-240v-80h160v80H560Zm0 160v-80h160v80H560Z"/>
+                            </svg>
+                            <h5 class="mt-3">State-of-the-Art Labs</h5>
+                            <p>Powered by Socius’s infrastructure.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <!--                            <i class="bi bi-graph-up display-4 text-info"></i>-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px"
+                                 fill="#0dcaf0">
+                                <path d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z"/>
+                            </svg>
+                            <h5 class="mt-3">Career Acceleration</h5>
+                            <p>Gain the skills employers demand today.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Programs Offered -->
+            <section id="programs" class="py-5 cybersecuritycommon_container">
+                <div class="container">
+                    <h4 class="text-center mb-4">Programs Offered</h4>
+                    <div class="row g-4">
+                        <div class="col-md-3">
+                            <div class="card program-card  text-center p-3">
+                                <div class="card-body">
+                                    <img src="/Lexyle/static/src/images/cyber_security.jpg"/>
+                                    <h5>Cybersecurity</h5>
+                                    <p>Defend systems, networks, and data against evolving cyber threats.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card program-card  text-center p-3">
+                                <div class="card-body">
+                                    <img src="/Lexyle/static/src/images/cyber_forsenic.jpg"/>
+
+
+                                    <h5>Cyber Forensics</h5>
+                                    <p>Investigate digital evidence and fight cybercrime with forensic tools.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card program-card  text-center p-3">
+                                <div class="card-body">
+                                    <img src="/Lexyle/static/src/images/Cyber_investigation.jpg"/>
+
+
+                                    <h5>Cyber Investigation</h5>
+                                    <p>Track, analyze, and prevent online crimes with real-world simulations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card program-card  text-center p-3">
+                                <div class="card-body">
+                                    <img src="/Lexyle/static/src/images/cyber_fintech.jpg"/>
+
+
+                                    <h5>FinTech</h5>
+                                    <p>Explore blockchain, AI-driven finance, and the future of digital payments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="#curriculum">
+                            <button style="font-family: 'Gilroy-Bold', sans-serif;   color: white;   font-size: 15px;   word-spacing: 3px; background: #003384;   border: none;   border-radius: 50px;   padding: 10px 25px;margin-top: 05px;"
+                                    class="btn btn-primary">View Detailed Curriculum
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Learning Journey -->
+            <section class="py-5 bg-light cybersecuritycommon_container">
+                <div class="container">
+                    <h4 class="text-center mb-2">The Learning Journey</h4>
+                    <div class="row g-4 text-center">
+                        <div class="col-md-3 timeline-step">
+                            <i class="bi bi-pencil-square display-4 text-primary"></i>
+                            <h5 class="mt-2">Enroll</h5>
+                            <p>Simple admission process through Socius.</p>
+                        </div>
+                        <div class="col-md-3 timeline-step">
+                            <i class="bi bi-book display-4 text-success"></i>
+                            <h5 class="mt-2">Learn</h5>
+                            <p>Hands-on training with NCSRC-certified trainers.</p>
+                        </div>
+                        <div class="col-md-3 timeline-step">
+                            <i class="bi bi-award display-4 text-warning"></i>
+                            <h5 class="mt-2">Certify</h5>
+                            <p>Official NCSRC certification upon course completion.</p>
+                        </div>
+                        <div class="col-md-3 timeline-step">
+                            <i class="bi bi-briefcase display-4 text-info"></i>
+                            <h5 class="mt-2">Launch Career</h5>
+                            <p>Step confidently into industry roles.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Student Benefits -->
+            <section class="benefits cybersecuritycommon_container">
+                <div class="container">
+                    <h4 class="text-center mb-4">Student Benefits</h4>
+                    <div class="row text-center g-4">
+                        <div class="col-md-3">
+                            <i class="bi bi-globe2 display-4"></i>
+                            <p>Globally Recognized Certification</p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="bi bi-journal-text display-4"></i>
+                            <p>Real-World Projects &amp; Case Studies</p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="bi bi-people display-4"></i>
+                            <p>Networking with Industry Experts</p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="bi bi-headset display-4"></i>
+                            <p>Dedicated Admission &amp; Career Support</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="cta-section cybersecuritycommon_container ">
+                <div class="container">
+                    <h4>Your Future in Cybersecurity &amp; FinTech Starts Here!</h4>
+                    <div class="d-flex gap-2 justify-content-center">
+
+                                     <a href="#apply">
+                        <button style="font-family: 'Gilroy-Bold', sans-serif;   color: white;   font-size: 15px;   word-spacing: 3px; background: #003384;   border: none;   border-radius: 50px;   padding: 10px 25px;margin-top: 20px;"
+                                class="btn btn-primary">Apply Now
+                        </button>
+                    </a>
+                    <a href="#advisor">
+                        <button style="font-family: 'Gilroy-Bold', sans-serif;   color: white;   font-size: 15px;   word-spacing: 3px; background: #003384;   border: none;   border-radius: 50px;   padding: 10px 25px;margin-top: 20px;"
+                                class="btn btn-primary">Speak to an Advisor
+                        </button>
+                    </a>
+                    </div>
+
+
+                </div>
+            </section>
+
+
+
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+            <!--            original pone scrript-->
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const form = document.querySelector(".onlyform");
+
+                if (!form) return; // Safety check
+
+                const phoneInputs = form.querySelectorAll("input[type='tel']");
+
+                phoneInputs.forEach(function (phoneInput) {
+                // Set input mode to numeric to encourage number-only input on mobile devices
+                phoneInput.setAttribute("inputmode", "numeric");
+                // Add required attribute
+                phoneInput.setAttribute("required", true);
+                // Set pattern to enforce 10 digits (for HTML5 validation)
+                phoneInput.setAttribute("pattern", "\\d{10}");
+                // Optionally, add a placeholder for guidance
+                phoneInput.setAttribute("placeholder", "");
+
+                phoneInput.addEventListener("input", function () {
+                // Remove non-digits
+                this.value = this.value.replace(/\D/g, '');
+                // Limit to 10 digits
+                if (this.value.length > 10) {
+                this.value = this.value.slice(0, 10);
+                }
+                });
+
+                // Optional: Provide real-time feedback
+                phoneInput.addEventListener("blur", function () {
+                const digitsOnly = this.value.replace(/\D/g, '');
+                if (digitsOnly.length > 0 &amp;&amp; digitsOnly.length &lt; 10) {
+                this.classList.add("input-error");
+                // Optionally show a message below the input
+                let errorMessage = this.nextElementSibling;
+                if (!errorMessage || !errorMessage.classList.contains("error-message")) {
+                errorMessage = document.createElement("span");
+                errorMessage.classList.add("error-message");
+                errorMessage.style.color = "red";
+                errorMessage.style.fontSize = "12px";
+                this.parentNode.insertBefore(errorMessage, this.nextSibling);
+                }
+                errorMessage.textContent = "Enter a Valid Phone Number";
+                } else {
+                this.classList.remove("input-error");
+                const errorMessage = this.nextElementSibling;
+                if (errorMessage &amp;&amp; errorMessage.classList.contains("error-message")) {
+                errorMessage.textContent = "";
+                }
+                }
+                });
+                });
+
+                form.addEventListener("submit", function (e) {
+                let allValid = true;
+
+                phoneInputs.forEach(function (input) {
+                const digitsOnly = input.value.replace(/\D/g, '');
+                if (digitsOnly.length !== 10) {
+                allValid = false;
+                input.classList.add("input-error");
+                // Ensure error message is visible
+                let errorMessage = input.nextElementSibling;
+                if (!errorMessage || !errorMessage.classList.contains("error-message")) {
+                errorMessage = document.createElement("span");
+                errorMessage.classList.add("error-message");
+                errorMessage.style.color = "red";
+                errorMessage.style.fontSize = "12px";
+                input.parentNode.insertBefore(errorMessage, input.nextSibling);
+                }
+                errorMessage.textContent = "Phone number must be exactly 10 digits.";
+                } else {
+                input.classList.remove("input-error");
+                const errorMessage = input.nextElementSibling;
+                if (errorMessage &amp;&amp; errorMessage.classList.contains("error-message")) {
+                errorMessage.textContent = "";
+                }
+                }
+                });
+
+                if (!allValid) {
+                e.preventDefault(); // Stop form submission
+                alert("Please enter exactly 10 digits in the phone number field.");
+                }
+                });
+                });
+            </script>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                // Select all inputs with class="onlytext"
+                var textInputs = document.querySelectorAll(".onlytext");
+
+
+                textInputs.forEach(function (input) {
+                input.addEventListener("input", function () {
+                console.log("Input onlytext");
+                this.value = this.value.replace(/[0-9]/g, '');
+                });
+                });
+                });
+            </script>
+
+        </t>
+    </template>
+
+
+</odoo>

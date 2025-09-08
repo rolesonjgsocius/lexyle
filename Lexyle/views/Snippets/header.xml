@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="lexyle_custom_header" inherit_id="website.snippet_options">
+        <xpath expr="//we-select[@data-variable='header-template']" position="inside">
+            <we-button title="Custom_Header" data-name="Lexyle"
+                       data-customize-website-views="Lexyle.lexyle_Header"
+                       data-customize-website-variable="'Custom_Header'"
+                       data-img="/website/static/src/img/snippets_options/header_template_hamburger.svg"/>
+        </xpath>
+    </template>
+    <template id="lexyle_Header" inherit_id="website.layout" name="Template Header" active="False">
+        <xpath expr="//head//title" position="replace">
+            <title>Lexyle || Learn Today. Lead Tomorrow</title>
+        </xpath>
+        <xpath expr="//link[@type='image/x-icon']" position="replace">
+            <link type="image/x-icon" rel="shortcut icon"
+                  href="/Event_Booking/static/src/images/Untitled design (1).png"/>
+        </xpath>
+        <xpath expr="//header" position="replace">
+
+
+            <title>Lexyle || Learn Today. Lead Tomorrow</title>
+
+            <!-- Favicon (Website Icon) -->
+            <link rel="icon" type="image/png"
+                  href="/Lexyle/static/src/images/Untitled design - 2025-03-26T162316.799.ico"/>
+
+            <!-- Alternative Favicon for Different Browsers -->
+            <link rel="shortcut icon" href="/Lexyle/static/src/images/Untitled design - 2025-03-26T162316.799.ico"
+                  type="image/x-icon"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com/"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com"/>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+                  rel="stylesheet"/>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com"/>
+            <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap"
+                  rel="stylesheet"/>
+
+            <style>
+                #headerscrollresp {
+                transition: transform 0.3s ease, opacity 0.3s ease;
+                }
+                #Features_homepage {
+                scroll-margin-top: 130px;
+                scroll-behavior: smooth;
+                }
+                                #assessments {
+                                scroll-margin-top: 300px;
+                                scroll-behavior: smooth !important;
+                                }
+                #instantquestionbank{
+                scroll-margin-top: 140px;
+                scroll-behavior: smooth;
+                }
+                #doagriai_container{
+                scroll-margin-top: 140px;
+                scroll-behavior: smooth;
+                }
+                #inputcustom_crm {
+                scroll-margin-top: 140px;
+                scroll-behavior: smooth;
+                }
+                @media(min-width:992px){
+                .header_Lexyle_Func{
+
+                min-width:425px ;
+                }
+                }
+                @media (min-width:768px) and (max-width:992px){
+                .header_Lexyle_Func{
+                display: flex;
+                align-items: center !important;
+                flex-direction: column !important;
+                }
+                }
+
+                .lmsunique{
+                margin-left: 50px;
+                }
+                .header_Lexyle_Func{
+                display:flex;
+                align-items:center;
+                }
+                .header_Lexyle_Func > img{
+                height: 20px;
+                margin-right: 35px;
+                }
+                .header_Lexyle_Func > div{
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                }
+                .header_Lexyle_Func > div:nth-of-type(1) button{
+                background: #003384;
+                border-radius: 25px;
+                padding: 5px 25px;
+                border: none;
+                color: white;
+                font-size: 15px;
+                margin-right: 15px;
+
+                font-family: "Open Sans", serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                font-variation-settings: "wdth" 100;
+                font-weight: 600;
+                }
+                .header_Lexyle_Func > div:nth-of-type(2) button{
+                font-family: "Poppins", serif;
+                background:#A55EFF;
+
+                border-radius: 5px;
+                padding: 5px 25px;
+                border: none;
+                color: white;
+                font-size: 15px;
+                margin-right: 5%;
+                }
+                .lexylelogo img{
+                width: 145px;
+
+
+                }
+                .lexylelogo{
+                position: absolute;
+                top: 25px;
+                left: 50px;
+                }
+                /* Base styles for the header */
+                .headerdiv {
+                <!--                animation: slideFadeIn 0.5s ease-in-out;-->
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 25px;
+
+                position: relative;
+                background: white;
+                font-family: "Open Sans", serif;
+                font-optical-sizing: auto;
+
+                font-style: normal;
+                font-variation-settings:
+                "wdth" 100;
+                padding-bottom: 30px;
+
+                }
+
+                /* Styles for the links */
+                .headerdiv a {
+
+
+                color: black;
+                font-family: "Poppins", serif;
+                text-decoration: none;
+                transition: color 0.3s, background 0.3s;
+                }
+
+                /* Hide the toggle button on larger screens */
+                .toggle-button {
+                display: none;
+                background: none;
+                border: none;
+                color: rgba(255, 255, 255, 1);
+                font-size: 24px;
+                cursor: pointer;
+                outline: none;
+                color: black;
+                }
+                .disresplinks{
+                display:none;
+                }
+                /* Styles for smaller screens */
+                @media (max-width: 768px) {
+                #assessmentlink_duplicate{
+                    border-bottom: 1px solid white !important;
+                }
+                #assessmentlink{
+                border-bottom: 1px solid white !important;
+                }
+
+                #questionbanklink{
+                border-bottom: 1px solid white !important;
+                }
+                #assessmentlink,#questionbanklink,#DOAgrilink, #assessmentlink_duplicate{
+                padding-left:20px !important;
+                }
+
+                .customlinksstyledropdown::after {
+                content: " ▼";
+                font-size: 0.7em;
+                margin-left: 4px;
+                vertical-align: middle;
+                display: inline-block; /* Ensures transform works */
+                transition: transform 0.3s ease; /* Smooth transition for rotation */
+                }
+
+                /* On hover of the parent element, flip the arrow up */
+                .customlinksstyledropdown:hover::after {
+                transform: rotate(180deg);
+
+                }
+                .customlinksstyleresp {
+                border-bottom: 1px solid #dbd2d2 !important;
+                border-radius: 0px !important;
+                }
+                #inputcustom_crm {
+                scroll-margin-top: 75px !important;
+                scroll-behavior: smooth;
+                }
+                #linktoredirectproprly{
+                background: #003384;
+                border-radius: 25px !important;
+                padding: 5px 25px;
+                border: none;
+                color: white;
+                font-size: 15px;
+                margin-right: 15px;
+                font-optical-sizing: auto;
+                font-style: normal;
+                font-variation-settings: 'wdth' 100;
+                font-weight: 600;
+                max-width: 140px;
+                text-align: center;
+                }
+                .lexylelogo{
+                top: 1px !important;
+                left:10px !important;
+                }
+                .margintopclassresp{
+                <!--                  margin-top: 25px;-->
+                width: 100%;
+                margin-top: 25px;
+                }
+                .seconderheader{
+                position:fixed !important;
+                }
+                .lexylelogo > a:nth-of-type(1){
+                display:block !important;
+                }
+                <!--                .headerdiv > div{-->
+                <!--                    width: 100vw !important;-->
+                <!--                }-->
+                .lmsunique{
+                margin-left: 0px !important;
+                }
+                .header_Lexyle_Func{
+                display:none;
+                align-items:center;
+
+                }
+                .disresplinks{
+                display:block;
+                }
+                .lexylelogo img{
+                width: 145px;
+                }
+
+                .headerdiv {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                position: relative;
+                overflow: hidden;
+                min-height: 75px;
+                transition: max-height 0.5s ease-in-out;
+                position: absolute;
+                z-index: 3;
+                width: 100%;
+                }
+
+                .headerdiv a {
+                display: none;
+                margin: 10px 0;
+                <!--                background: #111827;-->
+                padding: 7px;
+                border-radius: 5px;
+                width: 100%;
+                transition: all 0.3s ease;
+                }
+
+                .headerdiv.active {
+                max-height: 530px;
+                }
+
+                .headerdiv.active a {
+                display: block;
+                animation: fadeIn 0.3s ease forwards;
+                }
+                .lexylelogo > a:hover{
+    box-shadow: none !important;
+                }
+                .headerdiv a:hover {
+                background: white;
+                color: rgb(4, 1, 108);
+                transform: scale(1.05);
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+                }
+
+                .toggle-button {
+                display: block;
+                margin-bottom: 10px;
+                align-self: end;
+                padding-right: 20px;
+                padding-top: 10px;
+                }
+                }
+
+                /* Slide and Fade-in Animation */
+                @keyframes slideFadeIn {
+                0% {
+                transform: translateX(-100%);
+                opacity: 0;
+                }
+                100% {
+                transform: translateX(0);
+                opacity: 1;
+                }
+                }
+
+                /* Fade-in animation for links */
+                @keyframes fadeIn {
+                0% {
+                opacity: 0;
+                transform: translateY(-10px);
+                }
+                100% {
+                opacity: 1;
+                transform: translateY(0);
+                }
+                }
+
+                /* Close Animation */
+                .headerdiv.closing {
+                max-height: 60px;
+                transition: max-height 0.5s ease-in-out;
+                }
+
+
+                /* Dropdown container */
+                .dropdown {
+                position: relative;
+                display: inline-block;
+                z-index: 500;
+                }
+
+                /* Style for the main link */
+                .dropdown > a {
+                position: relative;
+                <!--  padding: 10px 15px;-->
+                text-decoration: none;
+                color: black;
+                background-color: white;
+                display: block;
+                }
+
+                /* Ensure dropdown stays hidden initially */
+                .dropdown-content {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: white;
+                min-width: 160px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                overflow: hidden;
+                }
+
+                /* Show dropdown on hover for larger screens */
+                @media (min-width: 768px) {
+
+                .margintopclassresp{
+             min-width: 530px;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 30px;
+    margin-right: 30px;
+                }
+                <!--  .dropdown:hover .dropdown-content {-->
+                <!--    display: block;-->
+                <!--  }-->
+                .dropdown.open .dropdown-content {
+                display: block;
+                }
+                .lexylelogo{
+                position: static !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 3%;
+
+                }
+                .lexylelogo a{
+                margin: 0px !important;
+
+                }
+                .dropdown-content_two{
+                display:none;
+                }
+
+                }
+
+                /* Mobile-specific styles */
+                @media (max-width: 767px) {
+                #onlydisatmob{
+                display:block ;
+                }
+                .dropdown {
+                display:none;
+                }
+                .dropdown-content_two{
+                display:block;
+                }
+                .headerdiv.active .dropdown {
+                display: block;
+                }
+                .dropdown-content {
+                display: none;
+                position: static;
+                width: 100%;
+                text-align: start;
+                border: none !important;
+                box-shadow: none;
+                }
+
+                /* Display dropdown when active on mobile */
+                .dropdown-content.show {
+                display: block;
+                }
+                }
+
+                /* Dropdown links */
+                .dropdown-content a {
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                color: black;
+                border-bottom: 1px solid #f1f1f1;
+                background: white;
+                margin-right: 0px !important;
+                padding: 10px 5px 10px 5px;
+
+                border: none;
+                }
+
+                .dropdown-content a:hover {
+                background-color: #f8f8f8;
+                }
+
+                /* Show dropdown on hover */
+                .dropdown:hover .dropdown-content {
+                display: block;
+                }
+                .dropdown.open .dropdown-content {
+                display: block;
+                }
+
+            </style>
+            <div id="headerscrollresp" style="position:fixed;z-index:99999999999;background:white;width:100vw;">
+                <div class="headerdiv">
+                    <div class="lexylelogo">
+                        <a style="display: flex;
+  flex-direction: column;" href="/">
+                            <img src="/Lexyle/static/src/images/image 1.png"/>
+                            <p style="    color: #456f8c;
+        font-size: 10px;
+
+    margin-top: 2px;
+    word-spacing: 0px;
+    font-weight: 500;
+">Learn Today.
+                                <span style="    white-space: nowrap;
+">
+                                    Lead Tomorrow
+                                </span>
+                            </p>
+                        </a>
+                    </div>
+                    <button style="font-family:   Arial, sans-serif
+
+Arial, sans-serif
+;
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 25px;" class="toggle-button" onclick="toggleMenu()">☰
+                    </button>
+                    <div class="margintopclassresp">
+                        <a class="customlinksstyleresp" id="toFeatures_homepage" href="#Features_homepage">
+                            Features
+                        </a>
+                        <!--                        <a style="z-index: 500;-->
+                        <!--  position: relative;" href="/ai">AI Solutions</a>-->
+                        <!-- Dropdown Structure -->
+       <a class="close_on_click customlinksstyleresp" href="/cybersecurity">Cyber Security</a>
+                        <div class="dropdown">
+                            <a class="   customlinksstyledropdown  customlinksstyleresp">AI Solutions</a>
+
+                            <div class="dropdown-content">
+                                <a class="close_on_click customlinksstyleresp"   id="assessmentlink_duplicate" href="/ai">Assessment
+                                    AI
+                                </a>
+                                <a class="close_on_click customlinksstyleresp" id="questionbanklink" href="">Question
+                                    AI
+                                </a>
+                                <a class="close_on_click customlinksstyleresp" id="DOAgrilink" href="">DOAgri ERP</a>
+
+
+                            </div>
+                            <!--      <a class="dropdown-content_two" id="assessmentlink" href="">Assessments AI</a>-->
+                            <!--    <a  class="dropdown-content_two" id="questionbanklink" href="">Questions Bank AI</a>-->
+                        </div>
+                        <a class="close_on_click customlinksstyleresp" href="/Internships">Internships</a>
+                        <a class="close_on_click customlinksstyleresp" href="/careers">Careers</a>
+                        <a class="customlinksstyleresp  close_on_click disresplinks" style="color: #003384;font-family: 'Poppins', serif;
+  text-decoration: none;  font-weight: 600;" href="tel:+918714603391">+91 871 460 3391
+                        </a>
+                        <a id="linktoredirectproprly" class="customlinksstyleresp  close_on_click disresplinks"
+                           href="#get_in_touch_id">Contact Us
+                        </a>
+
+
+                    </div>
+                    <div class="header_Lexyle_Func">
+                        <div>
+                            <button style="border: none;
+  color: white;
+  font-size: 15px;
+  font-family:   Arial, sans-serif
+
+Arial, sans-serif
+;
+  font-style: normal;
+  font-weight: 600;
+  background: white;">
+
+                                <a href="tel:+918714603391" style="  color: #003384;
+  margin-right: 0px;
+  white-space: nowrap;
+">
+
+                                    +91 871 460 3391
+
+                                </a>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button style="    background: #003384;
+    border-radius: 25px;
+    padding: 5px 25px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    margin-right: 15px;
+    font-family:   Arial, sans-serif
+
+Arial, sans-serif
+;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+    font-weight: 600;" id="navigatetoget_in_touch_id">
+                                <a  style="color: white;
+  margin-right: 0px;
+">Contact Us
+                                </a>
+                            </button>
+                        </div>
+
+                        <!--                        <div>-->
+                        <!--                              <button  style="border: none;-->
+                        <!--  color: white;-->
+                        <!--  font-size: 15px;-->
+                        <!--  font-family:   Arial, sans-serif
+
+                        Arial, sans-serif
+                        ;-->
+                        <!--  font-style: normal;-->
+                        <!--  font-weight: 600;-->
+                        <!--  background: white;">-->
+
+                        <!--&lt;!&ndash;                                    <a href="/web/login"  style="  color: #003384;&ndash;&gt;-->
+                        <!--&lt;!&ndash;  margin-right: 0px;&ndash;&gt;-->
+                        <!--&lt;!&ndash;  white-space: nowrap;&ndash;&gt;-->
+                        <!--&lt;!&ndash;" >Login</a>&ndash;&gt;-->
+                        <!--                                </button>-->
+                        <!--                        </div>-->
+                    </div>
+
+                    <!--dropdown toggleoriginal-->
+                    <!--<script>-->
+                    <!--    function toggleMenu() {-->
+                    <!--        const header = document.querySelector('.headerdiv');-->
+                    <!--        const toggleButton = document.querySelector('.toggle-button');-->
+
+                    <!--        if (header.classList.contains('active')) {-->
+                    <!--            closeMenu();-->
+                    <!--        } else {-->
+                    <!--            openMenu();-->
+                    <!--        }-->
+                    <!--    }-->
+
+                    <!--    function closeMenu() {-->
+                    <!--        const header = document.querySelector('.headerdiv');-->
+                    <!--        const toggleButton = document.querySelector('.toggle-button');-->
+
+                    <!--        if (header.classList.contains('active')) {-->
+                    <!--            header.classList.add('closing');-->
+                    <!--            setTimeout(() => {-->
+                    <!--                header.classList.remove('active', 'closing');-->
+                    <!--                toggleButton.textContent = '☰';-->
+                    <!--            }, 300); // adjust to match transition-->
+                    <!--        }-->
+                    <!--    }-->
+
+                    <!--    function openMenu() {-->
+                    <!--        const header = document.querySelector('.headerdiv');-->
+                    <!--        const toggleButton = document.querySelector('.toggle-button');-->
+
+                    <!--        header.classList.remove('closing');-->
+                    <!--        header.classList.add('active');-->
+                    <!--        toggleButton.textContent = 'X';-->
+                    <!--    }-->
+
+                    <!--    // Close the menu when any .close_on_click link is clicked-->
+                    <!--    document.addEventListener('DOMContentLoaded', () => {-->
+                    <!--        const closers = document.querySelectorAll('.close_on_click');-->
+                    <!--        closers.forEach(link => {-->
+                    <!--            link.addEventListener('click', () => {-->
+                    <!--                closeMenu();-->
+                    <!--            });-->
+                    <!--        });-->
+                    <!--    });-->
+                    <!--</script>-->
+                    <script>
+                        function toggleMenu() {
+                        const header = document.querySelector('.headerdiv');
+                        const toggleButton = document.querySelector('.toggle-button');
+
+                        if (header.classList.contains('active')) {
+                        closeMenu();
+                        } else {
+                        openMenu();
+                        }
+                        }
+
+                        function closeMenu() {
+                        const header = document.querySelector('.headerdiv');
+                        const toggleButton = document.querySelector('.toggle-button');
+
+                        if (header.classList.contains('active')) {
+                        header.classList.add('closing');
+                        setTimeout(() => {
+                        header.classList.remove('active', 'closing');
+                        toggleButton.textContent = '☰';
+                        }, 300); // adjust to match transition
+                        }
+                        }
+
+                        function openMenu() {
+                        const header = document.querySelector('.headerdiv');
+                        const toggleButton = document.querySelector('.toggle-button');
+
+                        header.classList.remove('closing');
+                        header.classList.add('active');
+                        toggleButton.textContent = 'X';
+                        }
+
+                        // Close the menu when any .close_on_click link is clicked (only on screen > 760px)
+                        document.addEventListener('DOMContentLoaded', () => {
+                        const closers = document.querySelectorAll('.close_on_click');
+                        closers.forEach(link => {
+                        link.addEventListener('click', () => {
+                        if (window.innerWidth &lt; 760) {
+                        closeMenu();
+                        }
+                        });
+                        });
+                        });
+                    </script>
+
+
+                    <!--                 original   contact us navigation script-->
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                        const navigateButtons = document.querySelectorAll("#navigatetoget_in_touch_id, #linktoredirectproprly");
+                        const targetSection = "inputcustom_crm"; // Target section ID
+
+                        function scrollToSection(id) {
+                        const targetElement = document.getElementById(id);
+                        if (targetElement) {
+                        console.log("Applying smooth offset...");
+                        const yOffset = 500; // Offset moves the element up
+                        const y = targetElement.getBoundingClientRect().top + window.scrollY + yOffset;
+                        console.log("Original position:", targetElement.getBoundingClientRect().top + window.scrollY);
+                        console.log("Adjusted position:", y);
+                        window.scrollTo({ top: y, behavior: "smooth" });
+                        } else {
+                        console.log("Target element not found:", id);
+                        }
+                        }
+
+                        navigateButtons.forEach(button => {
+                        button.addEventListener("click", function (event) {
+                        event.preventDefault(); // Prevent default navigation
+                        console.log("Button clicked, current path:", window.location.pathname);
+
+                        const currentPath = window.location.pathname;
+                        if (!["/", "/ai"].includes(currentPath)) {
+                        // Redirect from other pages with sessionStorage
+                        console.log("Redirecting to homepage with target:", targetSection);
+                        sessionStorage.setItem("scrollToSection", targetSection);
+                        window.location.href = "/#" + targetSection; // Redirect with hash
+                        } else {
+                        // On "/" or "/ai", use hash jump + offset
+                        console.log("On homepage or AI page, scrolling to:", targetSection);
+                        window.location.href = "#" + targetSection; // Trigger browser jump
+                        setTimeout(() => scrollToSection(targetSection), 50); // Apply offset
+                        }
+                        });
+                        });
+
+                        // Handle scroll on page load (for redirects from other pages)
+                        window.addEventListener("load", function () {
+                        const storedSection = sessionStorage.getItem("scrollToSection");
+                        const hashSection = window.location.hash.substring(1); // Remove "#"
+
+                        console.log("Page loaded, storedSection:", storedSection, "hashSection:", hashSection);
+
+                        const sectionToScroll = storedSection || hashSection;
+                        if (sectionToScroll === targetSection &amp;&amp; window.location.pathname === "/") {
+                        console.log("Scrolling to:", sectionToScroll);
+                        scrollToSection(sectionToScroll);
+                        if (storedSection) {
+                        sessionStorage.removeItem("scrollToSection"); // Clean up
+                        history.replaceState(null, "", window.location.pathname); // Clean URL
+                        }
+                        }
+                        });
+                        });
+                    </script>
+
+                    <!--feautres scroll-->
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+
+                        const link = document.getElementById("toFeatures_homepage");
+
+                        if (link) {
+                        link.addEventListener("click", function (event) {
+                        event.preventDefault(); // Prevent default anchor behavior
+
+                        const targetSection = "#Features_homepage";
+                        const isHomepage = window.location.pathname === "/";
+
+                        if (isHomepage) {
+                        // Smooth scroll if already on the homepage
+                        document.querySelector(targetSection)?.scrollIntoView({ behavior: "smooth", block: 'start' });
+                        } else {
+                        // Redirect to homepage and scroll after loading
+                        window.location.href = "/" + targetSection;
+                        }
+                        });
+                        }
+
+                        // If the URL contains a hash, scroll to it on page load
+                        if (window.location.hash) {
+                        document.querySelector(window.location.hash)?.scrollIntoView({ behavior: "smooth", block:
+                        'start' });
+                        }
+                        });
+
+                        // Smooth navigation for AI page sections
+                        document.addEventListener("DOMContentLoaded", function () {
+                        function handleNavigation(event, targetId) {
+                        event.preventDefault(); // Prevent default anchor behavior
+                        const currentPath = window.location.pathname;
+
+                        if (currentPath === "/ai") {
+                        // If already on /ai, just scroll to the section
+                        document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth", block: 'start' });
+                        } else {
+                        // Redirect to AI page and scroll after loading
+                        sessionStorage.setItem("scrollToSection", targetId); // Store target section
+                        window.location.href = "/ai#" + targetId;
+                        }
+                        }
+
+                        // Add click listeners safely
+                        document.getElementById("assessmentlink")?.addEventListener("click", function (event) {
+                        handleNavigation(event, "assessments");
+                        });
+
+                        document.getElementById("questionbanklink")?.addEventListener("click", function (event) {
+                        handleNavigation(event, "instantquestionbank");
+                        });
+                        document.getElementById("DOAgrilink")?.addEventListener("click", function (event) {
+                        handleNavigation(event, "doagriai_container");
+                        });
+
+
+                        // On AI page, check for hash in URL and scroll to it
+                        if (window.location.pathname === "/ai") {
+                        const storedSection = sessionStorage.getItem("scrollToSection");
+                        const sectionId = window.location.hash ? window.location.hash.substring(1) : storedSection;
+
+                        if (sectionId) {
+                        setTimeout(() => {
+                        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: 'start' });
+                        sessionStorage.removeItem("scrollToSection"); // Clear stored section
+                        }, 500); // Small delay to ensure the element is loaded
+                        }
+                        }
+                        });
+
+                    </script>
+<!--                    <script>-->
+<!--                        document.addEventListener("DOMContentLoaded", function () {-->
+
+<!--                        const link = document.getElementById("toFeatures_homepage");-->
+
+<!--                        if (link) {-->
+<!--                        link.addEventListener("click", function (event) {-->
+<!--                        event.preventDefault(); // Prevent default anchor behavior-->
+
+<!--                        const targetSection = "#Features_homepage";-->
+<!--                        const isHomepage = window.location.pathname === "/";-->
+
+<!--                        if (isHomepage) {-->
+<!--                        // Smooth scroll if already on the homepage-->
+<!--                        document.querySelector(targetSection)?.scrollIntoView({ behavior: "smooth", block: 'start' });-->
+<!--                        } else {-->
+<!--                        // Redirect to homepage and scroll after loading-->
+<!--                        window.location.href = "/" + targetSection;-->
+<!--                        }-->
+<!--                        });-->
+<!--                        }-->
+
+<!--                        // If the URL contains a hash, scroll to it on page load-->
+<!--                        if (window.location.hash) {-->
+<!--                        document.querySelector(window.location.hash)?.scrollIntoView({ behavior: "smooth", block:-->
+<!--                        'start' });-->
+<!--                        }-->
+<!--                        });-->
+
+<!--                        // Smooth navigation for AI page sections-->
+<!--                        document.addEventListener("DOMContentLoaded", function () {-->
+<!--                        function handleNavigation(event, targetId) {-->
+<!--                        event.preventDefault(); // Prevent default anchor behavior-->
+<!--                        const currentPath = window.location.pathname;-->
+
+<!--                        if (currentPath === "/ai") {-->
+<!--                        // If already on /ai, just scroll to the section-->
+<!--                        document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth", block: 'start' });-->
+<!--                        } else {-->
+<!--                        // Redirect to AI page and scroll after loading-->
+<!--                        sessionStorage.setItem("scrollToSection", targetId); // Store target section-->
+<!--                        window.location.href = "/ai#" + targetId;-->
+<!--                        }-->
+<!--                        }-->
+
+<!--                        // Add click listeners safely-->
+<!--                        document.getElementById("assessmentlink")?.addEventListener("click", function (event) {-->
+
+<!--                        handleNavigation(event, "assessments");-->
+<!--                        });-->
+
+<!--                        document.getElementById("questionbanklink")?.addEventListener("click", function (event) {-->
+<!--                        handleNavigation(event, "instantquestionbank");-->
+<!--                        });-->
+<!--                        document.getElementById("DOAgrilink")?.addEventListener("click", function (event) {-->
+<!--                        handleNavigation(event, "doagriai_container");-->
+<!--                        });-->
+
+
+<!--                        // On AI page, check for hash in URL and scroll to it-->
+<!--                        if (window.location.pathname === "/ai") {-->
+<!--                        const storedSection = sessionStorage.getItem("scrollToSection");-->
+<!--                        const sectionId = window.location.hash ? window.location.hash.substring(1) : storedSection;-->
+
+<!--                        if (sectionId) {-->
+<!--                        setTimeout(() => {-->
+<!--                        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: 'start' });-->
+<!--                        sessionStorage.removeItem("scrollToSection"); // Clear stored section-->
+<!--                        }, 500); // Small delay to ensure the element is loaded-->
+<!--                        }-->
+<!--                        }-->
+<!--                        });-->
+
+<!--                    </script>-->
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                        const btndrop = document.querySelector('.customlinksstyledropdown');
+                        const dropdowntwo = document.querySelector('.dropdown');
+
+                        btndrop.addEventListener('click', function () {
+                        dropdowntwo.classList.toggle('open');
+                        });
+
+                        // Optional: Close when clicking outside
+                        document.addEventListener('click', function (e) {
+                        if (!dropdowntwo.contains(e.target)) {
+                        dropdowntwo.classList.remove('open');
+                        }
+                        });
+                        });
+                    </script>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                        const clickable = document.querySelector('.clickairesp');
+
+                        if (clickable) {
+                        clickable.addEventListener('click', function () {
+                        if (window.innerWidth > 768) {
+                        window.location.href = '/ai';
+                        }
+                        // else do nothing
+                        });
+                        }
+                        });
+                    </script>
+
+                    `
+
+                </div>
+            </div>
+            <div style="margin-bottom:100px;"></div>
+
+        </xpath>
+    </template>
+
+
+</odoo>

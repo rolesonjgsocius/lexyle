@@ -1,0 +1,1477 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="Lexyle_ai" name="Lexyle">
+
+
+        <t t-call="website.layout">
+            <section>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
+                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap"
+                      rel="stylesheet"/>
+
+
+                <style>
+
+                    ::-webkit-scrollbar {
+                    width: 3px;
+                    }
+
+                    ::-webkit-scrollbar-thumb {
+                    background-color: #888;
+                    border-radius: 6px;
+                    }
+
+                    ::-webkit-scrollbar-track {
+                    background: #f1f1f1;
+                    }
+
+                    .card-front::-webkit-scrollbar, .card-back::-webkit-scrollbar {
+                    display: block !important;
+                    }
+                    #wrapwrap > main{
+                    overflow-x: hidden !important;
+                    }
+                    .doagriai_container *{
+                    color:black !important;
+                    }
+                    .cardbox {
+                    margin: 20px auto;
+                    position: relative;
+                    perspective: none;
+                    }
+
+                    .card {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    min-height: 450px;
+                    border-radius: 20px;
+                    border: 0;
+                    box-shadow: 0px 2px 30px 0px #00000014;
+                    overflow: hidden;
+                    }
+
+                    .card-front,
+                    .card-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    padding: 20px;
+                    background-color: white;
+                    border-radius: 20px;
+                    box-shadow: 1px 10px 30px rgba(0, 0, 0, 0.2);
+                    overflow-y: auto;
+                    transition: opacity 0.5s ease;
+                    }
+
+                    .card-front::-webkit-scrollbar,
+                    .card-back::-webkit-scrollbar {
+                    display: none;
+                    }
+
+                    .card-front {
+                    z-index: 2;
+                    opacity: 1;
+                    }
+
+                    .card-back {
+                    z-index: 1;
+                    opacity: 0;
+                    }
+
+                    .cardbox:hover .card-front {
+                    opacity: 0;
+                    z-index: 1;
+                    }
+
+                    .cardbox:hover .card-back {
+                    opacity: 1;
+                    z-index: 2;
+                    }
+
+                    <!--hover box end-->
+                    .s_website_form_submit .s_website_form_label{
+                    display: none !important;
+
+                    }
+                    .s_website_form_mark{
+                    color: red !important;
+                    }
+                    .getintouchbackground{
+                    background: linear-gradient(#0033841F, #0033841F), url('/Lexyle/static/src/images/image(1).png')
+                    center/cover no-repeat;
+                    min-height: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    }
+                    @media(min-width:992px){
+                       .respinstantbanking_content p{
+                        text-align: justify;
+
+                        max-width: 609px;
+
+                    }
+                    #assessments{
+                    margin-top: 30px;
+
+                    }
+                    .img-drone-resp{
+                    max-width: 470px;
+                    }
+
+
+                    .inputcustom_crm form > div {
+                    display: grid !important;
+                    grid-template-columns: 1fr 1fr !important;
+                    }
+                    }
+                    @media(max-width:568px) {
+                    .text-aligin-last-custom-resp{
+
+    text-align-last: start !important;
+                    }
+                    .keypcompdogargi p {
+                    margin-bottom:5px;
+                    }
+                    .keypcompdogargi ul {
+                    padding-left: 25px !important;
+                    }
+                    .keypcompdogargi .cardbox{
+                    margin-top: 0px !important;
+                    }
+                    .keypcompdogargi {
+                    gap: 0px;
+                    }
+                    }
+                    @media(max-width:992px) {
+
+                    #aipowered_assessment{
+                        gap: 20px;
+
+                    }
+                    #assessments{     margin-top: 30px !important;}
+                    .instantquestionbank{
+                    display: flex !important;
+                    flex-direction: column !important;
+                    align-items: center !important;
+
+                    }
+                    .respinstantbanking_content h4{
+                    text-align: center !important;
+                    margin-bottom: 15px !important;
+                    }
+                    .respinstantbanking_content p{
+                    text-align: justify !important;
+                    margin-bottom: 10px !important;
+                    word-break: normal !important;
+                    overflow-wrap: break-word;
+                    hyphens: auto;
+                    font-size: 15px !important;
+                    }
+                    .getintouchgrid{
+                    padding: 0px !important;
+                    }
+                    .bankcreation{
+                    gap: 20px;
+
+                    }
+                    .pararespaitop{
+                    width:100% !important;
+                    }
+                    .instantquestionresp{
+                    position: static !important;
+                    max-height: 210px;
+                    }
+                    .ROI_DRIVEN_BENIFITS{
+                    gap: 25px;
+                    }
+                    .instantquestionbank > img{
+                    height: 100% !important;
+                    }
+                    .hide_flex{
+                    flex: unset !important;
+                    margin: 10px !important;
+                    }
+                    .banner_custom_lms{
+                    margin-top: 0px !important;
+                    }
+                    .banner_custom_lms > div{
+                    row-gap: 10px !important;
+                    }
+
+                    .banner_custom_lms > div{
+                    gap: 25px;
+                    }
+                    .imagemarginleftresp{
+                    margin-left: 0px !important;
+
+                    }
+                    .second_banner{
+                    height: 100% !important;
+                    margin: 50px 0px;
+                    padding: 25px 0px;
+
+                    }
+
+                    .second_banner p {
+                    font-family: 'Open Sans', serif;
+                    font-size: 15px;
+                    margin: 15px 15px;
+                    }
+                    .endless_possibilites_grid{
+                    grid-template-columns: 1fr !important;
+                    }
+                    .resp_lms_middle > div:nth-of-type(1){
+                    margin-right: 0px !important;
+                    }
+                    .resp_lms_middle{
+                    display: flex;
+                    flex-direction:column !important;
+                    align-items: center;
+                    gap: 25px;
+                    }
+                    }
+                    .resp_lms_middle{
+                    display: flex;
+                    }
+                    .lms_middle_section > div > div{
+
+                    padding: 0px;
+                    border-radius: 15px;
+                    }
+                    .lms_middle_section > div > div > div{
+
+                    padding: 0px;
+                    border-radius: 15px;
+                    }
+
+                    .lms_middle_section h4{
+                    font-family: 'Gilroy-Heavy', sans-serif;
+                    color: white;
+                    font-size: 30px;
+                    word-spacing: 5px;
+                    margin-top: 35px;
+                    padding: 10px;
+                    }
+                    .lms_middle_section p {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: white;
+                    font-family: 'Open Sans', serif;
+                    margin-top: 25px;
+                    padding: 10px;
+                    }
+                    .banner_custom_lms > div > div > p:nth-of-type(1){
+                    font-weight: 500;
+                    font-size: 40px;
+                    font-family: 'Gilroy-Heavy', sans-serif;
+                    margin-bottom: 0px;
+                    color: black;
+                    }
+                    .banner_custom_lms > div > div > p:nth-of-type(2){
+                    font-weight: 400;
+                    font-size: 15px;
+                    margin: 15px 0px;
+                    text-align: justify;
+                    text-align-last: start;
+                    color: black;
+                    line-height: 25px;
+                    font-family: Arial, sans-serif;
+                    }
+                    .getintouchgrid{
+                    background: #F9F9F9;
+                    padding: 30px;
+                    border-radius: 25px;
+                    margin-top: 25px;
+
+                    font-family: 'Open Sans', serif;
+                    }
+                    .endless_possibilites_get_in_touch{
+                    margin: 50px auto 75px auto;
+
+                    }
+                    .getintouchgrid p {font-size: 15px;
+                    text-align: justify;
+                    font-weight: 400; }
+                    .getintouchgrid h4{
+                    margin-top: 35px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    }
+                    .getintouchgrid ul {
+                    padding-left: 0px;
+                    }
+                    .getintouchgrid li {
+                    list-style: none;
+                    font-size: 15px;
+                    font-weight: 400;
+                    margin-bottom: 3px;
+                    }
+                    .getintouchgrid > div:nth-of-type(1){
+                    background: #0068D9;
+                    color: white;
+                    padding: 25px;
+                    border-radius: 25px;
+                    }
+                    .groupofinputs_getintouch{
+                    padding: 25px;
+                    }
+                    .groupofinputs_getintouch >div {
+                    flex-direction: column;
+                    }
+                    .groupofinputs_getintouch input {
+                    border-radius: 5px;
+                    border: 1px solid #0068D9;
+                    padding: 10px;
+                    }
+                    .groupofinputs_getintouch button {
+                    background: #0068D9;
+                    color: white;
+                    max-width: 175px;
+                    border: none;
+                    border-radius: 25px;
+                    padding: 10px;
+                    font-weight: 700;
+                    font-family: 'Open Sans', serif;
+                    font-size: 16px;
+                    }
+
+                    .banner > div:nth-of-type(1) >div:nth-of-type(2) >div > img:nth-of-type(1){
+                    height: 170px;
+                    width: auto !important;
+                    }
+                    .banner > div:nth-of-type(1) >div:nth-of-type(2) > img:nth-of-type(2){
+                    max-height: 500px !important;
+                    width: auto !important;
+                    }
+                    .second_banner button{
+                    background: #0068D9;
+                    color: white;
+                    border: none;
+                    padding: 10px 25px;
+                    border-radius: 25px;
+                    font-weight: 700;
+                    }
+                    .second_banner{
+
+                    background: url('/Lexyle/static/src/images/image(1).png') center/cover no-repeat;
+                    height: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 50px 0px;
+                    }
+                    .second_banner p {
+                    font-family: 'Open Sans', serif;
+                    font-size: 15px;
+
+                    }
+
+                    @font-face {
+                    font-family: 'Gilroy-Bold';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Bold.ttf') format('truetype');
+
+                    }
+
+                    @font-face {
+                    font-family: 'Gilroy-Light';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Light.ttf') format('truetype');
+                    }
+
+                    @font-face {
+                    font-family: Arial, sans-serif;
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Medium.ttf') format('truetype');
+                    }
+                    @font-face {
+                    font-family: Arial, sans-serif
+
+
+                    ;
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Regular.ttf') format('truetype');
+                    }
+
+                    @font-face {
+                    font-family: 'Gilroy-Heavy';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Heavy.ttf') format('truetype');
+
+                    }
+
+                    .waveofgrowth >div:nth-of-type(1) >div:nth-of-type(1) img {
+                    height: 275px;
+                    width: auto !important;
+                    }
+                    .waveofgrowth >div:nth-of-type(1) >div:nth-of-type(1) {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    }
+                    .waveofgrowth >div:nth-of-type(1) >div:nth-of-type(1) p{
+                    color:black;
+                    text-align: center;
+                    margin-top: 0px;
+                    line-height: 20px;
+                    }
+                    .waveofgrowth >div:nth-of-type(1) >div:nth-of-type(1) img{
+                    flex-direction: column;
+                    }
+                    .waveofgrowth{
+                    margin-bottom: 50px;
+                    }
+
+                    .endless_possibilites_grid > div {
+                    border-top:3px solid #0068D9;
+                    border-bottom:3px solid g#0068D9;
+                    padding:10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                    }
+                    .endless_possibilites_grid{
+                    display:grid;
+                    grid-template-columns:1fr 1fr 1fr;
+                    gap:10px;
+                    margin: 50px 0px;
+                    }
+                    .endless_possibilites_grid > *:nth-child(3n+2) {
+                    border-top:3px solid #003384;
+                    border-bottom:3px solid #003384;
+                    padding:10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                    }
+
+                    .endless_possibilites_grid h4 {
+                    color: #003384;
+                    font-family: 'Gilroy-Bold', sans-serif;
+                    text-align: center;
+                    font-size: 20px;
+                    }
+                    .endless_possibilites_grid p {
+                    font-size: 12px;
+                    font-family: 'Open Sans', serif;
+                    text-align: justify;
+                    color: black;
+                    font-weight: 400;
+                    }
+                    .banner{
+                    <!--                        margin-top:100px;-->
+                    }
+                    .aipowered_assessment{
+                    margin: 30px auto 75px auto;
+
+
+                    }
+
+                    .aipowered_assessment_firstcol{
+                    background: #003384;
+                    color: white;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                    border-radius: 15px;
+                    }
+
+                    .aipowered_assessment_firstcol h4{
+                    font-family: Arial, sans-serif;
+                    font-size: 23px;
+                    }
+                    .aipowered_assessment_firstcol p{
+                    font-family: Arial, sans-serif;
+                    font-size: 15px;
+                    text-align: justify;
+                    }
+                    .aipowered_assessment_secondcol p:nth-of-type(1){
+                    color: black;
+                    font-weight: 700;
+                    font-family: Arial, sans-serif;
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                    font-size: 15px;
+                    }
+                    .aipowered_assessment_secondcol p:nth-of-type(2){
+                    color: black;
+                    font-family: Arial, sans-serif;
+                    font-size: 15px;
+                    text-align: justify;
+
+                    }
+                    .aipowered_assessment_secondcol h4 span{
+                    background: #003384;
+                    border-radius: 100px;
+                    padding: 5px 12px;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 700;
+                    }
+                    .ROI_DRIVEN_BENIFITS{
+                    margin: 35px 0px;
+                    }
+                    .ROI_DRIVEN_BENIFITS >div > div{
+                    background:#F4F9FB;
+                    border-radius:10px;
+                    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) !important;
+                    padding: 10px;
+                    min-height: 180px;
+
+                    }
+                    .ROI_DRIVEN_BENIFITS h4{
+                    text-align: center;
+                    color: black;
+                    font-size: 16px;
+                    font-family: 'Gilroy-bold';
+                    }
+                    .ROI_DRIVEN_BENIFITS p{
+                    text-align: center;
+                    color: black;
+                    font-size: 15px;
+                    font-family: Arial, sans-serif;
+                    }
+                    .ROI_DRIVEN_BENIFITS > div {
+                    margin-top:0px !important;
+                    }
+                    .testiaisection{
+                    display:flex;
+
+                    }
+                    .testiaisection > div:nth-of-type(1){
+                    background: linear-gradient(to bottom, #00C3A5, #003384);
+                    }
+                    .testiaisection p {
+                    text-align: start;
+                    color: black;
+                    font-family: 'Open Sans', serif;
+                    font-size: 12px;
+                    }
+                    .testimonails_image{
+                    display: flex;
+                    margin-top: 20px;
+                    padding-left: 40px;
+                    }
+                    .testimonails_image p {
+                    margin-bottom: 4px;
+                    }
+                    .instantquestionbank{
+                    position: relative;
+                    background: #003384;
+                    color: white;
+                    border-radius: 10px;
+                    padding: 30px;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    }
+                    .instantquestionbank br{
+                    margin-top: 10px;
+
+                    }
+                    .instantquestionbank > img {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    height: 100%;
+
+                    width: auto !important;
+                    }
+                    .questionbanks p{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    font-weight: 400;
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                    color: black;
+                    font-family: Arial, sans-serif
+
+                    ;
+                    line-height: 25px;
+                    text-align: justify !important;
+                    }
+                    .questionbanks{
+                    margin: 50px auto;
+                    margin-top: 25px;
+                    }
+                    .bankcreation{
+                    margin-top: 25px;
+                    }
+                    .bankcreation >div > div > p:nth-of-type(1) span img {
+                    max-width: 20px;
+                    margin-top: 2px;
+                    }
+                    .bankcreation >div > div > p:nth-of-type(1) span {
+                    height: 30px !important;
+                    display: flex !important;
+                    align-items: start !important;
+                    }
+                    .bankcreation >div > div > p:nth-of-type(1){
+                    display: grid;
+                    grid-template-columns: 25px 1fr;
+                    color: black;
+                    font-size: 16px;
+                    font-family: 'Gilroy-Bold';
+                    gap: 5px;
+                    margin-bottom: 5px;
+
+
+                    }
+                    .bankcreation >div > div > p:nth-of-type(2){
+                    text-align: justify;
+                    color: black;
+                    font-size: 15px;
+                    font-family: Arial, sans-serif;
+                    }
+                    bankcreation >div > div > p:nth-of-type(1) img{
+                    height: 20px;
+                    width: 20px !important;
+                    }
+                    .bankcreation > div >div{
+                    background: #EBF2F9;
+                    padding: 20px 20px;
+                    border-radius: 5px;
+                    min-height: 150px;
+                    border-radius: 10px;
+                    }
+
+
+                    .input-container {
+                    position: relative;
+                    display: inline-block;
+                    width: 100%; /* Adjust width */
+                    }
+
+                    .input-container input {
+                    width: 100%;
+                    padding-right: 30px; /* Space for the icon */
+                    }
+                    .input-container input::placeholder {
+                    color: black;
+                    font-family: 'Open Sans', serif;
+                    font-size: 12px;
+                    text-align: justify;
+                    font-weight: 500;
+                    }
+
+                    .input-container img {
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 15px;
+                    height: auto;
+                    cursor: pointer;
+                    }
+
+                    /* Custom dropdown styling */
+                    .custom-dropdown {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    background: white;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    max-height: 150px;
+                    overflow-y: auto;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                    z-index: 1000;
+                    }
+
+                    .custom-dropdown div {
+                    padding: 8px;
+                    cursor: pointer;
+                    color: black;
+                    font-family: 'Open Sans', serif;
+                    font-size: 12px;
+                    text-align: justify;
+                    font-weight: 500;
+                    }
+
+                    .custom-dropdown div:hover {
+                    background: #f0f0f0;
+                    }
+
+                    .inputcustom_crm form > div > div > div{
+                    display: flex;
+                    flex-direction: column;
+                    }
+
+                    .inputcustom_crm form > div > div:last-of-type {
+                    grid-column: span 2 !important;
+
+                    }
+                    .inputcustom_crm form > div > div:nth-of-type(7){
+                    grid-column: span 2 !important;
+
+                    }
+                    .inputcustom_crm form input {
+                    border-radius: 5px;
+                    border: 1px solid #0068D9;
+                    padding: 10px;
+                    }
+                    .inputcustom_crm .form-select{
+                    border-radius: 5px;
+                    border: 1px solid #0068D9;
+                    padding: 10px;
+                    }
+                    .inputcustom_crm form textarea {
+                    border-radius: 5px;
+                    border: 1px solid #0068D9;
+                    padding: 10px;
+                    }
+                    .inputcustom_crm form > div > div:last-of-type a {
+                    background: #0068D9;
+                    color: white;
+                    max-width: 175px;
+                    border: none;
+                    border-radius: 25px;
+                    padding: 10px 50px;
+                    font-weight: 700;
+                    font-family: 'Open Sans', serif;
+                    font-size: 16px;
+                    }
+                    .inputcustom_crm .col-form-label{
+                    font-size: 15px;
+                    font-weight: 400;
+                    font-family: 'Open Sans', serif;
+                    }
+
+
+                </style>
+                <div id="assessments" class="container banner banner_custom_lms">
+                    <div class="row d-flex align-items-center">
+                        <div class=" g-sm-2  col-12 col-sm-4  col-md-6 ">
+                            <p>AI-Powered</p>
+                            <h4 style="font-family: 'Gilroy-Heavy', sans-serif;
+  color: #003384;
+  font-size: 40px;
+  word-spacing: 5px;">Assessment Tool
+
+                            </h4>
+                            <p>Our Generative AI Assessment project delivers an adaptive evaluation experience that
+                                mimics real-world conversations. By generating dynamic follow-up questions based on
+                                candidate responses, the system promotes deeper learning and critical thinking. The AI
+                                provides instant feedback after each assessment, offering clear insights into the
+                                candidate's understanding—all in an engaging, automated process. 
+                            </p>
+
+                        </div>
+                        <div style="    display: flex;
+    justify-content: start;" class=" col-12 col-sm-4  col-md-6 position-relative">
+
+                            <img style="          max-width: 475px;
+
+    margin-left: 15px;" class="imagemarginleftresp w-100" src="Lexyle/static/src/images/image 227.png"
+                                 alt="Platform Image"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="container ">
+                    <div id="aipowered_assessment" class="aipowered_assessment row">
+                        <div style="position:relative;" class="col-12 col-md-3 aipowered_assessment_firstcol ">
+                            <h4>AI-Powered Interactive Assessment System </h4>
+                            <p>As part of this internship project, you will contribute to building an advanced
+                                Generative AI Assessment Tool designed to create dynamic and engaging evaluation
+                                experiences. The project focuses on leveraging AI to simulate real-time, adaptive
+                                assessments. Here's what the system does:
+                            </p>
+
+                            <img class="w-100"
+                                 src="/Lexyle/static/src/images/happy-young-woman-holding-laptop-gray-wall-transformed 3.png"/>
+                        </div>
+                        <div class="col-12 col-md-9 ">
+                            <div style="    padding-top: 0px !important;"
+                                 class="row aipowered_assessment_secondcol gap-3 p-3">
+                                <div class="col-12 rounded-2 border-1 col-md-5 d-flex border flex-column  pt-2 pr-2 pb-2">
+                                    <h4>
+                                        <span style="background: #003384;
+  border-radius: 100px;
+  padding: 5px 12px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;">1
+                                        </span>
+                                    </h4>
+                                    <p>Topic Definition</p>
+                                    <p>The tool begins by accepting a predefined question, scenario, or case study from
+                                        the evaluator.
+                                    </p>
+                                </div>
+                                <div class="col-12 rounded-2 border-1 col-md-5 d-flex border flex-column  pt-2 pr-2 pb-2">
+                                    <h4>
+                                        <span style="background: #003384;
+  border-radius: 100px;
+  padding: 5px 12px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;">2
+                                        </span>
+                                    </h4>
+                                    <p>Candidate Interaction</p>
+                                    <p>Candidates provide written responses, showcasing their knowledge and analytical
+                                        skills.
+                                    </p>
+                                </div>
+                                <div class="col-12 rounded-2 border-1 col-md-5 d-flex border flex-column  pt-2 pr-2 pb-2">
+                                    <h4>
+                                        <span style="background: #003384;
+  border-radius: 100px;
+  padding: 5px 12px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;">3
+                                        </span>
+                                    </h4>
+                                    <p>AI-Driven Follow-ups</p>
+                                    <p>The AI dynamically generates follow-up questions based on the candidate’s
+                                        answers, encouraging deeper exploration of the topic.
+                                    </p>
+                                </div>
+                                <div class="col-12 rounded-2 border-1 col-md-5 d-flex border flex-column  pt-2 pr-2 pb-2">
+                                    <h4>
+                                        <span style="background: #003384;
+  border-radius: 100px;
+  padding: 5px 12px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;">4
+                                        </span>
+                                    </h4>
+                                    <p>Real-Time Evaluation</p>
+                                    <p>After 4-5 iterative questions, the AI instantly assesses the responses and
+                                        provides comprehensive feedback on the candidate’s understanding. 
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div style="color: black;
+  font-family: 'Open Sans', serif;
+  font-size: 13px;
+  text-align: justify;width: 85%;" class=" px-2 pararespaitop">
+                                <p style="    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 15px;">This project involves developing an AI-powered assessment platform that creates dynamic,
+                                    scenario-based evaluations. Interns will design a system where users define a topic
+                                    or case study, and the AI generates adaptive follow-up questions based on the
+                                    candidate’s initial responses. The system will conclude by evaluating the
+                                    candidate’s understanding and providing instant feedback. This project offers
+                                    practical experience in AI-driven learning assessments, conversational AI, and
+                                    automated evaluation processes. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="  margin: 75px auto;
+  margin-bottom: 25px;" class="container">
+                    <h4 style="text-align: center;
+  color: black;    font-weight: 700;
+  font-family: 'Gilroy- Medium', sans-serif;  line-height: 30px;">ROI-Driven Benefits of
+
+                        <span style="  font-weight: 700;">
+                            AI Assessment Tool 
+                        </span>
+                    </h4>
+                    <div class="row g-4 ROI_DRIVEN_BENIFITS">
+                        <div class="col-12 col-md-3">
+                            <div>
+                                <h4 style="">Cost-Efficiency</h4>
+                                <p>Reduce the need for manual evaluations and streamline the assessment process with AI
+                                    automation, leading to significant time and cost savings.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div>
+                                <h4>Scalable Solution</h4>
+                                <p>Deploy AI assessments across multiple learners or candidates simultaneously,
+                                    enhancing productivity and operational efficiency. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div>
+                                <h4>Improved Learning Outcomes</h4>
+                                <p>By delivering personalized feedback and deeper engagement, the system helps learners
+                                    retain knowledge better, improving overall learning ROI.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div>
+                                <h4>Data-Driven Insights</h4>
+                                <p>Instant performance analytics allow organizations to make informed decisions and
+                                    track learner progress with precision.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                <div class="container testiaisection">-->
+                <!--                    <div style="  width: 10px;-->
+                <!--  min-height: 100%;-->
+                <!--  margin-right: 15px;">-->
+
+                <!--                    </div>-->
+                <!--                    <div>-->
+                <!--                        <p>“We were looking for a seamless online solution to assess our store employees, and Lexyle-->
+                <!--                            proved to be the perfect fit for automating our testing process. The platform has-->
+                <!--                            significantly streamlined our workflows, saving valuable time through automated evaluation-->
+                <!--                            and instant result generation. With Lexyle, we’ve enhanced the efficiency and effectiveness-->
+                <!--                            of our assessment process ”-->
+                <!--                        </p>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <div class="testimonails_image container">-->
+                <!--                    <div style="display:flex;align-items:center;">-->
+                <!--                         <img  style="height: 40px;-->
+                <!--  width: 40px !important;-->
+                <!--  border-radius: 50%;" class="" src="Lexyle/static/src/images/Rectangle 7.png" alt="Rectangle 7"/>-->
+                <!--                    </div>-->
+
+                <!--<div style="margin-left: 10px;">-->
+                <!--    <p style="text-align: center;-->
+                <!--  color: black;-->
+                <!--  font-family: 'Open Sans', serif;-->
+                <!--  font-size: 16px;-->
+                <!--  margin-bottom: 0px;">Gokul</p>-->
+                <!--    <p style="color: #718096;-->
+                <!--  font-size: 15px;">CEO</p>-->
+                <!--</div>-->
+                <!--                </div>-->
+                <div id="instantquestionbank" class="container instantquestionbank">
+                    <img class=" w-100 instantquestionresp" style="z-index:100;"
+                         src="Lexyle/static/src/images/Pink Happy Birthday Instagram Post Square (27) 1.png"
+                         alt="Platform Image"/>
+                    <img class=" w-100" style="z-index:50;left: 17%;
+  height: 720px;
+  bottom: -452px;
+  z-index: 50;" src="Lexyle/static/src/images/Group 237646(1).png" alt="Platform Image"/>
+
+                    <div class="row">
+                        <div class=" col-12 col-md-4"></div>
+                        <div class=" respinstantbanking_content col-12 col-md-8">
+                            <h4 style="     font-family:  Arial, sans-serif
+
+Arial, sans-serif
+
+
+  font-size: 30px;  margin-bottom: 5px;">
+                                Instant Question Bank Generation 
+                            </h4>
+                            <p style="      font-family:   Arial, sans-serif
+
+;
+
+
+    margin-bottom: 5px;">Stop spending hours creating assessment questions manually. With Lexyle, you can instantly
+                                generate a comprehensive question bank for any topic using advanced AI-powered tools.
+
+                            </p>
+                            <p style="        font-family:   Arial, sans-serif
+
+;
+
+
+    margin-bottom: 5px;">No longer dependent on subject matter experts, you can easily create tailored questions that
+                                meet your specific assessment needs.
+                            </p>
+                            <p style="       font-family:   Arial, sans-serif
+
+;
+
+
+    margin-bottom: 5px;">
+                                Customize content to match your criteria and save valuable time by automating the
+                                question creation process. Experience the efficiency of AI and streamline your
+                                assessments with Lexyle.
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container">
+
+                    <!--                    <div class="row questionbanks">-->
+                    <!--                          <div  class="col-12 col-md-6 ">-->
+                    <!--<img class="" style="        height: 100%;-->
+                    <!--    max-height: 320px;-->
+                    <!--    max-width: 100%;-->
+                    <!--" src="Lexyle/static/src/images/Rectangle 18.png" />-->
+                    <!--                    </div>-->
+                    <!--                        <div style="display: flex;-->
+                    <!--    flex-direction: column;-->
+                    <!--    justify-content: center;" class="col-12 col-md-6">-->
+                    <!--                              <h4 style="  font-family:   Arial, sans-serif-->
+
+                    <!--Arial, sans-serif-->
+                    <!--;line-height: 30px;"><span style="color: black;-->
+                    <!--  font-family: 'Gilroy-Bold', sans-serif;          margin-bottom: 10px;-->
+                    <!--    margin-top: 25px;-->
+                    <!--">Lexyle Internships <br/></span>-->
+                    <!--                    </h4>-->
+                    <!--                         <p>-->
+                    <!--                             The Lexyle Internship Program is a unique opportunity for students from colleges across the country to gain real-world experience by working on live projects and engaging assignments. Interns will collaborate with diverse teams, receive mentorship from subject matter experts and leaders, and may earn a pre-placement interview opportunity within Lexyle.-->
+                    <!--                    </p>-->
+                    <!--                             <p>-->
+                    <!--If you are a student studying at any college in India, you can be a part of the Lexyle Internship Program. Based on mid-term and final evaluations, top performers will be offered a pre-placement interview opportunity within Lexyle.                    </p>-->
+
+
+                    <!--                    </div>-->
+
+                    <!--                    </div>-->
+
+
+                </div>
+                <div style="  margin: 50px auto;  margin: 50px auto;" class="container">
+                    <h4 style="
+text-align: center;
+    line-height: 30px;
+    color: black;
+    font-family: 'Gilroy-Bold', sans-serif;
+">Why Use
+                        <span style="color: black;
+  font-family: 'Gilroy-Bold', sans-serif;">AI for Question Bank Creation? 
+                        </span>
+                    </h4>
+                    <div class="row bankcreation">
+
+                        <div class="col-md-4 col-12">
+                            <div>
+                                <p>
+                                    <span>
+                                        <img class=" w-100" src="Lexyle/static/src/images/Symbol.png"
+                                             alt="Platform Image"/>
+                                    </span>
+                                    Save Time &amp; Effort
+                                </p>
+                                <p>
+                                    Automate question generation from content, eliminating the need for manual drafting.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div>
+                                <p>
+                                    <span>
+                                        <img class=" w-100" src="Lexyle/static/src/images/Symbol.png"
+                                             alt="Platform Image"/>
+                                    </span>
+                                    Enhance Quality
+                                </p>
+                                <p>
+                                    Generate high-quality questions with AI and refine them further through expert
+                                    review.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div>
+                                <p>
+                                    <span>
+                                        <img class=" w-100" src="Lexyle/static/src/images/Symbol.png"
+                                             alt="Platform Image"/>
+                                    </span>
+                                    Minimize Expert Dependency
+                                </p>
+                                <p>
+                                    Reduce reliance on subject matter experts while maintaining quality through built-in
+                                    verification checks.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div style="margin:50px auto;    max-width: 900px;
+" class="container">
+                    <h4  style="    font-family:   Arial, sans-serif
+
+Arial, sans-serif
+;
+    text-align: center;    font-weight: 700;
+        color: black;
+
+">Question Banks for Cost and Efficiency Savings  
+                    </h4>
+                    <p class="text-aligin-last-custom-resp" style="font-weight: 400;
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: center;
+        font-family:   Arial, sans-serif;
+    color: black;
+    text-align: justify;
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  text-align-last: center;
+
+
+">Use our AI question bank generating tool to save money. For your assessments, come up with a range of questions based
+                        solely on the syllabus. 
+                        Even without a subject matter expert, you can obtain a quick question bank. Automate the process
+                        of creating question banks to save time and money.  
+                    </p>
+                </div>
+                <div style="margin:50px auto;    max-width: 900px;
+" class="container">
+                    <h4 style="    font-family:   Arial, sans-serif
+
+Arial, sans-serif
+;
+    text-align: center;    font-weight: 700;    color: black;
+">Revolutionize Hiring with AI-Driven Test Creation 
+                    </h4>
+                    <p class="text-aligin-last-custom-resp" style="    font-weight: 400;
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: center;
+       font-family:   Arial, sans-serif;    color: black;
+text-align: justify;
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  text-align-last: center;
+
+
+
+;">Effortlessly design recruitment tests tailored to any role or domain with our AI-powered platform. Generate custom,
+                        skill-specific questions aligned with job profiles, candidate experience levels, and learning
+                        objectives. 
+                        <span>Elevate the quality and precision of your assessments with intelligent automation,
+                            reducing manual workload and expert dependency. 
+                        </span>
+
+                    </p>
+
+
+                </div>
+                <div id="doagriai_container" class="doagriai_container container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 style="font-weigh: 500 !important;font-family: 'Gilroy-Medium', sans-serif;   font-size: 1.5rem;">
+                                <span style="font-weight: 900">DOAgri ERP</span>
+                                with Drone Imaging and
+                                <span style="font-weight: 900">AI Advisory</span>
+                            </h4>
+                            <h4 class="mt-2 mb-2" style="font-weight: 600;    font-size: 18px;">Overview:</h4>
+                            <p style="font-weight: 400;color: #292E32;text-align: justify;font-size: 15px;font-family: Arial, sans-serif;">
+                                The Smart Agri ERP system integrates drone technology and OpenAI-powered advisory
+                                intelligence into a unified agricultural management platform. It enables modern farms to
+                                automate crop monitoring, optimize resource usage, and make data-driven decisions for
+                                higher productivity and sustainability. The system combines ERP for operational
+                                efficiency, drones for real-time data capture, and OpenAI for intelligent
+                                recommendations.
+                            </p>
+
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid img-drone-resp" src="/Lexyle/static/src/images/image 232.png"
+                                 style="border-radius: 20px;"/>
+                        </div>
+                    </div>
+                    <div class="row mt-4 keypcompdogargi">
+                        <div class="col-md-4">
+                            <h4 class="mt-2 mb-2" style="font-weight: 600;">Key Components:</h4>
+                            <p style="text-align: justify;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+ ">ERP Integration for End-to-End Farm Management.
+                                <br/>
+                                <span style="     word-break: normal !important;
+  overflow-wrap: break-word;
+  hyphens: auto;">The ERP system serves as the central hub for planning, execution, and monitoring. It includes modules
+                                    for:
+                                </span>
+                            </p>
+
+                            <ul style="text-align: justify;font-size: 15px;font-family: Arial, sans-serif;">
+                                <li>Crop and field planning: Define crop types, sowing schedules, and plot
+                                    segmentation.
+                                </li>
+                                <li>Resource management: Track inputs like seeds, fertilizers, pesticides, and labor.
+                                </li>
+                                <li>Task automation: Create and assign tasks to workers based on AI advisory or manual
+                                    inputs.
+                                </li>
+                                <li>Finance and compliance: Generate reports for subsidies, cost analysis, yield
+                                    estimation, and government compliance.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cardbox">
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img class="img-fluid" src="/Lexyle/static/src/images/display/image-233.png"
+                                             style="border-radius: 20px;"/>
+                                        <h6 class="mt-2">Drone-Based Imaging System</h6>
+                                        <p style="text-align: justify;font-size: 15px;font-family: Arial, sans-serif;">
+                                            Drones equipped with multispectral and thermal cameras fly over farmlands to
+                                            collect
+                                            real-time imagery. They monitor plant health, soil moisture levels, pest
+                                            infestations, and crop growth stages. Flights are scheduled through the ERP
+                                            based on
+                                            crop cycles, weather forecasts, and user-defined intervals.
+                                        </p>
+                                    </div>
+                                    <div class="card-back">
+                                        <img class="img-fluid" src="/Lexyle/static/src/images/display/image-236.png"
+                                             style="border-radius: 20px;"/>
+                                        <h6 class="mt-2">Predictive Analytics and Forecasting</h6>
+                                        <p style="text-align: justify;font-size: 15px;font-family: Arial, sans-serif;">
+                                            AI-driven forecasting models predict yield, resource demand, and pest trends
+                                            based
+                                            on climatic patterns and historical data. These insights help farmers plan
+                                            harvest
+                                            schedules, procure resources in advance, and reduce crop loss.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cardbox">
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img class="img-fluid" src="/Lexyle/static/src/images/display/image-235.png"
+                                             style="border-radius: 20px;"/>
+                                        <h6 class="mt-2">AI Image Analysis and Advisory</h6>
+                                        <p style="text-align: justify;font-size: 15px;font-family: Arial, sans-serif;">
+                                            Captured images are analyzed using OpenAI’s vision models to identify
+                                            anomalies, such
+                                            as nutrient deficiencies, water stress, or disease outbreaks. The system
+                                            learns over
+                                            time from historical data, satellite insights, and local agronomic models to
+                                            generate tailored advisory messages.
+                                        </p>
+                                    </div>
+                                    <div class="card-back">
+                                        <img class="img-fluid" src="/Lexyle/static/src/images/display/image-237.png"
+                                             style="border-radius: 20px;"/>
+                                        <h6 class="mt-2">Mobile and Web Access</h6>
+                                        <p style="text-align: justify;font-size: 15px;font-family: Arial, sans-serif;">
+                                            A farmer-friendly mobile app and a web dashboard provide real-time updates,
+                                            drone
+                                            video feeds, task assignments, and AI recommendations in local languages.
+                                            Push
+                                            notifications alert users to critical actions like disease outbreaks or
+                                            irrigation
+                                            needs.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="getintouchbackground">
+                    <p style="
+                    color: black;
+  font-family: 'Gilroy-Heavy', sans-serif;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 0px;
+    font-size: 25px;
+
+">OUR SOLUTIONS
+                    </p>
+                    <h4 style="font-family: 'Gilroy-Heavy', sans-serif;
+  color: #003384;
+  font-size: 27px;
+  margin: 0px 0px 10px 0px;
+  text-align: center;  ">Get in Touch
+                    </h4>
+                    <p style="
+font-size: 15px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  word-spacing: 3px;
+  text-align: center;
+  color: black;
+  margin-bottom: 0px;
+">To request a demo or want to know more. Contact us directly or fill out the
+                        form and
+                    </p>
+                    <p style="         font-size: 15px;         font-family: Arial, sans-serif;      font-weight: 400;     word-spacing: 3px;     text-align: justify;     text-align: center;     color: black;     margin-bottom: 5px;">
+                        we will get back to you promptly.
+                    </p>
+                </div>
+                <div id="get_in_touch_id" class="  endless_possibilites_get_in_touch container">
+
+                    <div class="row g-2 getintouchgrid">
+                        <div class="col-12 col-md-4">
+                            <p>Lexyle serves as the cornerstone for enhancing learner engagement, optimizing and
+                                expanding workflows,
+                                facilitating content management, integrating seamlessly with your learning technology
+                                ecosystem, and
+                                achieving business objectives both now and in the future.
+                            </p>
+                            <h4>Locate Us</h4>
+                            <ul>
+                                <li>Ground Floor, Pamba Building,</li>
+                                <li>Phase I Technopark,</li>
+                                <li>Trivandrum, Kerala</li>
+                            </ul>
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li>+91 871 460 3391</li>
+                                <li>info@lexyle.in</li>
+
+                            </ul>
+                        </div>
+                        <div id="inputcustom_crm" style="    padding: 0px 25px;"
+                             class="col-12 col-md-8 inputcustom_crm">
+                            <div class="row g-4">
+                                <div class="oe_structure ">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    const input = document.getElementById("myInput");
+                    const dropdown = document.getElementById("customDropdown");
+                    const icon = document.getElementById("toggleIcon");
+
+                    // Function to toggle dropdown visibility
+                    function toggleDropdown() {
+                    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                    }
+
+                    // Show dropdown when clicking on input or icon
+                    input.addEventListener("click", toggleDropdown);
+                    icon.addEventListener("click", toggleDropdown);
+
+                    // Select value from dropdown
+                    dropdown.addEventListener("click", function (e) {
+                    if (e.target.dataset.value) {
+                    input.value = e.target.dataset.value;
+                    dropdown.style.display = "none";
+                    }
+                    });
+
+                    // Hide dropdown when clicking outside
+                    document.addEventListener("click", function (e) {
+                    if (!input.contains(e.target) &amp;&amp; !icon.contains(e.target) &amp;&amp;
+                    !dropdown.contains(e.target)) {
+                    dropdown.style.display = "none";
+                    }
+                    });
+                </script>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const form = document.querySelector(".onlyform");
+
+                    if (!form) return; // Safety check
+
+                    const phoneInputs = form.querySelectorAll("input[type='tel']");
+
+                    phoneInputs.forEach(function (phoneInput) {
+                    // Set input mode to numeric to encourage number-only input on mobile devices
+                    phoneInput.setAttribute("inputmode", "numeric");
+                    // Add required attribute
+                    phoneInput.setAttribute("required", true);
+                    // Set pattern to enforce 10 digits (for HTML5 validation)
+                    phoneInput.setAttribute("pattern", "\\d{10}");
+                    // Optionally, add a placeholder for guidance
+                    phoneInput.setAttribute("placeholder", "");
+
+                    phoneInput.addEventListener("input", function () {
+                    // Remove non-digits
+                    this.value = this.value.replace(/\D/g, '');
+                    // Limit to 10 digits
+                    if (this.value.length > 10) {
+                    this.value = this.value.slice(0, 10);
+                    }
+                    });
+
+                    // Optional: Provide real-time feedback
+                    phoneInput.addEventListener("blur", function () {
+                    const digitsOnly = this.value.replace(/\D/g, '');
+                    if (digitsOnly.length > 0 &amp;&amp; digitsOnly.length &lt; 10) {
+                    this.classList.add("input-error");
+                    // Optionally show a message below the input
+                    let errorMessage = this.nextElementSibling;
+                    if (!errorMessage || !errorMessage.classList.contains("error-message")) {
+                    errorMessage = document.createElement("span");
+                    errorMessage.classList.add("error-message");
+                    errorMessage.style.color = "red";
+                    errorMessage.style.fontSize = "12px";
+                    this.parentNode.insertBefore(errorMessage, this.nextSibling);
+                    }
+                    errorMessage.textContent = "Enter a Valid Phone Number";
+                    } else {
+                    this.classList.remove("input-error");
+                    const errorMessage = this.nextElementSibling;
+                    if (errorMessage &amp;&amp; errorMessage.classList.contains("error-message")) {
+                    errorMessage.textContent = "";
+                    }
+                    }
+                    });
+                    });
+
+                    form.addEventListener("submit", function (e) {
+                    let allValid = true;
+
+                    phoneInputs.forEach(function (input) {
+                    const digitsOnly = input.value.replace(/\D/g, '');
+                    if (digitsOnly.length !== 10) {
+                    allValid = false;
+                    input.classList.add("input-error");
+                    // Ensure error message is visible
+                    let errorMessage = input.nextElementSibling;
+                    if (!errorMessage || !errorMessage.classList.contains("error-message")) {
+                    errorMessage = document.createElement("span");
+                    errorMessage.classList.add("error-message");
+                    errorMessage.style.color = "red";
+                    errorMessage.style.fontSize = "12px";
+                    input.parentNode.insertBefore(errorMessage, input.nextSibling);
+                    }
+                    errorMessage.textContent = "Phone number must be exactly 10 digits.";
+                    } else {
+                    input.classList.remove("input-error");
+                    const errorMessage = input.nextElementSibling;
+                    if (errorMessage &amp;&amp; errorMessage.classList.contains("error-message")) {
+                    errorMessage.textContent = "";
+                    }
+                    }
+                    });
+
+                    if (!allValid) {
+                    e.preventDefault(); // Stop form submission
+                    alert("Please enter exactly 10 digits in the phone number field.");
+                    }
+                    });
+                    });
+                </script>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                    // Select all inputs with class="onlytext"
+                    var textInputs = document.querySelectorAll(".onlytext");
+
+
+                    textInputs.forEach(function (input) {
+                    input.addEventListener("input", function () {
+                    console.log("Input onlytext");
+                    this.value = this.value.replace(/[0-9]/g, '');
+                    });
+                    });
+                    });
+                </script>
+
+
+            </section>
+        </t>
+    </template>
+
+
+</odoo>

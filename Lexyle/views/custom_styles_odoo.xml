@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="brand_promotion_custom"  inherit_id="web.brand_promotion" name="Lexyle">
+<xpath position="attributes" expr="//div[hasclass('o_brand_promotion')]">
+<attribute name="style">display:none;</attribute>
+</xpath>
+    </template>
+<template inherit_id="web.frontend_layout" id="footercopyrightscustom">
+<xpath expr="//div[contains(@class, 'col-sm') and contains(@class, 'text-center') and contains(@class, 'text-sm-start') and contains(@class, 'text-muted')]" position="replace">
+    <div style="display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0px;" class="col-12 col-md-12 col-lg-12 col-xl-12 col-xs-12 text-center text-sm-start text-muted  d-flex flex-column flex-md-row">
+
+        <span class="o_footer_copyright_name me-2">
+            Copyright &amp;copy; <span>Lexyle</span>
+        </span>
+                <span style="  " class="o_footer_copyright_name me-2">
+           <a style="color: rgba(255, 255, 255, 0.7) !important;" href="/termsandconditions">Terms and Conditions</a>
+        </span>
+    </div>
+</xpath>
+</template>
+      <template id="newcontacontactus"  inherit_id="website.contactus">
+<xpath expr="//input[@name='phone']" position="attributes">
+    <attribute name="t-att-style">"background: red !important;"</attribute>
+</xpath>
+
+
+    </template>
+
+<!--    <template id="inherit_s_website_form" name="Inherited Form" inherit_id="website.s_website_form">-->
+<!--        <xpath expr="//input[@name='phone']" position="attributes">-->
+<!--            <attribute name="pattern">^\d+$</attribute>-->
+<!--            <attribute name="title">Only numbers are allowed</attribute>-->
+<!--            <attribute name="inputmode">numeric</attribute>-->
+<!--            <attribute name="required">required</attribute>-->
+<!--        </xpath>-->
+<!--    </template>-->
+<!-- <template id="contactus_thanks_custom" inherit_id="website.contactus_thanks">-->
+<!--        &lt;!&ndash; Example: Change the heading text &ndash;&gt;-->
+<!--&lt;!&ndash;        <xpath expr="//li" position="replace">&ndash;&gt;-->
+<!--&lt;!&ndash;    <xpath expr="//div[@id='wrap']" position="after">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h1 class="text-center text-success">🎉 Thanks for Reaching Out!</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;        </xpath>&ndash;&gt;-->
+<!--&lt;!&ndash;    <xpath expr="//div[@class='col-lg-4']/ul" position="replace"/>&ndash;&gt;-->
+<!--<xpath expr="//div[@id='wrap']" position="inside">-->
+<!--    <p>Test</p>-->
+<!--</xpath>-->
+<!--    </template>-->
+
+
+    <template id="s_website_form_inherit" inherit_id="website.s_website_form" priority="20">
+    <xpath expr="//input[@name='phone']" position="attributes">
+        <attribute name="class">form-control s_website_form_input onlyphone</attribute>
+    </xpath>
+</template>
+
+</odoo>

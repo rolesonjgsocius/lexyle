@@ -1,0 +1,772 @@
+<!--Homepage Form-->
+           <form action="/website/form/" method="post" enctype="multipart/form-data" class="onlyform o_mark_required" data-mark="*" data-pre-fill="true" data-model_name="crm.lead" data-success-mode="redirect" data-success-page="/contactus-thank-you">
+    <div class="s_website_form_rows row s_col_no_bgcolor">
+
+
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_model_required" data-type="char" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oz2p0d17f61m"><span class="s_website_form_label_content">First Name</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><input class="onlytext form-control s_website_form_input" type="text" name="name" required="" placeholder="" id="oz2p0d17f61m" data-fill-with="undefined"/>
+                </div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="char" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oxf4bjvg2l6"><span class="s_website_form_label_content">Last Name</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input onlytext" type="text" name="contact_name" required="1" placeholder="" id="oxf4bjvg2l6" data-fill-with="name"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="tel" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="o8s1zz94udlt"><span class="s_website_form_label_content">Phone Number</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input" type="tel" name="phone" placeholder="" id="o8s1zz94udlt" data-fill-with="phone" required="true" inputmode="numeric" pattern="\d{10}"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="email" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="ox95702yq9rs"><span class="s_website_form_label_content">Email Address</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input" type="email" name="email_from" required="1" data-fill-with="email" id="ox95702yq9rs"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12" data-type="many2one" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="olfukfz5xl7n"><span class="s_website_form_label_content">Country</span></label>
+                <div class="col-sm"><select class="form-select s_website_form_input" name="country_id" id="olfukfz5xl7n">
+                    <option value="3">Afghanistan</option>
+                    <option value="6">Albania</option>
+                    <option value="62">Algeria</option>
+                    <option value="11">American Samoa</option>
+                    <option value="1">Andorra</option>
+                    <option value="8">Angola</option>
+                    <option value="5">Anguilla</option>
+                    <option value="9">Antarctica</option>
+                    <option value="4">Antigua and Barbuda</option>
+                    <option value="10">Argentina</option>
+                    <option value="7">Armenia</option>
+                    <option value="14">Aruba</option>
+                    <option value="13">Australia</option>
+                    <option value="12">Austria</option>
+                    <option value="16">Azerbaijan</option>
+                    <option value="32">Bahamas</option>
+                    <option value="23">Bahrain</option>
+                    <option value="19">Bangladesh</option>
+                    <option value="18">Barbados</option>
+                    <option value="36">Belarus</option>
+                    <option value="20">Belgium</option>
+                    <option value="37">Belize</option>
+                    <option value="25">Benin</option>
+                    <option value="27">Bermuda</option>
+                    <option value="33">Bhutan</option>
+                    <option value="29">Bolivia</option>
+                    <option value="30">Bonaire, Sint Eustatius and Saba</option>
+                    <option value="17">Bosnia and Herzegovina</option>
+                    <option value="35">Botswana</option>
+                    <option value="34">Bouvet Island</option>
+                    <option value="31">Brazil</option>
+                    <option value="105">British Indian Ocean Territory</option>
+                    <option value="28">Brunei Darussalam</option>
+                    <option value="22">Bulgaria</option>
+                    <option value="21">Burkina Faso</option>
+                    <option value="24">Burundi</option>
+                    <option value="116">Cambodia</option>
+                    <option value="47">Cameroon</option>
+                    <option value="38">Canada</option>
+                    <option value="52">Cape Verde</option>
+                    <option value="123">Cayman Islands</option>
+                    <option value="40">Central African Republic</option>
+                    <option value="214">Chad</option>
+                    <option value="46">Chile</option>
+                    <option value="48">China</option>
+                    <option value="54">Christmas Island</option>
+                    <option value="39">Cocos (Keeling) Islands</option>
+                    <option value="49">Colombia</option>
+                    <option value="118">Comoros</option>
+                    <option value="42">Congo</option>
+                    <option value="45">Cook Islands</option>
+                    <option value="50">Costa Rica</option>
+                    <option value="97">Croatia</option>
+                    <option value="51">Cuba</option>
+                    <option value="53">Curaçao</option>
+                    <option value="55">Cyprus</option>
+                    <option value="56">Czech Republic</option>
+                    <option value="44">Côte d'Ivoire</option>
+                    <option value="41">Democratic Republic of the Congo</option>
+                    <option value="59">Denmark</option>
+                    <option value="58">Djibouti</option>
+                    <option value="60">Dominica</option>
+                    <option value="61">Dominican Republic</option>
+                    <option value="63">Ecuador</option>
+                    <option value="65">Egypt</option>
+                    <option value="209">El Salvador</option>
+                    <option value="87">Equatorial Guinea</option>
+                    <option value="67">Eritrea</option>
+                    <option value="64">Estonia</option>
+                    <option value="212">Eswatini</option>
+                    <option value="69">Ethiopia</option>
+                    <option value="72">Falkland Islands</option>
+                    <option value="74">Faroe Islands</option>
+                    <option value="71">Fiji</option>
+                    <option value="70">Finland</option>
+                    <option value="75">France</option>
+                    <option value="79">French Guiana</option>
+                    <option value="174">French Polynesia</option>
+                    <option value="215">French Southern Territories</option>
+                    <option value="76">Gabon</option>
+                    <option value="84">Gambia</option>
+                    <option value="78">Georgia</option>
+                    <option value="57">Germany</option>
+                    <option value="80">Ghana</option>
+                    <option value="81">Gibraltar</option>
+                    <option value="88">Greece</option>
+                    <option value="83">Greenland</option>
+                    <option value="77">Grenada</option>
+                    <option value="86">Guadeloupe</option>
+                    <option value="91">Guam</option>
+                    <option value="90">Guatemala</option>
+                    <option value="82">Guernsey</option>
+                    <option value="85">Guinea</option>
+                    <option value="92">Guinea-Bissau</option>
+                    <option value="93">Guyana</option>
+                    <option value="98">Haiti</option>
+                    <option value="95">Heard Island and McDonald Islands</option>
+                    <option value="236">Holy See (Vatican City State)</option>
+                    <option value="96">Honduras</option>
+                    <option value="94">Hong Kong</option>
+                    <option value="99">Hungary</option>
+                    <option value="108">Iceland</option>
+                    <option value="104" selected="selected">India</option>
+                    <option value="100">Indonesia</option>
+                    <option value="107">Iran</option>
+                    <option value="106">Iraq</option>
+                    <option value="101">Ireland</option>
+                    <option value="103">Isle of Man</option>
+                    <option value="102">Israel</option>
+                    <option value="109">Italy</option>
+                    <option value="111">Jamaica</option>
+                    <option value="113">Japan</option>
+                    <option value="110">Jersey</option>
+                    <option value="112">Jordan</option>
+                    <option value="124">Kazakhstan</option>
+                    <option value="114">Kenya</option>
+                    <option value="117">Kiribati</option>
+                    <option value="250">Kosovo</option>
+                    <option value="122">Kuwait</option>
+                    <option value="115">Kyrgyzstan</option>
+                    <option value="125">Laos</option>
+                    <option value="134">Latvia</option>
+                    <option value="126">Lebanon</option>
+                    <option value="131">Lesotho</option>
+                    <option value="130">Liberia</option>
+                    <option value="135">Libya</option>
+                    <option value="128">Liechtenstein</option>
+                    <option value="132">Lithuania</option>
+                    <option value="133">Luxembourg</option>
+                    <option value="147">Macau</option>
+                    <option value="141">Madagascar</option>
+                    <option value="155">Malawi</option>
+                    <option value="157">Malaysia</option>
+                    <option value="154">Maldives</option>
+                    <option value="144">Mali</option>
+                    <option value="152">Malta</option>
+                    <option value="142">Marshall Islands</option>
+                    <option value="149">Martinique</option>
+                    <option value="150">Mauritania</option>
+                    <option value="153">Mauritius</option>
+                    <option value="246">Mayotte</option>
+                    <option value="156">Mexico</option>
+                    <option value="73">Micronesia</option>
+                    <option value="138">Moldova</option>
+                    <option value="137">Monaco</option>
+                    <option value="146">Mongolia</option>
+                    <option value="139">Montenegro</option>
+                    <option value="151">Montserrat</option>
+                    <option value="136">Morocco</option>
+                    <option value="158">Mozambique</option>
+                    <option value="145">Myanmar</option>
+                    <option value="159">Namibia</option>
+                    <option value="168">Nauru</option>
+                    <option value="167">Nepal</option>
+                    <option value="165">Netherlands</option>
+                    <option value="160">New Caledonia</option>
+                    <option value="170">New Zealand</option>
+                    <option value="164">Nicaragua</option>
+                    <option value="161">Niger</option>
+                    <option value="163">Nigeria</option>
+                    <option value="169">Niue</option>
+                    <option value="162">Norfolk Island</option>
+                    <option value="120">North Korea</option>
+                    <option value="143">North Macedonia</option>
+                    <option value="148">Northern Mariana Islands</option>
+                    <option value="166">Norway</option>
+                    <option value="171">Oman</option>
+                    <option value="177">Pakistan</option>
+                    <option value="184">Palau</option>
+                    <option value="172">Panama</option>
+                    <option value="175">Papua New Guinea</option>
+                    <option value="185">Paraguay</option>
+                    <option value="173">Peru</option>
+                    <option value="176">Philippines</option>
+                    <option value="180">Pitcairn Islands</option>
+                    <option value="178">Poland</option>
+                    <option value="183">Portugal</option>
+                    <option value="181">Puerto Rico</option>
+                    <option value="186">Qatar</option>
+                    <option value="188">Romania</option>
+                    <option value="190">Russian Federation</option>
+                    <option value="191">Rwanda</option>
+                    <option value="187">Réunion</option>
+                    <option value="26">Saint Barthélémy</option>
+                    <option value="198">Saint Helena, Ascension and Tristan da Cunha</option>
+                    <option value="119">Saint Kitts and Nevis</option>
+                    <option value="127">Saint Lucia</option>
+                    <option value="140">Saint Martin (French part)</option>
+                    <option value="179">Saint Pierre and Miquelon</option>
+                    <option value="237">Saint Vincent and the Grenadines</option>
+                    <option value="244">Samoa</option>
+                    <option value="203">San Marino</option>
+                    <option value="192">Saudi Arabia</option>
+                    <option value="204">Senegal</option>
+                    <option value="189">Serbia</option>
+                    <option value="194">Seychelles</option>
+                    <option value="202">Sierra Leone</option>
+                    <option value="197">Singapore</option>
+                    <option value="210">Sint Maarten (Dutch part)</option>
+                    <option value="201">Slovakia</option>
+                    <option value="199">Slovenia</option>
+                    <option value="193">Solomon Islands</option>
+                    <option value="205">Somalia</option>
+                    <option value="247">South Africa</option>
+                    <option value="89">South Georgia and the South Sandwich Islands</option>
+                    <option value="121">South Korea</option>
+                    <option value="207">South Sudan</option>
+                    <option value="68">Spain</option>
+                    <option value="129">Sri Lanka</option>
+                    <option value="182">State of Palestine</option>
+                    <option value="195">Sudan</option>
+                    <option value="206">Suriname</option>
+                    <option value="200">Svalbard and Jan Mayen</option>
+                    <option value="196">Sweden</option>
+                    <option value="43">Switzerland</option>
+                    <option value="211">Syria</option>
+                    <option value="208">São Tomé and Príncipe</option>
+                    <option value="227">Taiwan</option>
+                    <option value="218">Tajikistan</option>
+                    <option value="228">Tanzania</option>
+                    <option value="217">Thailand</option>
+                    <option value="223">Timor-Leste</option>
+                    <option value="216">Togo</option>
+                    <option value="219">Tokelau</option>
+                    <option value="222">Tonga</option>
+                    <option value="225">Trinidad and Tobago</option>
+                    <option value="221">Tunisia</option>
+                    <option value="220">Turkmenistan</option>
+                    <option value="213">Turks and Caicos Islands</option>
+                    <option value="226">Tuvalu</option>
+                    <option value="224">Türkiye</option>
+                    <option value="232">USA Minor Outlying Islands</option>
+                    <option value="230">Uganda</option>
+                    <option value="229">Ukraine</option>
+                    <option value="2">United Arab Emirates</option>
+                    <option value="231">United Kingdom</option>
+                    <option value="233">United States</option>
+                    <option value="234">Uruguay</option>
+                    <option value="235">Uzbekistan</option>
+                    <option value="242">Vanuatu</option>
+                    <option value="238">Venezuela</option>
+                    <option value="241">Vietnam</option>
+                    <option value="239">Virgin Islands (British)</option>
+                    <option value="240">Virgin Islands (USA)</option>
+                    <option value="243">Wallis and Futuna</option>
+                    <option value="66">Western Sahara</option>
+                    <option value="245">Yemen</option>
+                    <option value="248">Zambia</option>
+                    <option value="249">Zimbabwe</option>
+                    <option value="15">Åland Islands</option>
+                </select></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="many2one" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="ojt47lpj76c"><span class="s_website_form_label_content">Subject</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><select class="form-select s_website_form_input" name="Subject" required="1" id="ojt47lpj76c">
+                    <option value="Internship" selected="selected">Internship</option>
+                    <option value="Assessment AI">Assessment AI</option>
+                    <option value="Question Bank AI">Question Bank AI</option>
+                    <option value="Others">Others</option>
+                </select></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12" data-type="text" data-translated-name="Field"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oapxxzca0bdj"><span class="s_website_form_label_content">Message</span></label><div class="col-sm"><textarea class="form-control s_website_form_input" name="description" placeholder="" id="oapxxzca0bdj" rows="3"/></div></div></div>
+        <div class="mb-0 py-2 col-12 s_website_form_submit" data-name="Submit Button">
+            <div style="width: 200px;" class="s_website_form_label"/>
+            <a href="#" role="button" class="btn btn-primary s_website_form_send o_default_snippet_text">Submit</a>
+            <span id="s_website_form_result"/>
+        </div>
+    </div>
+</form>
+
+
+<!--AI page Form-->
+        <form action="/website/form/" method="post" enctype="multipart/form-data" class="onlyform" data-mark="*" data-pre-fill="true" data-model_name="crm.lead" data-success-mode="redirect" data-success-page="/contactus-thank-you">
+    <div class="s_website_form_rows row s_col_no_bgcolor">
+
+
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_model_required" data-type="char" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="ozaamom59gv"><span class="s_website_form_label_content">First Name</span></label>
+                <div class="col-sm"><input class="onlytext form-control s_website_form_input" type="text" name="name" required="" placeholder="" id="ozaamom59gv" data-fill-with="undefined"/>
+                </div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="char" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oxd18ftnyuaf"><span class="s_website_form_label_content">Last Name</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input onlytext" type="text" name="contact_name" required="1" placeholder="" id="oxd18ftnyuaf" data-fill-with="name"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12" data-type="tel" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="or86ruq1en3h"><span class="s_website_form_label_content">Phone Number</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input" type="tel" name="phone" data-fill-with="phone" id="or86ruq1en3h" inputmode="numeric" required="true" pattern="\d{10}" placeholder=""/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="email" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="ofcm90i3h8e"><span class="s_website_form_label_content">Email Address</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input" type="email" name="email_from" required="1" placeholder="" id="ofcm90i3h8e" data-fill-with="email"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="many2one" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="olwht2edfsn"><span class="s_website_form_label_content">Country</span></label>
+                <div class="col-sm"><select class="form-select s_website_form_input" name="country_id" required="1" id="olwht2edfsn">
+                    <option value="3">Afghanistan</option>
+                    <option value="6">Albania</option>
+                    <option value="62">Algeria</option>
+                    <option value="11">American Samoa</option>
+                    <option value="1">Andorra</option>
+                    <option value="8">Angola</option>
+                    <option value="5">Anguilla</option>
+                    <option value="9">Antarctica</option>
+                    <option value="4">Antigua and Barbuda</option>
+                    <option value="10">Argentina</option>
+                    <option value="7">Armenia</option>
+                    <option value="14">Aruba</option>
+                    <option value="13">Australia</option>
+                    <option value="12">Austria</option>
+                    <option value="16">Azerbaijan</option>
+                    <option value="32">Bahamas</option>
+                    <option value="23">Bahrain</option>
+                    <option value="19">Bangladesh</option>
+                    <option value="18">Barbados</option>
+                    <option value="36">Belarus</option>
+                    <option value="20">Belgium</option>
+                    <option value="37">Belize</option>
+                    <option value="25">Benin</option>
+                    <option value="27">Bermuda</option>
+                    <option value="33">Bhutan</option>
+                    <option value="29">Bolivia</option>
+                    <option value="30">Bonaire, Sint Eustatius and Saba</option>
+                    <option value="17">Bosnia and Herzegovina</option>
+                    <option value="35">Botswana</option>
+                    <option value="34">Bouvet Island</option>
+                    <option value="31">Brazil</option>
+                    <option value="105">British Indian Ocean Territory</option>
+                    <option value="28">Brunei Darussalam</option>
+                    <option value="22">Bulgaria</option>
+                    <option value="21">Burkina Faso</option>
+                    <option value="24">Burundi</option>
+                    <option value="116">Cambodia</option>
+                    <option value="47">Cameroon</option>
+                    <option value="38">Canada</option>
+                    <option value="52">Cape Verde</option>
+                    <option value="123">Cayman Islands</option>
+                    <option value="40">Central African Republic</option>
+                    <option value="214">Chad</option>
+                    <option value="46">Chile</option>
+                    <option value="48">China</option>
+                    <option value="54">Christmas Island</option>
+                    <option value="39">Cocos (Keeling) Islands</option>
+                    <option value="49">Colombia</option>
+                    <option value="118">Comoros</option>
+                    <option value="42">Congo</option>
+                    <option value="45">Cook Islands</option>
+                    <option value="50">Costa Rica</option>
+                    <option value="97">Croatia</option>
+                    <option value="51">Cuba</option>
+                    <option value="53">Curaçao</option>
+                    <option value="55">Cyprus</option>
+                    <option value="56">Czech Republic</option>
+                    <option value="44">Côte d'Ivoire</option>
+                    <option value="41">Democratic Republic of the Congo</option>
+                    <option value="59">Denmark</option>
+                    <option value="58">Djibouti</option>
+                    <option value="60">Dominica</option>
+                    <option value="61">Dominican Republic</option>
+                    <option value="63">Ecuador</option>
+                    <option value="65">Egypt</option>
+                    <option value="209">El Salvador</option>
+                    <option value="87">Equatorial Guinea</option>
+                    <option value="67">Eritrea</option>
+                    <option value="64">Estonia</option>
+                    <option value="212">Eswatini</option>
+                    <option value="69">Ethiopia</option>
+                    <option value="72">Falkland Islands</option>
+                    <option value="74">Faroe Islands</option>
+                    <option value="71">Fiji</option>
+                    <option value="70">Finland</option>
+                    <option value="75">France</option>
+                    <option value="79">French Guiana</option>
+                    <option value="174">French Polynesia</option>
+                    <option value="215">French Southern Territories</option>
+                    <option value="76">Gabon</option>
+                    <option value="84">Gambia</option>
+                    <option value="78">Georgia</option>
+                    <option value="57">Germany</option>
+                    <option value="80">Ghana</option>
+                    <option value="81">Gibraltar</option>
+                    <option value="88">Greece</option>
+                    <option value="83">Greenland</option>
+                    <option value="77">Grenada</option>
+                    <option value="86">Guadeloupe</option>
+                    <option value="91">Guam</option>
+                    <option value="90">Guatemala</option>
+                    <option value="82">Guernsey</option>
+                    <option value="85">Guinea</option>
+                    <option value="92">Guinea-Bissau</option>
+                    <option value="93">Guyana</option>
+                    <option value="98">Haiti</option>
+                    <option value="95">Heard Island and McDonald Islands</option>
+                    <option value="236">Holy See (Vatican City State)</option>
+                    <option value="96">Honduras</option>
+                    <option value="94">Hong Kong</option>
+                    <option value="99">Hungary</option>
+                    <option value="108">Iceland</option>
+                    <option value="104" selected="selected">India</option>
+                    <option value="100">Indonesia</option>
+                    <option value="107">Iran</option>
+                    <option value="106">Iraq</option>
+                    <option value="101">Ireland</option>
+                    <option value="103">Isle of Man</option>
+                    <option value="102">Israel</option>
+                    <option value="109">Italy</option>
+                    <option value="111">Jamaica</option>
+                    <option value="113">Japan</option>
+                    <option value="110">Jersey</option>
+                    <option value="112">Jordan</option>
+                    <option value="124">Kazakhstan</option>
+                    <option value="114">Kenya</option>
+                    <option value="117">Kiribati</option>
+                    <option value="250">Kosovo</option>
+                    <option value="122">Kuwait</option>
+                    <option value="115">Kyrgyzstan</option>
+                    <option value="125">Laos</option>
+                    <option value="134">Latvia</option>
+                    <option value="126">Lebanon</option>
+                    <option value="131">Lesotho</option>
+                    <option value="130">Liberia</option>
+                    <option value="135">Libya</option>
+                    <option value="128">Liechtenstein</option>
+                    <option value="132">Lithuania</option>
+                    <option value="133">Luxembourg</option>
+                    <option value="147">Macau</option>
+                    <option value="141">Madagascar</option>
+                    <option value="155">Malawi</option>
+                    <option value="157">Malaysia</option>
+                    <option value="154">Maldives</option>
+                    <option value="144">Mali</option>
+                    <option value="152">Malta</option>
+                    <option value="142">Marshall Islands</option>
+                    <option value="149">Martinique</option>
+                    <option value="150">Mauritania</option>
+                    <option value="153">Mauritius</option>
+                    <option value="246">Mayotte</option>
+                    <option value="156">Mexico</option>
+                    <option value="73">Micronesia</option>
+                    <option value="138">Moldova</option>
+                    <option value="137">Monaco</option>
+                    <option value="146">Mongolia</option>
+                    <option value="139">Montenegro</option>
+                    <option value="151">Montserrat</option>
+                    <option value="136">Morocco</option>
+                    <option value="158">Mozambique</option>
+                    <option value="145">Myanmar</option>
+                    <option value="159">Namibia</option>
+                    <option value="168">Nauru</option>
+                    <option value="167">Nepal</option>
+                    <option value="165">Netherlands</option>
+                    <option value="160">New Caledonia</option>
+                    <option value="170">New Zealand</option>
+                    <option value="164">Nicaragua</option>
+                    <option value="161">Niger</option>
+                    <option value="163">Nigeria</option>
+                    <option value="169">Niue</option>
+                    <option value="162">Norfolk Island</option>
+                    <option value="120">North Korea</option>
+                    <option value="143">North Macedonia</option>
+                    <option value="148">Northern Mariana Islands</option>
+                    <option value="166">Norway</option>
+                    <option value="171">Oman</option>
+                    <option value="177">Pakistan</option>
+                    <option value="184">Palau</option>
+                    <option value="172">Panama</option>
+                    <option value="175">Papua New Guinea</option>
+                    <option value="185">Paraguay</option>
+                    <option value="173">Peru</option>
+                    <option value="176">Philippines</option>
+                    <option value="180">Pitcairn Islands</option>
+                    <option value="178">Poland</option>
+                    <option value="183">Portugal</option>
+                    <option value="181">Puerto Rico</option>
+                    <option value="186">Qatar</option>
+                    <option value="188">Romania</option>
+                    <option value="190">Russian Federation</option>
+                    <option value="191">Rwanda</option>
+                    <option value="187">Réunion</option>
+                    <option value="26">Saint Barthélémy</option>
+                    <option value="198">Saint Helena, Ascension and Tristan da Cunha</option>
+                    <option value="119">Saint Kitts and Nevis</option>
+                    <option value="127">Saint Lucia</option>
+                    <option value="140">Saint Martin (French part)</option>
+                    <option value="179">Saint Pierre and Miquelon</option>
+                    <option value="237">Saint Vincent and the Grenadines</option>
+                    <option value="244">Samoa</option>
+                    <option value="203">San Marino</option>
+                    <option value="192">Saudi Arabia</option>
+                    <option value="204">Senegal</option>
+                    <option value="189">Serbia</option>
+                    <option value="194">Seychelles</option>
+                    <option value="202">Sierra Leone</option>
+                    <option value="197">Singapore</option>
+                    <option value="210">Sint Maarten (Dutch part)</option>
+                    <option value="201">Slovakia</option>
+                    <option value="199">Slovenia</option>
+                    <option value="193">Solomon Islands</option>
+                    <option value="205">Somalia</option>
+                    <option value="247">South Africa</option>
+                    <option value="89">South Georgia and the South Sandwich Islands</option>
+                    <option value="121">South Korea</option>
+                    <option value="207">South Sudan</option>
+                    <option value="68">Spain</option>
+                    <option value="129">Sri Lanka</option>
+                    <option value="182">State of Palestine</option>
+                    <option value="195">Sudan</option>
+                    <option value="206">Suriname</option>
+                    <option value="200">Svalbard and Jan Mayen</option>
+                    <option value="196">Sweden</option>
+                    <option value="43">Switzerland</option>
+                    <option value="211">Syria</option>
+                    <option value="208">São Tomé and Príncipe</option>
+                    <option value="227">Taiwan</option>
+                    <option value="218">Tajikistan</option>
+                    <option value="228">Tanzania</option>
+                    <option value="217">Thailand</option>
+                    <option value="223">Timor-Leste</option>
+                    <option value="216">Togo</option>
+                    <option value="219">Tokelau</option>
+                    <option value="222">Tonga</option>
+                    <option value="225">Trinidad and Tobago</option>
+                    <option value="221">Tunisia</option>
+                    <option value="220">Turkmenistan</option>
+                    <option value="213">Turks and Caicos Islands</option>
+                    <option value="226">Tuvalu</option>
+                    <option value="224">Türkiye</option>
+                    <option value="232">USA Minor Outlying Islands</option>
+                    <option value="230">Uganda</option>
+                    <option value="229">Ukraine</option>
+                    <option value="2">United Arab Emirates</option>
+                    <option value="231">United Kingdom</option>
+                    <option value="233">United States</option>
+                    <option value="234">Uruguay</option>
+                    <option value="235">Uzbekistan</option>
+                    <option value="242">Vanuatu</option>
+                    <option value="238">Venezuela</option>
+                    <option value="241">Vietnam</option>
+                    <option value="239">Virgin Islands (British)</option>
+                    <option value="240">Virgin Islands (USA)</option>
+                    <option value="243">Wallis and Futuna</option>
+                    <option value="66">Western Sahara</option>
+                    <option value="245">Yemen</option>
+                    <option value="248">Zambia</option>
+                    <option value="249">Zimbabwe</option>
+                    <option value="15">Åland Islands</option>
+                </select></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="many2one" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="o5j5m6vxw5gs"><span class="s_website_form_label_content">Subject</span></label>
+                <div class="col-sm"><select class="form-select s_website_form_input" name="Subject" id="o5j5m6vxw5gs" required="">
+                    <option value="Internship" selected="selected">Internship</option>
+                    <option value="Assessment AI">Assessment AI</option>
+                    <option value="Question Bank AI">Question Bank AI</option>
+                    <option value="Others">Others</option>
+                </select></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="text" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="ox2sbmo2wrg"><span class="s_website_form_label_content">Message</span></label>
+                <div class="col-sm"><textarea class="form-control s_website_form_input" name="description" required="1" placeholder="" id="ox2sbmo2wrg" rows="3"/></div>
+            </div>
+        </div>
+        <div class="mb-0 py-2 col-12 s_website_form_submit" data-name="Submit Button">
+            <div style="width: 200px;" class="s_website_form_label"/>
+            <a href="#" role="button" class="btn btn-primary s_website_form_send o_default_snippet_text">Submit</a>
+            <span id="s_website_form_result"/>
+        </div>
+    </div>
+</form>
+
+
+<!--Internship Form-->
+ <form action="/website/form/" method="post" enctype="multipart/form-data" class="onlyform o_mark_required" data-mark="*" data-pre-fill="true" data-model_name="crm.lead" data-success-mode="redirect" data-success-page="/contactus-thank-you" novalidate="true">
+    <div class="s_website_form_rows row s_col_no_bgcolor">
+
+
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_model_required" data-type="char" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="o4kfdfrhjpjy"><span class="s_website_form_label_content">Name</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><input class="onlytext form-control s_website_form_input" type="text" name="name" required="" id="o4kfdfrhjpjy"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="email" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="od6nzokv6m8"><span class="s_website_form_label_content">Email</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input" type="email" name="email_from" required="1" placeholder="" id="od6nzokv6m8" data-fill-with="email"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="tel" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oq7bepuw2kjb"><span class="s_website_form_label_content">Phone Number</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input" type="tel" name="phone" required="true" placeholder="" id="oq7bepuw2kjb" data-fill-with="phone" inputmode="numeric" pattern="\d{10}"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="tel" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="opauq5hz3x"><span class="s_website_form_label_content">Whatsapp Number</span><span class="s_website_form_mark">    *</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input" type="tel" name="Whatsapp Number" required="true" placeholder="" id="opauq5hz3x" data-fill-with="undefined" inputmode="numeric" pattern="\d{10}"/>
+                </div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="char" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="ofvpl93okp15"><span class="s_website_form_label_content">Address</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input" type="text" name="contact_name" required="1" placeholder="" id="ofvpl93okp15" data-fill-with="name"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="char" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="ox4m0u9j857"><span class="s_website_form_label_content ">City</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><input class="form-control onlytext  s_website_form_input" type="text" name="partner_name" required="1" placeholder="" id="ox4m0u9j857" data-fill-with="commercial_company_name"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom" data-type="char" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="ooq67h43mm1n"><span class="s_website_form_label_content">State</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input onlytext" type="text" name="State" id="ooq67h43mm1n"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="many2one" data-translated-name="Field"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="ovy459nmmgl"><span class="s_website_form_label_content">Country</span><span class="s_website_form_mark">          *</span></label><div class="col-sm"><select class="form-select s_website_form_input" style="" name="country_id" required="1" id="ovy459nmmgl"><option value="3">Afghanistan</option><option value="6">Albania</option><option value="62">Algeria</option><option value="11">American Samoa</option><option value="1">Andorra</option><option value="8">Angola</option><option value="5">Anguilla</option><option value="9">Antarctica</option><option value="4">Antigua and Barbuda</option><option value="10">Argentina</option><option value="7">Armenia</option><option value="14">Aruba</option><option value="13">Australia</option><option value="12">Austria</option><option value="16">Azerbaijan</option><option value="32">Bahamas</option><option value="23">Bahrain</option><option value="19">Bangladesh</option><option value="18">Barbados</option><option value="36">Belarus</option><option value="20">Belgium</option><option value="37">Belize</option><option value="25">Benin</option><option value="27">Bermuda</option><option value="33">Bhutan</option><option value="29">Bolivia</option><option value="30">Bonaire, Sint Eustatius and Saba</option><option value="17">Bosnia and Herzegovina</option><option value="35">Botswana</option><option value="34">Bouvet Island</option><option value="31">Brazil</option><option value="105">British Indian Ocean Territory</option><option value="28">Brunei Darussalam</option><option value="22">Bulgaria</option><option value="21">Burkina Faso</option><option value="24">Burundi</option><option value="116">Cambodia</option><option value="47">Cameroon</option><option value="38">Canada</option><option value="52">Cape Verde</option><option value="123">Cayman Islands</option><option value="40">Central African Republic</option><option value="214">Chad</option><option value="46">Chile</option><option value="48">China</option><option value="54">Christmas Island</option><option value="39">Cocos (Keeling) Islands</option><option value="49">Colombia</option><option value="118">Comoros</option><option value="42">Congo</option><option value="45">Cook Islands</option><option value="50">Costa Rica</option><option value="97">Croatia</option><option value="51">Cuba</option><option value="53">Curaçao</option><option value="55">Cyprus</option><option value="56">Czech Republic</option><option value="44">Côte d'Ivoire</option><option value="41">Democratic Republic of the Congo</option><option value="59">Denmark</option><option value="58">Djibouti</option><option value="60">Dominica</option><option value="61">Dominican Republic</option><option value="63">Ecuador</option><option value="65">Egypt</option><option value="209">El Salvador</option><option value="87">Equatorial Guinea</option><option value="67">Eritrea</option><option value="64">Estonia</option><option value="212">Eswatini</option><option value="69">Ethiopia</option><option value="72">Falkland Islands</option><option value="74">Faroe Islands</option><option value="71">Fiji</option><option value="70">Finland</option><option value="75">France</option><option value="79">French Guiana</option><option value="174">French Polynesia</option><option value="215">French Southern Territories</option><option value="76">Gabon</option><option value="84">Gambia</option><option value="78">Georgia</option><option value="57">Germany</option><option value="80">Ghana</option><option value="81">Gibraltar</option><option value="88">Greece</option><option value="83">Greenland</option><option value="77">Grenada</option><option value="86">Guadeloupe</option><option value="91">Guam</option><option value="90">Guatemala</option><option value="82">Guernsey</option><option value="85">Guinea</option><option value="92">Guinea-Bissau</option><option value="93">Guyana</option><option value="98">Haiti</option><option value="95">Heard Island and McDonald Islands</option><option value="236">Holy See (Vatican City State)</option><option value="96">Honduras</option><option value="94">Hong Kong</option><option value="99">Hungary</option><option value="108">Iceland</option><option value="104" selected="selected">India</option><option value="100">Indonesia</option><option value="107">Iran</option><option value="106">Iraq</option><option value="101">Ireland</option><option value="103">Isle of Man</option><option value="102">Israel</option><option value="109">Italy</option><option value="111">Jamaica</option><option value="113">Japan</option><option value="110">Jersey</option><option value="112">Jordan</option><option value="124">Kazakhstan</option><option value="114">Kenya</option><option value="117">Kiribati</option><option value="250">Kosovo</option><option value="122">Kuwait</option><option value="115">Kyrgyzstan</option><option value="125">Laos</option><option value="134">Latvia</option><option value="126">Lebanon</option><option value="131">Lesotho</option><option value="130">Liberia</option><option value="135">Libya</option><option value="128">Liechtenstein</option><option value="132">Lithuania</option><option value="133">Luxembourg</option><option value="147">Macau</option><option value="141">Madagascar</option><option value="155">Malawi</option><option value="157">Malaysia</option><option value="154">Maldives</option><option value="144">Mali</option><option value="152">Malta</option><option value="142">Marshall Islands</option><option value="149">Martinique</option><option value="150">Mauritania</option><option value="153">Mauritius</option><option value="246">Mayotte</option><option value="156">Mexico</option><option value="73">Micronesia</option><option value="138">Moldova</option><option value="137">Monaco</option><option value="146">Mongolia</option><option value="139">Montenegro</option><option value="151">Montserrat</option><option value="136">Morocco</option><option value="158">Mozambique</option><option value="145">Myanmar</option><option value="159">Namibia</option><option value="168">Nauru</option><option value="167">Nepal</option><option value="165">Netherlands</option><option value="160">New Caledonia</option><option value="170">New Zealand</option><option value="164">Nicaragua</option><option value="161">Niger</option><option value="163">Nigeria</option><option value="169">Niue</option><option value="162">Norfolk Island</option><option value="120">North Korea</option><option value="143">North Macedonia</option><option value="148">Northern Mariana Islands</option><option value="166">Norway</option><option value="171">Oman</option><option value="177">Pakistan</option><option value="184">Palau</option><option value="172">Panama</option><option value="175">Papua New Guinea</option><option value="185">Paraguay</option><option value="173">Peru</option><option value="176">Philippines</option><option value="180">Pitcairn Islands</option><option value="178">Poland</option><option value="183">Portugal</option><option value="181">Puerto Rico</option><option value="186">Qatar</option><option value="188">Romania</option><option value="190">Russian Federation</option><option value="191">Rwanda</option><option value="187">Réunion</option><option value="26">Saint Barthélémy</option><option value="198">Saint Helena, Ascension and Tristan da Cunha</option><option value="119">Saint Kitts and Nevis</option><option value="127">Saint Lucia</option><option value="140">Saint Martin (French part)</option><option value="179">Saint Pierre and Miquelon</option><option value="237">Saint Vincent and the Grenadines</option><option value="244">Samoa</option><option value="203">San Marino</option><option value="192">Saudi Arabia</option><option value="204">Senegal</option><option value="189">Serbia</option><option value="194">Seychelles</option><option value="202">Sierra Leone</option><option value="197">Singapore</option><option value="210">Sint Maarten (Dutch part)</option><option value="201">Slovakia</option><option value="199">Slovenia</option><option value="193">Solomon Islands</option><option value="205">Somalia</option><option value="247">South Africa</option><option value="89">South Georgia and the South Sandwich Islands</option><option value="121">South Korea</option><option value="207">South Sudan</option><option value="68">Spain</option><option value="129">Sri Lanka</option><option value="182">State of Palestine</option><option value="195">Sudan</option><option value="206">Suriname</option><option value="200">Svalbard and Jan Mayen</option><option value="196">Sweden</option><option value="43">Switzerland</option><option value="211">Syria</option><option value="208">São Tomé and Príncipe</option><option value="227">Taiwan</option><option value="218">Tajikistan</option><option value="228">Tanzania</option><option value="217">Thailand</option><option value="223">Timor-Leste</option><option value="216">Togo</option><option value="219">Tokelau</option><option value="222">Tonga</option><option value="225">Trinidad and Tobago</option><option value="221">Tunisia</option><option value="220">Turkmenistan</option><option value="213">Turks and Caicos Islands</option><option value="226">Tuvalu</option><option value="224">Türkiye</option><option value="232">USA Minor Outlying Islands</option><option value="230">Uganda</option><option value="229">Ukraine</option><option value="2">United Arab Emirates</option><option value="231">United Kingdom</option><option value="233">United States</option><option value="234">Uruguay</option><option value="235">Uzbekistan</option><option value="242">Vanuatu</option><option value="238">Venezuela</option><option value="241">Vietnam</option><option value="239">Virgin Islands (British)</option><option value="240">Virgin Islands (USA)</option><option value="243">Wallis and Futuna</option><option value="66">Western Sahara</option><option value="245">Yemen</option><option value="248">Zambia</option><option value="249">Zimbabwe</option><option value="15">Åland Islands</option></select></div></div></div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="many2one" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="os8rch58rqng"><span class="s_website_form_label_content">Qualification</span><span class="s_website_form_mark">                          *</span></label>
+                <div class="col-sm"><select class="form-select s_website_form_input" name="Qualification" required="1" id="os8rch58rqng">
+                    <option value="UG" selected="selected">UG</option>
+                    <option value="PG">PG</option>
+                    <option value="Others">Others</option>
+                </select></div>
+            </div>
+        </div>
+        <div data-visibility-dependency="Qualification" data-visibility-condition="Others" data-visibility-comparator="contains" data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_field_hidden_if d-none" data-type="char" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="o2zbra8mwoqq"><span class="s_website_form_label_content"/></label>
+                <div class="col-sm"><input class="form-control s_website_form_input" type="text" name="" placeholder="Mention" id="o2zbra8mwoqq" data-fill-with="undefined"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom" data-type="char" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oz2abr69p8w"><span class="s_website_form_label_content">University</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input" type="text" name="University" placeholder="" id="oz2abr69p8w" data-fill-with="undefined"/></div>
+            </div>
+        </div>
+        <div class="mb-0 py-2 col-12 s_website_form_submit" data-name="Submit Button">
+            <div style="width: 200px;" class="s_website_form_label"/>
+            <a href="#" role="button" class="btn btn-primary s_website_form_send o_default_snippet_text">Submit</a>
+            <span id="s_website_form_result"/>
+        </div>
+    </div>
+</form>
+
+<!--career form-->
+          <form action="/website/form/" method="post" enctype="multipart/form-data" class="onlyform o_mark_required" data-mark="*" data-pre-fill="true" data-model_name="crm.lead" data-success-mode="redirect" data-success-page="/contactus-thank-you">
+    <div class="s_website_form_rows row s_col_no_bgcolor">
+
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_model_required" data-type="char" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oja6kj45xskj"><span class="s_website_form_label_content">Name</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><input class="onlytext form-control s_website_form_input" type="text" name="name" required="" placeholder="" id="oja6kj45xskj" data-fill-with="undefined"/>
+                </div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12" data-type="tel" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="or86ruq1en3h"><span class="s_website_form_label_content">Phone Number</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input" type="tel" name="phone" data-fill-with="phone" id="or86ruq1en3h"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="email" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="opb36dpnq7lb"><span class="s_website_form_label_content">Email</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input" type="email" name="email_from" required="1" placeholder="" id="opb36dpnq7lb" data-fill-with="email"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="char" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oryxnyiismpb"><span class="s_website_form_label_content">Address</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input" type="text" name="contact_name" required="1" placeholder="" id="oryxnyiismpb" data-fill-with="name"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="char" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="o3w8of67g9e"><span class="s_website_form_label_content">Years of Experience</span><span class="s_website_form_mark">   *</span></label>
+                <div class="col-sm"><input class="onlyexperience form-control s_website_form_input" type="text" name="Years of Experience" required="1" placeholder="" id="o3w8of67g9e" data-fill-with="undefined"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="char" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="ogmcppn6fy0j"><span class="s_website_form_label_content">Apply For</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><input class="form-control s_website_form_input onlytext" type="text" name="partner_name" required="1" placeholder="" id="ogmcppn6fy0j" data-fill-with="commercial_company_name"/></div>
+            </div>
+        </div>
+        <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="binary" data-translated-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-sm-auto s_website_form_label" style="width: 200px" for="o9cg8jm86v5k"><span class="s_website_form_label_content">Upload Your Resume</span><span class="s_website_form_mark"> *</span></label>
+                <div class="col-sm"><input type="file" class="form-control s_website_form_input" name="Upload Your Resume" id="o9cg8jm86v5k" data-max-files-number="1" data-max-file-size="1" data-fill-with="undefined" required=""/></div>
+            </div>
+        </div>
+        <div class="mb-0 py-2 col-12 s_website_form_submit" data-name="Submit Button">
+            <div style="width: 200px;" class="s_website_form_label"/>
+            <a href="#" role="button" class="btn btn-primary s_website_form_send o_default_snippet_text">Submit</a>
+            <span id="s_website_form_result"/>
+        </div>
+    </div>
+</form>
+
+<!-- Terms and condtions-->
+
+           <div class="oe_structure">
+    <section class="s_text_block pt40 pb40 o_colored_level o_half_screen_height" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+            <p style="text-align: justify;">Welcome to Lexyle.in. These Terms and Conditions ("Terms") govern your use
+                of our website and services, including participation in our paid internship programs. By accessing or
+                using Lexyle.in, you agree to these Terms. If you do not agree, please do not use our services.</p><p style="  margin-bottom: 5px;"><strong>1. Eligibility</strong></p>
+            <p style="text-align: justify;"><span class="base-fs">Applicants must be at least 18 years of age. Accurate, complete, and current​ information must be provided during registration and throughout the duration of the internship.</span></p><p style="margin-bottom: 5px; text-align: justify;"><strong>2. Internship Fees</strong></p>
+            <p style="text-align: justify;">All internship programs offered by Lexyle are fee-based. Fee amounts vary
+                depending on the program and will be clearly communicated prior to enrollment. Fees must be paid
+                either:In full before the program begins, or Through EMI (Equated Monthly Installments), subject to
+                approval and eligibility. Payment, once initiated, is non-refundable under any circumstances unless the
+                program is cancelled by Lexyle.</p><p style="  margin-bottom: 5px;"><strong>3. Program Details and Delivery</strong></p>
+            <p style="text-align: justify;">Lexyle itself designs and delivers the internship programs—no third-party
+                host companies are involved. Program structure, duration, modules, and deliverables will be shared with
+                the participant upon successful enrollment. Internships are designed for learning and skill development
+                and should not be mistaken for employment or guaranteed job placement.</p><p style="  margin-bottom: 5px;"><strong>4. Placement Assistance</strong></p>
+            <p style="text-align: justify;">Lexyle provides placement assistance upon successful completion of the
+                internship program. Assistance may include resume building, mock interviews, job referrals, and access to
+                career guidance. Placement is not guaranteed. Success depends on individual performance, effort, and
+                external factors beyond Lexyle’s control.</p><p style="margin-bottom: 5px;"><strong>5. Refunds and Cancellations</strong></p>
+            <p style="text-align: justify;">No refunds will be issued once the payment is made, including EMI agreements, unless the program is
+                cancelled by Lexyle. Participants wishing to discontinue a program midway will not be eligible for a
+                refund or certificate. In the rare case that a program is cancelled by Lexyle, a full or partial refund
+                will be processed depending on the circumstances.</p><p style="margin-bottom: 5px;"><strong>6. Code of Conduct</strong></p>
+            <p style="text-align: justify;">Participants must maintain professional behavior and follow the guidelines provided by Lexyle throughout
+                the internship. Any misconduct, plagiarism, or unethical behavior may result in dismissal from the
+                program without refund or certification.</p><p style="margin-bottom: 5px;"><strong>7. Certification</strong></p>
+            <p style="text-align: justify;">A certificate of completion will be awarded only upon:Successful completion
+                of all modules and assignments. Meeting attendance and performance criteria set by Lexyle. Incomplete
+                participation or failing to meet standards may lead to disqualification from certification.</p><p style="margin-bottom: 5px;"><strong>8. Intellectual Property</strong></p>
+            <p style="text-align: justify;">All course materials, content, and resources provided during the internship remain the intellectual
+                property of Lexyle. Participants may not reuse, reproduce, or distribute materials without written
+                consent.</p><p style="margin-bottom: 5px;"><strong>9. Limitation of Liability</strong></p>
+            <p style="text-align: justify;">Lexyle is not liable for any indirect, incidental, or consequential damages
+                resulting from the use of its services. While we strive to ensure high-quality training, Lexyle does not
+                guarantee any particular career outcome or salary post-internship.</p><p style="margin-bottom: 5px;"><strong>10. Privacy and Data Use</strong></p>
+            <p style="text-align: justify;">All personal data submitted is handled in accordance with our Privacy
+                Policy. By using our services, you consent to the collection and appropriate use of your information.</p><p style="margin-bottom: 5px;"><strong>11. Modification of Terms</strong></p>
+            <p style="text-align: justify;">Lexyle reserves the right to change or update these Terms at any time
+                without prior notice. Continued use of the platform after any updates constitutes acceptance of the
+                revised Terms.</p><p style="margin-bottom: 5px;"><strong>12. Governing Law</strong></p>
+            <p style="text-align: justify;">These Terms shall be governed and interpreted in accordance with the laws of
+                India.</p></div>
+    </section>
+</div>

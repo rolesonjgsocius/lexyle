@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="Lexyle_HOME" name="Lexyle">
+        <t t-call="website.layout">
+            <t t-call="Lexyle.display_popup"/>
+
+            <section>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
+                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap"
+                      rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;display=swap" rel="stylesheet"/>
+                <style>
+.o_mark_required .col-sm {
+  flex: 1 0 0% !important;
+}
+
+                        @media (max-width: 576px){
+                    .endless_possibilites_get_in_touch{
+                      width: 93% !important;
+                    }
+
+                    }
+                    @media (min-width: 576px){
+
+                        #splash_popup .modal-dialog {
+                            max-width: 90% !important;
+                            margin: 30px auto !important;
+                         }
+                    }
+                    
+                    
+                    .aboutus{
+                      margin-top: 50px;
+                    }
+         #get_in_touch_id {
+  scroll-margin-top: 100px;
+  scroll-behavior: smooth;
+}
+                    .s_website_form_submit  .s_website_form_label{
+    display: none !important;
+
+                    }
+
+                     .s_website_form_mark{
+                      color: red !important;
+                    }
+                    @media(min-width:992px){
+                    #aboutus_image_resp{
+
+                    display: flex;
+  justify-content: center;
+                    }
+                     #paddingrespaboutus{
+                        padding-top: 0px !important;
+                      padding-left: 20px !important;
+                    }
+                    .content_features{
+            display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px 20px;
+                    }
+                    .globeiamgehome{
+                    height: 225px !important;
+  width: 225px !important;
+  left: -15% !important;
+  border-radius: 20px;
+  background: #0068D933;
+  top: 60px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+                    }
+                    .bannerhomeiamge{
+                    width:100% !important
+                    }
+
+                    .aboutus > div h4:nth-of-type(2) span{
+                    white-space: nowrap;
+                    }
+                        .inputcustom_crm form > div {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+}
+                    .Features_homepage > div > div:nth-of-type(2){
+<!--                 height: 500px;-->
+<!--    overflow-y: scroll;-->
+<!--    overflow-x: hidden;-->
+                    }
+                    .respwhitespace{
+                         white-space: nowrap;
+                    }
+                    }
+                    @media(max-width:992px) {
+
+                    .LinksDynamic a{
+                        padding-left: 0px !important;
+                    }
+
+                      .hfourresmob {
+    margin-top: 20px !important;
+  }
+                    .aboutus{
+                      margin-top: 25px !important;
+                    }
+                    .aboutusimagestylresp{
+                    position: static !important;
+                      margin: auto;
+                    }
+
+                    .aboutus > div h4:nth-of-type(1){
+                      margin-top: 25px;
+                    }
+                     .getintouchgrid{
+                              padding: 0px !important;
+                            }
+                      .content_features{
+                    display: grid;
+  grid-template-columns: 1fr ;
+  gap: 10px;
+                    }
+                    #paddingrespaboutus{
+                      padding-top: 0px !important;
+                    }
+                    .LinksDynamic{
+                      margin-top: 20px !important;
+                    }
+                    #aboutus_image_resp{
+    min-height: 165px;
+                      display: flex;
+                    }
+                    #aboutus_image_resp img{
+                    height: 100%;
+                      width: auto !important;
+                        max-height: 235px !important;
+                        min-height: 150px  !important;
+                    }
+                     .globeiamgehome{
+height: 130px !important;
+  width: 130px !important;
+  left: 2% !important;
+  border-radius: 20px;
+  background: #0068D933;
+  top: 10px !important;
+                    }
+                    .second_banner{
+                    height: 100% !important;
+                    margin: 50px 0px;
+  padding: 25px 0px;
+
+                    }
+                    .bannerhomeiamge{
+                width: 90% !important;
+    max-width: 270px;
+    min-width: 200px !important;
+                    }
+
+
+                    .second_banner p {
+                       font-family: Arial, sans-serif;
+
+  font-size: 15px;
+    margin: 15px 15px;
+                    }
+                    .endless_possibilites_grid{
+                    grid-template-columns: 1fr !important;
+                    }
+                     .banner{
+<!--                        margin-top: 100px !important;-->
+                        }
+                        .banner > div{
+                         row-gap: 25px;
+                        }
+                    .banner > div > div:nth-of-type(2){
+row-gap: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+                    }
+<!--                    .banner > div > div:nth-of-type(2) > div {-->
+<!--                    position:static !important;-->
+<!--                    }-->
+                    }
+                    .getintouchgrid{
+                    background: #F9F9F9;
+  padding: 30px;
+  border-radius: 25px;
+  margin-top: 50px;
+                          font-family: Arial, sans-serif;
+
+                    }
+                    .endless_possibilites_get_in_touch{
+    margin: 50px auto;
+
+                    }
+                    .getintouchgrid p {font-size: 15px;
+                        text-align: justify;
+
+  font-weight: 400;  }
+                    .getintouchgrid h4{
+                    margin-top: 35px;
+  font-size: 20px;
+  font-weight: 700;
+                    }
+                    .getintouchgrid ul {
+                      padding-left: 0px;
+                    }
+                    .getintouchgrid li {
+                     list-style: none;
+                    font-size: 15px;
+  font-weight: 400;
+                    margin-bottom: 3px;
+                    }
+                    .getintouchgrid > div:nth-of-type(1){
+                 background: #0068D9;
+  color: white;
+  padding: 25px;
+  border-radius: 25px;
+                    }
+                    .groupofinputs_getintouch{
+                    padding: 25px;
+                    }
+                    .groupofinputs_getintouch >div {
+flex-direction: column;
+                    }
+                    .groupofinputs_getintouch input {
+border-radius: 5px;
+  border: 1px solid #0068D9;
+  padding: 10px;
+                    }
+                    .groupofinputs_getintouch button {
+                background: #0068D9;
+  color: white;
+  max-width: 175px;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+                    font-weight: 700;
+      font-family: Arial, sans-serif;
+
+  font-size: 15px;
+                    }
+
+                    .banner > div:nth-of-type(1) >div:nth-of-type(2) >div > img:nth-of-type(1){
+                    height: 170px;
+                    width: auto !important;
+                    }
+                    .banner > div:nth-of-type(1) >div:nth-of-type(2) > img:nth-of-type(2){
+                    max-height: 500px !important;
+                    width: auto !important;
+                    }
+                    .second_banner{
+
+                    background: url('/Lexyle/static/src/images/image(1).png') center/cover no-repeat;
+                    height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+                      margin: 50px 0px;
+                    }
+
+     @font-face {
+                    font-family: 'Gilroy-Bold';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Bold.ttf') format('truetype');
+
+                    }
+
+                    @font-face {
+                    font-family: 'Gilroy-Light';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Light.ttf') format('truetype');
+                    }
+
+                    @font-face {
+                    font-family: Arial, sans-serif;
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Medium.ttf') format('truetype');
+                    }
+                         @font-face {
+                    font-family: 'Gilroy-Regular';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Regular.ttf') format('truetype');
+                    }
+
+                    @font-face {
+                    font-family: 'Gilroy-Heavy';
+                    src: url('Lexyle/static/src/fonts/gilroy-bold/Gilroy-Heavy.ttf') format('truetype');
+
+                    }
+
+                    .waveofgrowth >div:nth-of-type(1) >div:nth-of-type(1) img {
+                    height: 275px;
+                    width: auto !important;
+                    }
+                    .waveofgrowth >div:nth-of-type(1) >div:nth-of-type(1) {
+                    display: flex;
+                    justify-content: center;
+                    }
+.waveofgrowth{
+margin-bottom: 50px;
+                    }
+
+                    .endless_possibilites_grid >  div {
+border-top:3px solid #0068D9;
+                    border-bottom:3px solid #0068D9;
+                    padding:10px;
+                    display: flex;
+  flex-direction: column;
+  justify-content: center;
+                    margin-bottom: 20px;
+                    }
+                    .endless_possibilites_grid{
+                    display:grid;
+                    grid-template-columns:1fr 1fr 1fr;
+                    gap:10px;
+                    margin: 50px 0px;
+                    }
+                    .endless_possibilites_grid > *:nth-child(3n+2) {
+border-top:3px solid #003384;
+                    border-bottom:3px solid #003384;
+                    padding:10px;
+                    display: flex;
+  flex-direction: column;
+  justify-content: center;
+                    margin-bottom: 20px;
+}
+
+                    .endless_possibilites_grid h4 {
+                    color: #003384;
+  font-family: 'Gilroy-Bold', sans-serif;
+  text-align: center;
+font-size: 20px;
+                    }
+                    .endless_possibilites_grid  p {
+                    font-size: 12px;
+      font-family: Arial, sans-serif;
+
+  text-align: justify;
+  color: black;
+  font-weight: 400;
+                    }
+  .banner{
+<!--                    margin-top:100px;-->
+
+                    }
+                    .aboutus > div h4:nth-of-type(1){
+                    font-family: 'Gilroy-Heavy', sans-serif;
+  color: #000;
+   font-size: 35px;
+  word-spacing: 5px;
+
+
+                    }
+                    .aboutus > div p:nth-of-type(1),.aboutus > div p:nth-of-type(2){
+                    color: #292E32;
+      font-family: Arial, sans-serif;
+
+  font-size: 15px;
+  text-align: justify;
+  line-height: 23px;
+  font-weight: 400;
+                    }
+                    .aboutus > div h4:nth-of-type(2){
+                         font-family: Arial, sans-serif;
+
+  margin-top: 25px;
+  color: #003384;
+  font-size: 35px;
+  word-spacing: 5px;
+                    line-height: 40px;
+                    }
+                    .LinksDynamic{
+display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+                    }
+                    .LinksDynamic a  {
+                 color: #646464;
+      font-family: Arial, sans-serif;
+
+  text-decoration: none;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-weight: 500;
+      font-size: 17px;
+
+                    }
+                     .LinksDynamic a:hover {
+                    border-left: 3px solid #003384;
+                    color:black;
+                    }
+                    .linkactive {
+<!--                       border-left: 3px solid #003384;-->
+                    color:black !important;
+                    }
+                    .content_features > div{
+                    background: white;
+  padding: 15px;
+  border-radius: 5px;
+                      min-height: 160px;
+                    }
+                    .content_features h4{
+font-family: "Arial", sans-serif;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+                    }
+                     .content_features p {
+            color: black;
+      font-family: Arial, sans-serif;
+
+  font-size: 15px;
+  text-align: start;
+  line-height: 23px;
+  font-weight: 400;
+                        text-align: justify;
+
+                    }
+                    .Features_homepage{
+                    margin: 50px auto;
+  background: #D9D9D9;
+     padding: 45px 35px 25px 35px;
+  border-radius: 25px;
+                    }
+                    .getintouchbackground{
+background: linear-gradient(#0033841F, #0033841F), url('/Lexyle/static/src/images/image(1).png') center/cover no-repeat;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+                    }
+                    .input-container {
+        position: relative;
+        display: inline-block;
+        width: 100%; /* Adjust width */
+    }
+
+    .input-container input {
+        width: 100%;
+        padding-right: 30px; /* Space for the icon */
+    }
+ .input-container input::placeholder {
+color: #292E32;
+      font-family: Arial, sans-serif;
+
+  font-size: 12px;
+  text-align: justify;
+  font-weight: 500;
+    }
+
+    .input-container img {
+       position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: auto;
+  cursor: pointer;
+    }
+
+    /* Custom dropdown styling */
+    .custom-dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        max-height: 150px;
+        overflow-y: auto;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .custom-dropdown div {
+        padding: 8px;
+        cursor: pointer;
+                    color: #292E32;
+      font-family: Arial, sans-serif;
+
+  font-size: 12px;
+  text-align: justify;
+  font-weight: 500;
+    }
+
+    .custom-dropdown div:hover {
+        background: #f0f0f0;
+    }
+
+
+
+  .inputcustom_crm form > div > div > div{
+                  display: flex;
+  flex-direction: column;
+                    }
+
+
+.inputcustom_crm form > div > div:last-of-type {
+    grid-column: span 2 !important;
+
+}
+                    .inputcustom_crm form > div > div:nth-of-type(7){
+                       grid-column: span 2 !important;
+
+                    }
+                    .inputcustom_crm form  input {
+                    border-radius: 5px;
+  border: 1px solid #0068D9;
+  padding: 10px;
+                    }
+                      .inputcustom_crm   .form-select{
+                             border-radius: 5px;
+  border: 1px solid #0068D9;
+  padding: 10px;
+                            }
+                      .inputcustom_crm form  textarea {
+                    border-radius: 5px;
+  border: 1px solid #0068D9;
+  padding: 10px;
+                    }
+                    .inputcustom_crm form > div > div:last-of-type a {
+                    background: #0068D9;
+  color: white;
+  max-width: 175px;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 50px;
+  font-weight: 700;
+      font-family: Arial, sans-serif;
+
+  font-size: 15px;
+                    }
+                    .inputcustom_crm .col-form-label{
+                   font-size: 15px;
+  font-weight: 400;
+      font-family: Arial, sans-serif;
+
+                    }
+
+                </style>
+                <div class="container banner">
+                    <div class="row d-flex align-items-center">
+                        <div class="  col-12 col-sm-4  col-md-6  ">
+                            <h4 class="hfourresmob" style="font-family: 'Gilroy-Bold', sans-serif;
+  color: #000;
+  font-size: 40px;
+  word-spacing: 5px;
+    max-width: 400px;
+
+">Ready to deliver a transformative
+                                <span  class="respwhitespace" style="font-family: 'Gilroy-Heavy', sans-serif;
+  color: #003384;
+  font-size: 40px;
+  word-spacing: 5px;  ">learning journey?  </span>
+                            </h4>
+                               <a href="#get_in_touch_id">
+                                       <button style="font-family: 'Gilroy-Bold', sans-serif;
+  color: white;
+  font-size: 15px;
+  word-spacing: 3px;
+background: #003384;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 25px;margin-top: 20px;" class="btn btn-primary">Enquire Now
+                            </button>
+                                </a>
+
+                        </div>
+                        <div class=" col-12 col-sm-4  col-md-6 position-relative">
+                            <div  style="
+height: 180px;
+  width: 200px;
+  left: -15%;
+  border-radius: 20px;
+  background: #0068D933;
+  top: 60px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+" class="position-absolute globeiamgehome ">
+                                <img class="position-absolute "
+                                     src="Lexyle/static/src/images/Animation - 1739864120561 1.png"
+                                     alt="Platform Image"/>
+
+                            </div>
+                            <img class=" bannerhomeiamge"  src="Lexyle/static/src/images/image.png" alt="Platform Image"/>
+                        </div>
+                    </div>
+                </div>
+                <div  class="container">
+<div class="row aboutus">
+    <div style="position:relative " id="aboutus_image_resp" class=" col-12 col-md-6 p-2">
+                                    <img  style="width: 100% !important;
+  height: auto;
+  position: static;
+  min-height: 285px;
+    border-radius: 20px;
+" class=" w-100 aboutusimagestylresp" src="Lexyle/static/src/images/image 239.png" alt="Platform Image"/>
+                            <img style="
+    position: absolute;
+    height: 100%;
+    bottom: 25px;
+    left: 22%;
+    z-index: 50;
+    width: auto !important;
+"  src="Lexyle/static/src/images/Rectangle 8.png" alt="Platform Image"/>
+    </div>
+    <div id="paddingrespaboutus" class="col-12 col-md-6  px-2">
+        <h4>About us</h4>
+        <p>Lexyle eLearning is a user-friendly Learning Management System designed for both learners and trainers. Easily upload content, track student progress, and keep them engaged at all times.</p>
+        <h4><span style="        font-family: 'Gilroy-Heavy', sans-serif;">Learning is a continuous path,</span> <span style="font-family: 'Gilroy-Heavy', sans-serif;">not a final stop</span></h4>
+        <p>Inspire student engagement with an intuitive platform that allows them to track progress and interact with peers.</p>
+        <a href="#get_in_touch_id">
+            <button style="font-family: 'Gilroy-Bold', sans-serif;   color: white;   font-size: 15px;   word-spacing: 2px;  background: #003384;   border: none;   border-radius: 50px;   padding: 10px 25px;margin-top: 20px;"
+                    class="btn btn-primary">Enquire Now
+
+            </button>
+        </a>
+
+    </div>
+</div>
+
+                </div>
+   <div style="margin:50px auto;  min-height: 490px;" id="Features_homepage" class="Features_homepage container">
+                        <div class="row">
+                            <div class="col-12 col-md-3 p-0 p-md-2">
+                                <h4 style="color: #003384;
+  font-size: 35px;
+  word-spacing: 5px;
+  line-height: 40px;
+  font-family: 'Gilroy-Heavy', sans-serif;">Features</h4>
+                                <div class="LinksDynamic">
+<a href="#Features">Teach</a>
+                                    <a href="#Evaluate">Evaluate</a>
+                                    <a href="#Engage">Engage with your community</a>
+                                    <a href="#Reporting">Reporting</a>
+                                    <a href="#Optimize">Optimize &amp; Promote</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-9 p-2">
+                                <div id="Features" class=" content_features  row gap-3">
+                                    <div class="">
+                                        <h4>Organized content</h4>
+                                        <p>Each course serves as a channel for organizing the content on your eLearning platform. Create unlimited courses to cover all your teaching topics.</p>
+                                    </div>
+                                      <div class="">
+                                        <h4>Multi-language</h4>
+                                        <p>Your website can be translated into unlimited languages of your choice.</p>
+                                    </div>
+                                    <div class="">
+                                        <h4>Multimedia assets</h4>
+                                        <p>Enrich your courses with diverse content, including videos, PDF presentations, infographics, web pages, quizzes, and certifications.</p>
+                                    </div>
+                                      <div class="">
+                                        <h4>Progress</h4>
+                                        <p>Monitor course participation with clear and intuitive indicators of progress and completion.</p>
+                                    </div>
+
+<!--                                    <div class="col-12 col-md-5">-->
+<!--                                        <h4>Retention and understanding</h4>-->
+<!--                                        <p>Enhance learning with quizzes that support both single and multiple-choice answers</p>-->
+<!--                                    </div>-->
+<!--                                      <div class="col-12 col-md-5">-->
+<!--                                        <h4>Embedded video content</h4>-->
+<!--                                        <p>Enhance your course with free video content by linking YouTube videos or uploading files to Google Drive.</p>-->
+<!--                                    </div>-->
+                                </div>
+                                   <div id="Evaluate" class=" content_features  row gap-3">
+                                    <div class="">
+                                        <h4>Certification</h4>
+                                        <p>Evaluate your students with a series of questions and certify them once they pass the test.</p>
+                                    </div>
+                                      <div class="">
+                                        <h4>Question types</h4>
+                                        <p>The test you create can have various question types: text boxes (single and multiple lines), numerical, date (with and without time), single or multiple choice answers, and matrix.</p>
+                                    </div>
+                                    <div class="">
+                                        <h4>Question pools</h4>
+                                        <p>Define if the test includes all the questions or a randomized selection, reducing the chances of answer sharing.</p>
+                                    </div>
+                                      <div class="">
+                                        <h4>Instant feedback</h4>
+                                        <p>Your students can check their answers and compare them with the right ones after submitting their tests.</p>
+                                    </div>
+
+<!--                                    <div class="col-12 col-md-5">-->
+<!--                                        <h4>Passing scores</h4>-->
+<!--                                        <p>Define the minimum score required to pass the test.</p>-->
+<!--                                    </div>-->
+<!--                                      <div class="col-12 col-md-5">-->
+<!--                                        <h4>Measure performance</h4>-->
+<!--                                        <p>Define a time limit for your tests.</p>-->
+<!--                                    </div>-->
+<!--                                        <div class="col-12 col-md-5">-->
+<!--                                        <h4>Attempt limits</h4>-->
+<!--                                        <p>Define the minimum score required to pass the test.</p>-->
+<!--                                    </div>-->
+<!--                                      <div class="col-12 col-md-5">-->
+<!--                                        <h4>Certificates</h4>-->
+<!--                                        <p>The students who complete a certification receive their certificate immediately by email.</p>-->
+<!--                                    </div>-->
+                                </div>
+                                   <div id="Engage" class=" content_features  row gap-3">
+                                    <div class="">
+                                        <h4>Forum</h4>
+                                        <p>Create one or more forums linked to your course and let the members of your community help each other.</p>
+                                    </div>
+                                      <div class="">
+                                        <h4>Karma points and ranks</h4>
+                                        <p>Gamify your courses and reward your community with karma points to keep them active and give them access to new ranks and rewards.</p>
+                                    </div>
+                                    <div class="">
+                                        <h4>Leaderboard</h4>
+                                        <p>Spur competition and reward top performers by displaying their profile on the home page.</p>
+                                    </div>
+                                      <div class="">
+                                        <h4>Email</h4>
+                                        <p>Get in touch with all your attendees by sending them beautifully designed emails.</p>
+                                    </div>
+
+<!--                                    <div class="col-12 col-md-5">-->
+<!--                                        <h4>Reviews</h4>-->
+<!--                                        <p>Attendees can rate courses from one to five stars and leave comments. Post your own replies, delete off-topic answers and understand what people think of your content.</p>-->
+<!--                                    </div>-->
+
+                                </div>
+                                   <div id="Reporting" class=" content_features  row gap-3">
+                                    <div class="">
+                                        <h4>Advanced reporting</h4>
+                                        <p>Get advanced reports about the performances of your courses, contents, revenues, reviews, quizzes, forums, and certifications.</p>
+                                    </div>
+                                      <div class="">
+                                        <h4>Measures and graphs</h4>
+                                        <p>For each kind of report, define which metrics are relevant to you and display the graphs as bar charts, line charts, pie charts, or stacked.</p>
+                                    </div>
+                                    <div class="">
+                                        <h4>Filters and groups</h4>
+                                        <p>Add predefined or custom filters to only show the relevant data, and group the results however you want them.</p>
+                                    </div>
+
+                                </div>
+                                   <div id="Optimize" class=" content_features   row gap-3">
+                                    <div class="">
+                                        <h4>Optimize SEO</h4>
+                                        <p>Our Promote tool suggests keywords according to the most searched terms on Google. It also allows you to edit the title, description, and image that will be referenced and displayed by search engines and social media.</p>
+                                    </div>
+                                      <div class="">
+                                        <h4>Share online</h4>
+                                        <p>Allow your students to share your courses and content on social networks (Facebook, Twitter, and LinkedIn), by email, with a permanent link, or by embedding them on their websites.</p>
+                                    </div>
+
+                                    <div class="">
+                                        <h4>Link tracker</h4>
+                                        <p>Share links you want to track by creating a short version that includes analytics trackers and get a complete view of their performance on a dedicated dashboard.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll(".LinksDynamic a");
+        const sections = document.querySelectorAll(".content_features");
+
+        // Function to hide all sections
+        function hideAllSections() {
+            sections.forEach(section => section.style.display = "none");
+        }
+
+        // Function to remove active class from all links
+        function removeActiveClass() {
+            links.forEach(link => link.classList.remove("linkactive"));
+        }
+
+        // Show the first section by default and mark the first link as active
+        hideAllSections();
+        document.querySelector("#Features").style.display = "grid";
+        links[0].classList.add("linkactive");
+
+        // Add click event to each link
+        links.forEach(link => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                // Hide all sections
+                hideAllSections();
+
+                // Remove active class from all links
+                removeActiveClass();
+
+                // Get the target section ID
+                const targetId = this.getAttribute("href").substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                // Show the target section if it exists
+                if (targetSection) {
+                    targetSection.style.display = "grid";
+                }
+
+                // Add active class to the clicked link
+                this.classList.add("linkactive");
+            });
+        });
+    });
+</script>
+
+<!--                <div class="container waveofgrowth ">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-12">-->
+<!--                            <h4 style="font-family: 'Gilroy-Heavy', sans-serif;-->
+<!--  color: #003384;-->
+<!--  font-size: 40px;-->
+<!--  word-spacing: 5px;-->
+<!--  text-align: center;-->
+<!--  margin: 50px 0px;-->
+<!--    margin-top: 50px;-->
+<!--  margin-top: 75px;">Join the wave of <span style="color: #0068D9;">growth</span> and <span style="color: #0068D9;">innovation!</span>-->
+<!--                            </h4>-->
+<!--                        </div>-->
+<!--                        <div class=" col-12  col-md-6">-->
+<!--                            <img style="box-shadow: 0 -30px 40px -20px rgba(0, 104, 217, 0.2), 0 30px 40px -20px rgba(0, 104, 217, 0.2);" class=" w-100" src="Lexyle/static/src/images/Rectangle 7.png" alt="Platform Image"/>-->
+
+<!--                        </div>-->
+<!--                        <div style="display: flex;-->
+<!--  flex-direction: column;-->
+<!--  justify-content: center;" class=" col-12  col-md-6 ">-->
+<!--                            <p style="color: black;-->
+<!--      font-family: Arial, sans-serif;
+-->
+<!--  font-size: 12px;-->
+<!--  letter-spacing: 3px;">OUR PLATFORM-->
+<!--                            </p>-->
+<!--                            <h4 style="font-family: 'Gilroy-Heavy', sans-serif;-->
+<!--  color: #003384;-->
+<!--  font-size: 30px;-->
+<!--  margin: 15px 0px 25px 0px;">-->
+<!--                                Maximize the potential of education.-->
+<!--                            </h4>-->
+<!--                            <p style="font-size: 12px;-->
+<!--      font-family: Arial, sans-serif;
+-->
+<!--  font-weight: 400;-->
+<!--  word-spacing: 4px;-->
+<!--  text-align: justify;">The effectiveness of a learning program is inherently linked to the strength of the-->
+<!--                                platform that underpins it. In the absence of a solid foundation, it becomes difficult-->
+<!--                                to engage learners, achieve business objectives, scale initiatives, manage content-->
+<!--                                effectively, and optimize workflows. Our platform equips you with the necessary tools to-->
+<!--                                foster growth, improve learning experiences, and enhance operational-->
+<!--                                efficiency—guaranteeing sustained success for both your workforce and your organization.-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+
+<!--                </div>-->
+<!-- <div class="container waveofgrowth ">-->
+<!--                    <div class="row">-->
+
+<!--                         <div style="display: flex;-->
+<!--  flex-direction: column;-->
+<!--  justify-content: center;" class="col-12   col-md-6">-->
+<!--                            <p style="color: black;-->
+<!--      font-family: Arial, sans-serif;
+-->
+<!--  font-size: 12px;-->
+<!-- letter-spacing: 3px;">The Evolution of Education-->
+<!--                            </p>-->
+<!--                            <h4 style="font-family: 'Gilroy-Heavy', sans-serif;-->
+<!--  color: #003384;-->
+<!--  font-size: 30px;-->
+<!--  margin: 15px 0px 25px 0px;">-->
+<!--                                Fueled by Innovation. Enhanced by AI.-->
+<!--                            </h4>-->
+<!--                            <p style="font-size: 12px;-->
+<!--      font-family: Arial, sans-serif;
+-->
+<!--  font-weight: 400;-->
+<!--  word-spacing: 4px;-->
+<!--  text-align: justify;">-->
+<!--                                We transcend the traditional Learning Management System (LMS); we serve as the cornerstone for the evolution of education. This is why innovation is the fundamental principle guiding our platform, with artificial intelligence at its heart.  We leverage the capabilities of AI to expedite content creation, streamline workflows, and enhance the learner's experience. It is akin to expanding your team’s capacity without increasing personnel. This leads to a more significant impact and improved outcomes.-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                        <div class="col-12   col-md-6">-->
+<!--                            <img style="box-shadow: 0 -30px 40px -20px rgba(0, 104, 217, 0.2), 0 30px 40px -20px rgba(0, 104, 217, 0.2);" class=" w-100" src="Lexyle/static/src/images/Rectangle 7.png" alt="Platform Image"/>-->
+
+<!--                        </div>-->
+
+<!--                    </div>-->
+
+
+<!--                </div>-->
+<!--                <div  class="second_banner">-->
+<!--                  <h4 style="font-family: 'Gilroy-Heavy', sans-serif;-->
+<!--  color: #003384;-->
+<!--  font-size: 40px;-->
+<!--  word-spacing: 5px;-->
+<!--  text-align: center;-->
+<!--  margin-bottom: 10px;">Discover the boundless potential of education.-->
+<!--                            </h4>-->
+<!--                    <p>Provide training to any audience, regardless of location, while simultaneously achieving measurable business outcomes</p>-->
+<!--                </div>-->
+<!--                <div class="endless_possibilites container">-->
+<!--                    <p style="color: black;-->
+<!--      font-family: Arial, sans-serif;
+-->
+<!--  font-size: 12px;-->
+<!--  letter-spacing: 3px;text-align: center;-->
+<!--">Our solutions</p>-->
+<!--                    <h4 style="font-family: 'Gilroy-Heavy', sans-serif;-->
+<!--  color: #003384;-->
+<!--  font-size: 30px;-->
+<!-- margin: 15px 0px 10px 0px;text-align: center;   ">One learning platform. Endless possibilities</h4>-->
+<!--                    <p style="font-size: 12px;-->
+<!--      font-family: Arial, sans-serif;
+-->
+<!--  font-weight: 400;-->
+<!--  word-spacing: 4px;-->
+<!--  text-align: justify;text-align: center;">Create learning programs that drive engagement, productivity, advocacy, and connection with your customers, partners, and employees.</p>-->
+<!--<div class="row   endless_possibilites_grid">-->
+<!--<div class=" ">-->
+<!--    <h4>Powerful Learning Management</h4>-->
+<!--    <p>Our platform provides comprehensive tools for the management and delivery of tailored learning experiences to a wide range of audiences, accessible at any time and from any location</p>-->
+
+<!--</div>-->
+<!--    <div class="  ">-->
+<!--    <h4>Rich Content Marketplace</h4>-->
+<!--    <p>Access top-tier e-learning resources that focus on the most pertinent skills. Participants can attain compliance, obtain certifications, and advance their professional careers.</p>-->
+
+<!--</div>-->
+<!--    <div class="  ">-->
+<!--    <h4>Seamless Integrations</h4>-->
+<!--    <p>Integrate learning effortlessly within your technological framework. Enhance experiences, increase efficiencies, and expand programs through adaptable integration solutions.</p>-->
+
+<!--</div>-->
+
+<!--    <div class=" ">-->
+<!--    <h4>Data-Driven Insights</h4>-->
+<!--    <p>Gain essential insights through thorough analytics. Effortlessly monitor performance indicators, recognize trends, and showcase the effects of learning and return on investment using user-friendly data visualizations.</p>-->
+
+<!--</div>-->
+<!--    <div class="  ">-->
+<!--    <h4>AI Authoring</h4>-->
+<!--    <p>Facilitate large-scale learning through a robust and user-friendly tool designed to assist you in creating high-quality content, all within a secure, cloud-based AI framework that you can rely on.</p>-->
+
+<!--</div>-->
+<!--    <div class="  ">-->
+<!--    <h4>Community-Driven Learning</h4>-->
+<!--    <p>Encourage learners to utilize tools that promote collaboration and the exchange of knowledge. Facilitate individualized discussions and establish real-time connections, thereby transforming your platform into an interactive learning community.</p>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--                </div>-->
+                  <div class="getintouchbackground">
+
+                    <p style="color: black;
+    font-family: 'Gilroy-Heavy', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 0px;
+      font-size: 25px;
+">OUR SOLUTIONS</p>
+                    <h4 style="    font-family: 'Gilroy-Heavy', sans-serif;
+    color: #003384;
+    font-size: 27px;
+    margin: 0px 0px 10px 0px;
+    text-align: center;  ">Get in Touch</h4>
+                    <p style="    font-size: 15px;
+        font-family: Arial, sans-serif;
+
+    font-weight: 400;
+    word-spacing: 3px;
+    text-align: justify;
+    text-align: center;
+    color: black;
+    margin-bottom: 0px;">To request a demo or want to know more. Contact us directly or fill out the form and</p>
+
+                                    <p style="         font-size: 15px;
+        font-family: Arial, sans-serif;
+
+    font-weight: 400;
+    word-spacing: 3px;
+    text-align: justify;
+    text-align: center;
+    color: black;
+    margin-bottom: 5px;">we will get back to you promptly.</p>
+
+      </div>
+  <div id="get_in_touch_id" class="endless_possibilites_get_in_touch container">
+
+      <div class="row g-2 getintouchgrid">
+          <div class="col-12 col-md-4">
+              <p>Lexyle serves as the cornerstone for enhancing learner engagement, optimizing and expanding workflows,
+                  facilitating content management, integrating seamlessly with your learning technology ecosystem, and
+                  achieving business objectives both now and in the future.
+              </p>
+              <h4>Locate Us</h4>
+              <ul>
+                  <li>Ground Floor, Pamba Building,</li>
+                  <li>Phase I Technopark,</li>
+                  <li>Trivandrum, Kerala</li>
+              </ul>
+                <h4>Contact Us</h4>
+              <ul>
+                  <li>+91 871 460 3391</li>
+                  <li>info@lexyle.in</li>
+
+              </ul>
+          </div>
+          <div id="inputcustom_crm" style="    padding: 0px 25px;" class="col-12 col-md-8 inputcustom_crm">
+              <div class="row g-4">
+                  <div class="oe_structure ">
+
+                  </div>
+              </div>
+
+          </div>
+      </div>
+                </div>
+            </section>
+<!--            original pone scrript-->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".onlyform");
+
+    if (!form) return; // Safety check
+
+    const phoneInputs = form.querySelectorAll("input[type='tel']");
+
+    phoneInputs.forEach(function (phoneInput) {
+        // Set input mode to numeric to encourage number-only input on mobile devices
+        phoneInput.setAttribute("inputmode", "numeric");
+        // Add required attribute
+        phoneInput.setAttribute("required", true);
+        // Set pattern to enforce 10 digits (for HTML5 validation)
+        phoneInput.setAttribute("pattern", "\\d{10}");
+        // Optionally, add a placeholder for guidance
+        phoneInput.setAttribute("placeholder", "");
+
+        phoneInput.addEventListener("input", function () {
+            // Remove non-digits
+            this.value = this.value.replace(/\D/g, '');
+            // Limit to 10 digits
+            if (this.value.length > 10) {
+                this.value = this.value.slice(0, 10);
+            }
+        });
+
+        // Optional: Provide real-time feedback
+        phoneInput.addEventListener("blur", function () {
+            const digitsOnly = this.value.replace(/\D/g, '');
+            if (digitsOnly.length > 0 &amp;&amp; digitsOnly.length &lt; 10) {
+                this.classList.add("input-error");
+                // Optionally show a message below the input
+                let errorMessage = this.nextElementSibling;
+                if (!errorMessage || !errorMessage.classList.contains("error-message")) {
+                    errorMessage = document.createElement("span");
+                    errorMessage.classList.add("error-message");
+                    errorMessage.style.color = "red";
+                    errorMessage.style.fontSize = "12px";
+                    this.parentNode.insertBefore(errorMessage, this.nextSibling);
+                }
+                errorMessage.textContent = "Enter a Valid Phone Number";
+            } else {
+                this.classList.remove("input-error");
+                const errorMessage = this.nextElementSibling;
+                if (errorMessage &amp;&amp; errorMessage.classList.contains("error-message")) {
+                    errorMessage.textContent = "";
+                }
+            }
+        });
+    });
+
+    form.addEventListener("submit", function (e) {
+        let allValid = true;
+
+        phoneInputs.forEach(function (input) {
+            const digitsOnly = input.value.replace(/\D/g, '');
+            if (digitsOnly.length !== 10) {
+                allValid = false;
+                input.classList.add("input-error");
+                // Ensure error message is visible
+                let errorMessage = input.nextElementSibling;
+                if (!errorMessage || !errorMessage.classList.contains("error-message")) {
+                    errorMessage = document.createElement("span");
+                    errorMessage.classList.add("error-message");
+                    errorMessage.style.color = "red";
+                    errorMessage.style.fontSize = "12px";
+                    input.parentNode.insertBefore(errorMessage, input.nextSibling);
+                }
+                errorMessage.textContent = "Phone number must be exactly 10 digits.";
+            } else {
+                input.classList.remove("input-error");
+                const errorMessage = input.nextElementSibling;
+                if (errorMessage &amp;&amp; errorMessage.classList.contains("error-message")) {
+                    errorMessage.textContent = "";
+                }
+            }
+        });
+
+        if (!allValid) {
+            e.preventDefault(); // Stop form submission
+            alert("Please enter exactly 10 digits in the phone number field.");
+        }
+    });
+});
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select all inputs with class="onlytext"
+        var textInputs = document.querySelectorAll(".onlytext");
+
+
+        textInputs.forEach(function (input) {
+            input.addEventListener("input", function () {
+    console.log("Input onlytext");
+                this.value = this.value.replace(/[0-9]/g, '');
+            });
+        });
+    });
+</script>
+
+        </t>
+    </template>
+
+
+</odoo>
