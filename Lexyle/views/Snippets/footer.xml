@@ -50,6 +50,9 @@
                 justify-content: start;
                 align-items: center;
                 }
+                .addressfooter a {
+text-decoration: none;
+                }
                 .addressfooter{
                 display: flex;
                 align-items: center;
@@ -104,6 +107,7 @@
 
                 /* Large devices (≥992px) */
                 @media (min-width: 992px) {
+
                 .footergrid{
                 display: grid;
                 gap: 30px;
@@ -111,11 +115,14 @@
                 padding:25px;
                 }
 
+
                 }
 
                 /* Extra large devices (≥1200px) */
                 @media (min-width: 1200px) {
-
+       .centerlinksfooter p{
+                  margin-bottom: 0px;
+                }
                 }
 
                 /* Extra extra large devices (≥1400px) */
@@ -180,7 +187,7 @@ flex-direction:column;justify-content: center;">
 
                         </div>
                     </a>
-                    <div class="d-flex justify-content-center align-items-center gap-2">
+                    <div class="d-flex centerlinksfooter justify-content-center align-items-center gap-2">
                         <p>Contact Us:
                             <a href="tel:+918714603391">91 871 460 3391</a>
                         </p>

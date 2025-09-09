@@ -1,0 +1,43 @@
+<!-- custom_module/views/website_lead_form.xml -->
+<odoo>
+    <template id="website_form_lead" name="Website Lead Form">
+        <section id="lead_form" class="container mt-5">
+            <h2>Contact Us</h2>
+            <form action="/website/form/lead" method="post">
+    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+    <div class="form-group mb-2">
+        <label>Subject</label>
+        <input type="text" name="subject" required="True" class="form-control"/>
+    </div>
+    <div class="form-group mb-2">
+        <label>Your Name</label>
+        <input type="text" name="name" required="True" class="form-control"/>
+    </div>
+    <div class="form-group mb-2">
+        <label>Email</label>
+        <input type="email" name="email" required="True" class="form-control"/>
+    </div>
+    <div class="form-group mb-2">
+        <label>Phone</label>
+        <input type="text" name="phone" class="form-control"/>
+    </div>
+    <div class="form-group mb-3">
+        <label>Message</label>
+        <textarea name="message" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+        </section>
+    </template>
+
+    <!-- Thank You Page -->
+    <template id="thank_you_page" name="Thank You Page">
+        <section class="container mt-5">
+            <h2>Thank You!</h2>
+            <p>Your request has been submitted. We will contact you soon.</p>
+        </section>
+    </template>
+</odoo>

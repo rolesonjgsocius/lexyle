@@ -11,7 +11,7 @@
     "depends": [
         "website",
         "web",
-        "base", "website_sale"
+        "base", "website_sale","crm"
     ],
     "data": [
         "views/Lexyle_cybersecurity.xml",
@@ -26,6 +26,7 @@
         'views/custom_styles_odoo.xml',
         'views/careers.xml',
         'views/termsandconditions.xml',
+        'views/crm_forms_custom.xml',
     ],
     "assets": {
         "web.assets_frontend": [
