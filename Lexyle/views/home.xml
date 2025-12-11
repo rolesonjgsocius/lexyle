@@ -2,7 +2,7 @@
 <odoo>
     <template id="Lexyle_HOME" name="Lexyle">
         <t t-call="website.layout">
-            <t t-call="Lexyle.display_popup"/>
+<!--            <t t-call="Lexyle.display_popup"/>-->
 
             <section>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>

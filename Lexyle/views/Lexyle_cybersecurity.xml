@@ -2,7 +2,7 @@
 <odoo>
     <template id="Lexyle_cybersecurity" name="Lexyle">
         <t t-call="website.layout">
-            <t t-call="Lexyle.display_popup"/>
+            <!--            <t t-call="Lexyle.display_popup"/>-->
 
             <title>Lexyle × NCSRC Partnership</title>
             <!-- Bootstrap CSS -->
@@ -269,7 +269,7 @@
                 margin-bottom: 0px;
                 color: black;
 
-  line-height: 45px;
+                line-height: 45px;
                 }
                 .banner_custom_lms > div > div > p:nth-of-type(2){
                 font-weight: 400;
@@ -742,6 +742,36 @@
 
             </style>
             <style>
+                .modal-header {
+  padding: 10px 20px;
+                }
+                .modalwrap .modal{
+                padding-top: 100px;
+                }
+                .modalwrap ul {
+                width: fit-content;
+                margin: auto;
+                }
+                .modalwrap p  {
+                text-align:  justify !important;
+                }
+                .modalwrap   h4 {
+font-weight: 700;
+  font-family: 'Gilroy-Medium', sans-serif;
+  margin-bottom: 5px;
+  color: white;
+  margin-top: 15px !important;
+                text-align:center;
+                }
+                .modalwrap h5 {
+                font-weight: 700;
+  font-family: 'Gilroy-Medium', sans-serif;
+ text-align:center;
+                  margin-left: auto;
+                }
+                .modalwrap ul li {
+  margin-left: 15px;
+                }
 
                 .cybersecuritycommon_container h5 {
                 font-weight: 700;
@@ -819,20 +849,41 @@
                 padding: 80px 0;
                 text-align: center;
                 }
+
+                .modal-bg {
+                background-size: cover;
+                background-position: center;
+                padding: 50px 30px;
+                min-height: 350px !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0 0 8px 8px; /* match modal */
+                }
+
+                .modal-text {
+                max-width: 700px;
+                text-align: center;
+                font-size: 16px;
+                line-height: 1.6;
+                font-family: Arial, sans-serif;
+                }
+
             </style>
 
             <div class="container ">
                 <div id="assessments" class="container banner banner_custom_lms">
                     <div class="row d-flex align-items-center">
                         <div class=" g-sm-2  col-12 col-sm-4  col-md-6 ">
-                            <p style="  max-width: 518px;">Lexyle Strengthens Excellence As </p>
+                            <p style="  max-width: 518px;">Lexyle Strengthens Excellence As</p>
                             <h4 style="font-family: 'Gilroy-Heavy', sans-serif;
   color: #003384;
   font-size: 40px;
   word-spacing: 5px;">NCSRC Certified Partner
                             </h4>
                             <p>A strategic collaboration between Lexyle and the <strong>National Cyber
-                                Security Research Council (NCSRC) </strong> to deliver world-class certified programs.
+                                Security Research Council (NCSRC)
+                            </strong> to deliver world-class certified programs.
                             </p>
 
                             <div class="d-flex gap-3 ">
@@ -930,63 +981,346 @@
                 </div>
             </section>
 
-            <!-- Programs Offered -->
+
             <section id="programs" class="py-5 cybersecuritycommon_container">
                 <div class="container">
                     <h4 class="text-center mb-4">Programs Offered</h4>
                     <div class="row g-4">
+
+                        <!-- Cybersecurity Card -->
                         <div class="col-md-3">
-                            <div class="card program-card  text-center p-3">
+                            <div class="card program-card text-center p-3"
+                                 data-bs-target="#cybersecurityModal"
+                                 role="button" tabindex="0"
+                                 aria-controls="cybersecurityModal">
                                 <div class="card-body">
-                                    <img src="/Lexyle/static/src/images/cyber_security.jpg"/>
-                                    <h5>Cybersecurity</h5>
-                                    <p>Defend systems, networks, and data against evolving cyber threats.</p>
+                                    <img src="/Lexyle/static/src/images/cyber_security.jpg" class="img-fluid"/>
+                                    <h5 class="mt-2">Cybersecurity</h5>
+                                    <p class="mb-0">Defend systems, networks, and data against evolving cyber threats.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Cyber Forensics Card -->
                         <div class="col-md-3">
-                            <div class="card program-card  text-center p-3">
+                            <div class="card program-card text-center p-3"
+                                 data-bs-target="#forensicsModal"
+                                 role="button" tabindex="0" aria-controls="forensicsModal">
                                 <div class="card-body">
-                                    <img src="/Lexyle/static/src/images/cyber_forsenic.jpg"/>
-
-
-                                    <h5>Cyber Forensics</h5>
-                                    <p>Investigate digital evidence and fight cybercrime with forensic tools.</p>
+                                    <img src="/Lexyle/static/src/images/cyber_forsenic.jpg" class="img-fluid"/>
+                                    <h5 class="mt-2">Cyber Forensics</h5>
+                                    <p class="mb-0">Investigate digital evidence and fight cybercrime with forensic
+                                        tools.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Cyber Investigation Card -->
                         <div class="col-md-3">
-                            <div class="card program-card  text-center p-3">
+                            <div class="card program-card text-center p-3"
+                                 data-bs-target="#investigationModal"
+                                 role="button" tabindex="0" aria-controls="investigationModal">
                                 <div class="card-body">
-                                    <img src="/Lexyle/static/src/images/Cyber_investigation.jpg"/>
-
-
-                                    <h5>Cyber Investigation</h5>
-                                    <p>Track, analyze, and prevent online crimes with real-world simulations.</p>
+                                    <img src="/Lexyle/static/src/images/Cyber_investigation.jpg" class="img-fluid"/>
+                                    <h5 class="mt-2">Cyber Investigation</h5>
+                                    <p class="mb-0">Track, analyze, and prevent online crimes with real-world
+                                        simulations.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- FinTech Card -->
                         <div class="col-md-3">
-                            <div class="card program-card  text-center p-3">
+                            <div class="card program-card text-center p-3"
+                                 data-bs-target="#fintechModal"
+                                 role="button" tabindex="0" aria-controls="fintechModal">
                                 <div class="card-body">
-                                    <img src="/Lexyle/static/src/images/cyber_fintech.jpg"/>
-
-
-                                    <h5>FinTech</h5>
-                                    <p>Explore blockchain, AI-driven finance, and the future of digital payments.</p>
+                                    <img src="/Lexyle/static/src/images/cyber_fintech.jpg" class="img-fluid"/>
+                                    <h5 class="mt-2">FinTech</h5>
+                                    <p class="mb-0">Explore blockchain, AI-driven finance, and the future of digital
+                                        payments.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="text-center mt-4">
-                        <a href="#curriculum">
-                            <button style="font-family: 'Gilroy-Bold', sans-serif;   color: white;   font-size: 15px;   word-spacing: 3px; background: #003384;   border: none;   border-radius: 50px;   padding: 10px 25px;margin-top: 05px;"
-                                    class="btn btn-primary">View Detailed Curriculum
-                            </button>
-                        </a>
+
                     </div>
                 </div>
             </section>
+
+            <!--            <div class="modalwrap">-->
+            <!--                <div class="modal fade" id="cybersecurityModal" tabindex="-1" aria-hidden="true">-->
+            <!--  <div class="modal-dialog modal-lg modal-dialog-centered">-->
+            <!--    <div class="modal-content">-->
+            <!--      <div class="modal-header">-->
+            <!--        <h5 class="modal-title">Cybersecurity — Detailed Curriculum</h5>-->
+            <!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            <!--      </div>-->
+            <!--      <div class="modal-body">-->
+            <!--        <img src="/Lexyle/static/src/images/cyber_security.jpg" class="img-fluid mb-3"/>-->
+            <!--        <p>Learn advanced techniques in network defense, penetration testing, malware analysis, incident response, cloud security, and real-world red-team/blue-team labs. Includes projects, assessments, and certification guidance.</p>-->
+            <!--        &lt;!&ndash; add more structured content here (modules, durations, outcomes, sample projects) &ndash;&gt;-->
+            <!--      </div>-->
+            <!--    </div>-->
+            <!--  </div>-->
+            <!--</div>-->
+
+            <!--<div class="modal fade" id="forensicsModal" tabindex="-1" aria-hidden="true">-->
+            <!--  <div class="modal-dialog modal-lg modal-dialog-centered">-->
+            <!--    <div class="modal-content">-->
+            <!--      <div class="modal-header">-->
+            <!--        <h5 class="modal-title">Cyber Forensics — Detailed Curriculum</h5>-->
+            <!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            <!--      </div>-->
+            <!--      <div class="modal-body">-->
+            <!--        <img src="/Lexyle/static/src/images/cyber_forsenic.jpg" class="img-fluid mb-3"/>-->
+            <!--        <p>Master disk &amp; memory forensics, forensic imaging, log analysis, chain-of-custody practices, forensic toolkits, and case simulations used by investigators and law enforcement.</p>-->
+            <!--      </div>-->
+            <!--    </div>-->
+            <!--  </div>-->
+            <!--</div>-->
+
+            <!--<div class="modal fade" id="investigationModal" tabindex="-1" aria-hidden="true">-->
+            <!--  <div class="modal-dialog modal-lg modal-dialog-centered">-->
+            <!--    <div class="modal-content">-->
+            <!--      <div class="modal-header">-->
+            <!--        <h5 class="modal-title">Cyber Investigation — Detailed Curriculum</h5>-->
+            <!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            <!--      </div>-->
+            <!--      <div class="modal-body">-->
+            <!--        <img src="/Lexyle/static/src/images/Cyber_investigation.jpg" class="img-fluid mb-3"/>-->
+            <!--        <p>Training in intelligence gathering, threat hunting, OSINT, digital profiling, legal &amp; compliance considerations, and hands-on case studies.</p>-->
+            <!--      </div>-->
+            <!--    </div>-->
+            <!--  </div>-->
+            <!--</div>-->
+
+            <!--<div class="modal fade" id="fintechModal" tabindex="-1" aria-hidden="true">-->
+            <!--  <div class="modal-dialog modal-lg modal-dialog-centered">-->
+            <!--    <div class="modal-content">-->
+            <!--      <div class="modal-header">-->
+            <!--        <h5 class="modal-title">FinTech — Detailed Curriculum</h5>-->
+            <!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            <!--      </div>-->
+            <!--      <div class="modal-body">-->
+            <!--        <img src="/Lexyle/static/src/images/cyber_fintech.jpg" class="img-fluid mb-3"/>-->
+            <!--        <p>Deep-dive into blockchain fundamentals, smart contracts, AI in finance, payment rails, fraud detection, and building secure fintech prototypes.</p>-->
+            <!--      </div>-->
+            <!--    </div>-->
+            <!--  </div>-->
+            <!--</div>-->
+            <!--            </div>-->
+
+
+       <div class="modalwrap">
+    <!-- Cybersecurity -->
+    <div class="modal fade" id="cybersecurityModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cybersecurity — Detailed Curriculum</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-bg"
+                     style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/Lexyle/static/src/images/cyber_security.jpg');">
+                    <div class="modal-text text-white">
+
+
+                        <h4 class="mt-3">Modules Covered</h4>
+                        <p>
+                            The curriculum dives into <strong>Network &amp; Application Security</strong>, Ethical Hacking,
+                            Malware Reverse Engineering, <strong>Cloud Security &amp; Container Protection</strong>, and advanced
+                            Threat Intelligence techniques. Each module blends theory with practical lab work to
+                            ensure hands-on mastery.
+                        </p>
+
+                        <h4 class="mt-3">Learning Outcomes</h4>
+                        <p>
+                            Graduates will be able to design and implement secure enterprise systems, conduct ethical
+                            hacking operations, respond to critical cyber incidents, and work as part of specialized
+                            <strong>Red Team / Blue Team operations</strong> within security organizations.
+                        </p>
+
+                        <h4 class="mt-3">Duration &amp; Projects</h4>
+                        <p>
+                            A 6-month journey featuring real-time simulations, advanced security labs, and a capstone
+                            project that demonstrates the ability to detect, prevent, and mitigate cyber attacks.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forensics -->
+    <div class="modal fade" id="forensicsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cyber Forensics — Detailed Curriculum</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-bg"
+                     style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/Lexyle/static/src/images/cyber_forsenic.jpg');">
+                    <div class="modal-text text-white">
+
+
+                        <h4 class="mt-3">Modules Covered</h4>
+                        <p>
+                            Key areas include <strong>Disk &amp; Memory Forensics</strong>, File System &amp; Log Analysis,
+                            Forensic Imaging and maintaining <strong>Chain of Custody</strong>, Network Packet Forensics,
+                            and advanced Mobile &amp; Cloud Forensics techniques.
+                        </p>
+
+                        <h4 class="mt-3">Learning Outcomes</h4>
+                        <p>
+                            By the end of the course, learners will have the ability to collect, recover, and analyze
+                            <strong>digital evidence</strong> while ensuring its legal admissibility. They will be capable of
+                            generating investigation-ready reports suitable for corporate, legal, and government use.
+                        </p>
+
+                        <h4 class="mt-3">Duration &amp; Projects</h4>
+                        <p>
+                            A 4-month intensive program featuring real-world case simulations, digital artifact analysis,
+                            and court-ready investigation documentation.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Investigation -->
+    <div class="modal fade" id="investigationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cyber Investigation — Detailed Curriculum</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-bg"
+                     style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/Lexyle/static/src/images/Cyber_investigation.jpg');">
+                    <div class="modal-text text-white">
+
+
+                        <h4 class="mt-3">Modules Covered</h4>
+                        <p>
+                            The program covers <strong>Digital Profiling &amp; Social Engineering</strong>, Advanced Threat Hunting,
+                            <strong>OSINT Tools &amp; Frameworks</strong>, Legal and Regulatory Compliance, and structured
+                            Case Study Simulations for real-world readiness.
+                        </p>
+
+                        <h4 class="mt-3">Learning Outcomes</h4>
+                        <p>
+                            Learners will gain the ability to conduct full-scale cybercrime investigations, from
+                            evidence gathering and digital profiling to building investigation reports and presenting
+                            findings for actionable intelligence.
+                        </p>
+
+                        <h4 class="mt-3">Duration &amp; Projects</h4>
+                        <p>
+                            A 5-month learning track including hands-on OSINT projects, simulated case investigations,
+                            and practical exposure to modern cybercrime scenarios.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FinTech -->
+    <div class="modal fade" id="fintechModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">FinTech — Detailed Curriculum</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-bg"
+                     style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/Lexyle/static/src/images/cyber_fintech.jpg');">
+                    <div class="modal-text text-white">
+
+
+                        <h4 class="mt-3">Modules Covered</h4>
+
+<p>
+                            Topics include <strong>Blockchain &amp; Cryptocurrency Systems</strong>, Smart Contracts &amp;
+                            Decentralized Applications, Artificial Intelligence in Finance, <strong>Payment Gateways
+                            &amp; Fraud Detection</strong>, and secure prototyping of next-gen FinTech solutions.
+                        </p>
+                        <h4 class="mt-3">Learning Outcomes</h4>
+                        <p>
+                            By completing this course, learners will be able to design, secure, and innovate
+                            <strong>FinTech products</strong>, applying advanced technologies while ensuring compliance
+                            with global financial regulations and cybersecurity standards.
+                        </p>
+
+                        <h4 class="mt-3">Duration &amp; Projects</h4>
+                        <p>
+                            A 6-month immersive program featuring blockchain-based prototype development,
+                            AI-driven fraud detection systems, and innovation-driven capstone projects.
+                        </p>
+
+                         
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+            <style>
+                .program-card { cursor: pointer; transition: transform .12s ease, box-shadow .12s ease; }
+                .program-card:focus { outline: 3px solid rgba(0,51,132,0.2); transform: translateY(-4px); box-shadow: 0
+                8px 20px rgba(0,0,0,0.08); }
+                <!--  .program-card:hover { transform: translateY(-4px); box-shadow: 0 8px 18px rgba(0,0,0,0.08); }-->
+            </style>
+
+            <!-- JS: open the modal when card is clicked or activated via keyboard -->
+            <script>
+                // Remove or comment out any previous 'mouseenter' modal code to avoid conflicts.
+
+                document.querySelectorAll('.program-card').forEach(card => {
+                const targetSelector = card.getAttribute('data-bs-target');
+                if (!targetSelector) return;
+
+                // Click handler
+                card.addEventListener('click', function (ev) {
+                ev.preventDefault();
+                const modalEl = document.querySelector(targetSelector);
+                if (!modalEl) return;
+                const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+                modal.show();
+                });
+
+                // Keyboard activation (Enter / Space)
+                card.addEventListener('keydown', function (ev) {
+                if (ev.key === 'Enter' || ev.key === ' ') {
+                ev.preventDefault();
+                card.click();
+                }
+                });
+                });
+            </script>
+
 
             <!-- Learning Journey -->
             <section class="py-5 bg-light cybersecuritycommon_container">
@@ -1043,43 +1377,44 @@
             </section>
 
 
-
             <!-- Call to Action -->
             <section class="cta-section cybersecuritycommon_container ">
                 <div class="container">
                     <h4>Your Future in Cybersecurity &amp; FinTech Starts Here!</h4>
                     <div class="d-flex gap-2 justify-content-center">
 
-                                     <a href="/Internships">
-                        <button style="font-family: 'Gilroy-Bold', sans-serif;   color: white;   font-size: 15px;   word-spacing: 3px; background: #003384;   border: none;   border-radius: 50px;   padding: 10px 25px;margin-top: 20px;"
-                                class="btn btn-primary">Apply Now
-                        </button>
-                    </a>
-                    <a href="#advisor">
-                        <button style="font-family: 'Gilroy-Bold', sans-serif;   color: white;   font-size: 15px;   word-spacing: 3px; background: #003384;   border: none;   border-radius: 50px;   padding: 10px 25px;margin-top: 20px;"
-                                class="btn btn-primary">Speak to an Advisor
-                        </button>
-                    </a>
+                        <a href="/Internships">
+                            <button style="font-family: 'Gilroy-Bold', sans-serif;   color: white;   font-size: 15px;   word-spacing: 3px; background: #003384;   border: none;   border-radius: 50px;   padding: 10px 25px;margin-top: 20px;"
+                                    class="btn btn-primary">Apply Now
+                            </button>
+                        </a>
+                        <a href="#inputcustom_crm">
+                            <button style="font-family: 'Gilroy-Bold', sans-serif;   color: white;   font-size: 15px;   word-spacing: 3px; background: #003384;   border: none;   border-radius: 50px;   padding: 10px 25px;margin-top: 20px;"
+                                    class="btn btn-primary">Speak to an Advisor
+                            </button>
+                        </a>
                     </div>
 
 
                 </div>
             </section>
-                     <div class="getintouchbackground">
+            <div class="getintouchbackground">
 
-                    <p style="color: black;
+                <p style="color: black;
     font-family: 'Gilroy-Heavy', sans-serif;
     letter-spacing: 3px;
     text-align: center;
     margin-bottom: 0px;
       font-size: 25px;
-">OUR SOLUTIONS</p>
-                    <h4 style="    font-family: 'Gilroy-Heavy', sans-serif;
+">OUR SOLUTIONS
+                </p>
+                <h4 style="    font-family: 'Gilroy-Heavy', sans-serif;
     color: #003384;
     font-size: 27px;
     margin: 0px 0px 10px 0px;
-    text-align: center;  ">Get in Touch</h4>
-                    <p style="    font-size: 15px;
+    text-align: center;  ">Get in Touch
+                </h4>
+                <p style="    font-size: 15px;
         font-family: Arial, sans-serif;
 
     font-weight: 400;
@@ -1087,9 +1422,10 @@
     text-align: justify;
     text-align: center;
     color: black;
-    margin-bottom: 0px;">To request a demo or want to know more. Contact us directly or fill out the form and</p>
+    margin-bottom: 0px;">To request a demo or want to know more. Contact us directly or fill out the form and
+                </p>
 
-                                    <p style="         font-size: 15px;
+                <p style="         font-size: 15px;
         font-family: Arial, sans-serif;
 
     font-weight: 400;
@@ -1097,40 +1433,43 @@
     text-align: justify;
     text-align: center;
     color: black;
-    margin-bottom: 5px;">we will get back to you promptly.</p>
+    margin-bottom: 5px;">we will get back to you promptly.
+                </p>
 
-      </div>
-  <div id="get_in_touch_id" class="endless_possibilites_get_in_touch container">
+            </div>
+            <div id="get_in_touch_id" class="endless_possibilites_get_in_touch container">
 
-      <div class="row g-2 getintouchgrid">
-          <div class="col-12 col-md-4">
-              <p>Lexyle serves as the cornerstone for enhancing learner engagement, optimizing and expanding workflows,
-                  facilitating content management, integrating seamlessly with your learning technology ecosystem, and
-                  achieving business objectives both now and in the future.
-              </p>
-              <h4>Locate Us</h4>
-              <ul>
-                  <li>Ground Floor, Pamba Building,</li>
-                  <li>Phase I Technopark,</li>
-                  <li>Trivandrum, Kerala</li>
-              </ul>
-                <h4>Contact Us</h4>
-              <ul>
-                  <li>+91 871 460 3391</li>
-                  <li>info@lexyle.in</li>
+                <div class="row g-2 getintouchgrid">
+                    <div class="col-12 col-md-4">
+                        <p>Lexyle serves as the cornerstone for enhancing learner engagement, optimizing and expanding
+                            workflows,
+                            facilitating content management, integrating seamlessly with your learning technology
+                            ecosystem, and
+                            achieving business objectives both now and in the future.
+                        </p>
+                        <h4>Locate Us</h4>
+                        <ul>
+                            <li>Ground Floor, Pamba Building,</li>
+                            <li>Phase I Technopark,</li>
+                            <li>Trivandrum, Kerala</li>
+                        </ul>
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>+91 871 460 3391</li>
+                            <li>info@lexyle.in</li>
 
-              </ul>
-          </div>
-          <div id="inputcustom_crm" style="    padding: 0px 25px;" class="col-12 col-md-8 inputcustom_crm">
-              <div class="row g-4">
-                  <div class="oe_structure ">
+                        </ul>
+                    </div>
+                    <div id="inputcustom_crm" style="    padding: 0px 25px;" class="col-12 col-md-8 inputcustom_crm">
+                        <div class="row g-4">
+                            <div class="oe_structure ">
 
-                  </div>
-              </div>
+                            </div>
+                        </div>
 
-          </div>
-      </div>
+                    </div>
                 </div>
+            </div>
 
 
             <!-- Bootstrap JS -->
